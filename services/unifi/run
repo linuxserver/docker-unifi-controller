@@ -1,2 +1,4 @@
 #!/bin/bash
-exec /sbin/setuser abc "/command/to/execute" 
+
+
+exec /sbin/setuser abc java -Xmx1024M -jar /usr/lib/unifi/lib/ace.jar start
