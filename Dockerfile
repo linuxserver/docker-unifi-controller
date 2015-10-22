@@ -8,7 +8,7 @@ echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" >>
 apt-key adv --keyserver keyserver.ubuntu.com --recv C0A52C50 && \
 apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10 && \
 apt-get update -q && \
-apt-get install -yq 
+apt-get install -yq $APTLIST && \
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
 
@@ -18,10 +18,10 @@ ADD services/ /etc/service/
 ADD cron/ /etc/cron.d/
 ADD defaults/ /defaults/
 RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh
-
+RUN rm -rf /config /var/lib/unifi && ln -s /var/lib/unifi/ /config
 
 # Volumes and Ports
-VOLUME /volume
+VOLUME /config
 EXPOSE 8080 8081 8443 8843 8880
 
 
