@@ -1,10 +1,8 @@
 FROM linuxserver/baseimage
 MAINTAINER Your Name <your@email.com>
-ENV APTLIST="unifi oracle-java8-installer oracle-java8-set-default"
+ENV APTLIST="openjdk-7-jre-headless unifi"
 #Applying stuff
 RUN \
-add-apt-repository ppa:webupd8team/java && \
-echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
 echo "deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti" >> /etc/apt/sources.list && \
 echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" >> /etc/apt/sources.list && \
 apt-key adv --keyserver keyserver.ubuntu.com --recv C0A52C50 && \
@@ -19,10 +17,9 @@ ADD init/ /etc/my_init.d/
 ADD services/ /etc/service/
 ADD cron/ /etc/cron.d/
 ADD defaults/ /defaults/
-RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh && rm -rf /config && rm -rf rm -rf /var/lib/unifi/*
+RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh
 
 # Volumes and Ports
-WORKDIR /var/lib/unifi
 VOLUME /config
 EXPOSE 8080 8081 8443 8843 8880
 
