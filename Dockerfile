@@ -19,8 +19,7 @@ ADD init/ /etc/my_init.d/
 ADD services/ /etc/service/
 ADD cron/ /etc/cron.d/
 ADD defaults/ /defaults/
-RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh
-RUN rm -rf /config /var/lib/unifi
+RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh && rm -rf /config /var/lib/unifi
 
 # Volumes and Ports
 VOLUME /config
