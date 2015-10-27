@@ -22,6 +22,7 @@ ADD defaults/ /defaults/
 RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh && rm -rf /config && rm -rf rm -rf /var/lib/unifi/*
 
 # Volumes and Ports
+WORKDIR /var/lib/unifi
 VOLUME /config
 EXPOSE 8080 8081 8443 8843 8880
 
