@@ -12,16 +12,6 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10 && \
 apt-get update -q && \
 apt-get install $APTLIST -qy && \
 
-# clean up
-apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
-
-#Adding Custom files
-ADD init/ /etc/my_init.d/
-ADD services/ /etc/service/
-#ADD cron/ /etc/cron.d/
-#ADD defaults/ /defaults/
-RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh && \
-
 # configure unifi
 unlink /usr/lib/unifi/data && \
 unlink /usr/lib/unifi/logs && \
@@ -30,9 +20,17 @@ rm /var/lib/unifi/keystore && \
 mv /usr/lib/unifi/dl /usr/lib/unifi/dl_orig && \
 mv /var/lib/unifi /var/lib/unifi_orig && \
 mv /var/log/unifi /var/log/unifi_orig && \
-mv /var/run/unifi /var/run/unifi_orig
+mv /var/run/unifi /var/run/unifi_orig && \
 
+# clean up
+apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
+#Adding Custom files
+ADD init/ /etc/my_init.d/
+ADD services/ /etc/service/
+#ADD cron/ /etc/cron.d/
+#ADD defaults/ /defaults/
+RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh
 
 # Volumes and Ports
 WORKDIR /usr/lib/unifi
