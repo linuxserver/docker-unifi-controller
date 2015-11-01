@@ -2,25 +2,29 @@
 
 The [LinuxServer.io](https://www.linuxserver.io/) team brings you another quality container release featuring auto-update on startup, easy user mapping and community support. Be sure to checkout our [forums](https://forum.linuxserver.io/index.php) or for real-time support our [IRC](https://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`.
 
-# linuxserver/<container-name>
+# linuxserver/unifi
 
-<Provide a short, concise description of the application. No more than two SHORT paragraphs. Link to sources where possible and include an image illustrating your point if necessary. Point users to the original applications website, as that's the best place to get support - not here.>
+The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://www.ubnt.com/unifi/unifi-ap/)
 
 ## Usage
 
 ```
-docker create --name=<container-name> -v /etc/localtime:/etc/localtime:ro -v <path to data>:/config -e PGID=<gid> -e PUID=<uid>  -p 1234:1234 linuxserver/<container-name>
+docker create --name=unifi -v /etc/localtime:/etc/localtime:ro -v <path to data>:/config -e PGID=<gid> -e PUID=<uid>  -p 8080:8080 -p 8081:8081 -p 8443:8443 -p 8843:8843 -p 8880:8880 linuxserver/unifi
 ```
 
 **Parameters**
 
-* `-p 4242` - the port(s)
+* `-p 8080` - the port(s)
+* `-p 8081` - the port(s)
+* `-p 8443` - the port(s)
+* `-p 8843` - the port(s)
+* `-p 8880` - the port(s)
 * `-v /etc/localtime` for timesync - *optional*
-* `-v /config` -
+* `-v /config` - where unifi stores it config files etc, needs 3gb free
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
-It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it <container-name> /bin/bash`.
+It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it unifi /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -28,19 +32,19 @@ It is based on phusion-baseimage with ssh removed, for shell access whilst the c
 
 Part of what makes our containers work so well is by allowing you to specify your own `PUID` and `PGID`. This avoids nasty permissions errors with relation to data volumes (`-v` flags). When an application is installed on the host OS it is normally added to the common group called users, Docker apps due to the nature of the technology can't be added to this group. So we added this feature to let you easily choose when running your containers.
 
-## Setting up the application 
+## Setting up the application
 
-<Insert a basic user guide here to get a n00b up and running with the software inside the container.> DELETE ME
+The webui is at https://ip:8443 , setup with the first run wizard.
 
 
 ## Updates
 
-* Upgrade to the latest version simply `docker restart <container-name>`.
-* To monitor the logs of the container in realtime `docker logs -f <container-name>`.
+* Upgrade to the latest version simply `docker restart unifi`.
+* To monitor the logs of the container in realtime `docker logs -f unifi`.
 
 
 
 ## Versions
 
-+ **dd.MM.yyyy:** This is the standard Version type now. 
++ **02.11.2015:** Initial Release.
 
