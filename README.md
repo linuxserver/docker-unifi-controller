@@ -9,7 +9,16 @@ The UniFi® Controller software is a powerful, enterprise wireless software engi
 ## Usage
 
 ```
-docker create --name=unifi -v /etc/localtime:/etc/localtime:ro -v <path to data>:/config -e PGID=<gid> -e PUID=<uid>  -p 8080:8080 -p 8081:8081 -p 8443:8443 -p 8843:8843 -p 8880:8880 linuxserver/unifi
+docker create \
+  --name=unifi \
+  -v /etc/localtime:/etc/localtime:ro \
+  -v <path to data>:/config \
+  -e PGID=<gid> -e PUID=<uid>  \
+  -p 8080:8080 \
+  -p 8081:8081 \
+  -p 8443:8443 \
+  -p 8880:8880 \
+  linuxserver/unifi
 ```
 
 **Parameters**
@@ -17,7 +26,6 @@ docker create --name=unifi -v /etc/localtime:/etc/localtime:ro -v <path to data>
 * `-p 8080` - the port(s)
 * `-p 8081` - the port(s)
 * `-p 8443` - the port(s)
-* `-p 8843` - the port(s)
 * `-p 8880` - the port(s)
 * `-v /etc/localtime` for timesync - *optional*
 * `-v /config` - where unifi stores it config files etc, needs 3gb free
@@ -46,5 +54,4 @@ The webui is at https://ip:8443 , setup with the first run wizard.
 
 ## Versions
 
-+ **02.11.2015:** Initial Release.
-
++ **02.11.2015** Initial Release.
