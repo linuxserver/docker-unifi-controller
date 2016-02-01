@@ -13,14 +13,14 @@ apt-get update -q && \
 apt-get install $APTLIST -qy && \
 
 # configure unifi
-unlink /usr/lib/unifi/data && \
-unlink /usr/lib/unifi/logs && \
-unlink /usr/lib/unifi/run && \
-rm /var/lib/unifi/keystore && \
-mv /usr/lib/unifi/dl /usr/lib/unifi/dl_orig && \
-mv /var/lib/unifi /var/lib/unifi_orig && \
-mv /var/log/unifi /var/log/unifi_orig && \
-mv /var/run/unifi /var/run/unifi_orig && \
+# unlink /usr/lib/unifi/data && \
+# unlink /usr/lib/unifi/logs && \
+# unlink /usr/lib/unifi/run && \
+#rm /var/lib/unifi/keystore && \
+#mv /usr/lib/unifi/dl /usr/lib/unifi/dl_orig && \
+#mv /var/lib/unifi /var/lib/unifi_orig && \
+#mv /var/log/unifi /var/log/unifi_orig && \
+#mv /var/run/unifi /var/run/unifi_orig && \
 
 # clean up
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
