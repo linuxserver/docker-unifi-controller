@@ -61,5 +61,5 @@ The webui is at https://ip:8443 , setup with the first run wizard.
 
 
 ## Versions
-
++ **25.06.2016** Rebase to xenial and use updated repository.
 + **02.11.2015** Initial Release.
