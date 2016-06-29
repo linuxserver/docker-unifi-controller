@@ -1,6 +1,6 @@
 ![https://linuxserver.io](https://www.linuxserver.io/wp-content/uploads/2015/06/linuxserver_medium.png)
 
-The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring auto-update on startup, easy user mapping and community support. Find us for support at:
+The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring easy user mapping and community support. Find us for support at:
 * [forum.linuxserver.io](https://forum.linuxserver.io)
 * [IRC](https://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
@@ -35,7 +35,7 @@ docker create \
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
-It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it unifi /bin/bash`.
+It is based on xenial, for shell access whilst the container is running do `docker exec -it unifi /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -53,13 +53,12 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 The webui is at https://ip:8443 , setup with the first run wizard.
 
 
-## Updates
+## Info
 
 * Shell access whilst the container is running: `docker exec -it unifi /bin/bash`
-* Upgrade to the latest version: `docker restart unifi`
 * To monitor the logs of the container in realtime: `docker logs -f unifi`
 
 
 ## Versions
-
++ **25.06.2016** Rebase to xenial and use updated repository.
 + **02.11.2015** Initial Release.

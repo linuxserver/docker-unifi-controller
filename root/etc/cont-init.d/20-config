@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/with-contenv bash
 
-mkdir -p /config/{data,logs,run,dl}
+mkdir -p /config/{data,logs,run}
 
 
 [[ -L /usr/lib/unifi/data && ! /usr/lib/unifi/data -ef /config/data ]] && unlink /usr/lib/unifi/data
@@ -13,5 +13,7 @@ mkdir -p /config/{data,logs,run,dl}
 [[ ! -L /usr/lib/unifi/run ]] && ln -s /config/run /usr/lib/unifi/run
 
 chown -R abc:abc /config /usr/lib/unifi
+
+
 
 

@@ -1,34 +1,44 @@
-FROM linuxserver/baseimage
+FROM ubuntu:16.04
 
-MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>
+# global environment settings
+ENV HOME="/root"
+ENV TERM="xterm"
+ARG DEBIAN_FRONTEND="noninteractive"
 
-ENV APTLIST="openjdk-7-jre-headless unifi"
+# add abc user
+RUN \
+ useradd -u 911 -U -d /config -s /bin/false abc && \
+	usermod -G users abc
 
-# install packages
-RUN echo "deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti" >> /etc/apt/sources.list && \
-echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" >> /etc/apt/sources.list && \
-apt-key adv --keyserver keyserver.ubuntu.com --recv C0A52C50 && \
-apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10 && \
-apt-get update -q && \
-apt-get install $APTLIST -qy && \
+# install packages
+RUN \
+ apt-get update && \
+ apt-get install -y \
+	apt-transport-https \
+	apt-utils && \
 
-# configure unifi
-# unlink /usr/lib/unifi/data && \
-# unlink /usr/lib/unifi/logs && \
-# unlink /usr/lib/unifi/run && \
-#rm /var/lib/unifi/keystore && \
-#mv /usr/lib/unifi/dl /usr/lib/unifi/dl_orig && \
-#mv /var/lib/unifi /var/lib/unifi_orig && \
-#mv /var/log/unifi /var/log/unifi_orig && \
-#mv /var/run/unifi /var/run/unifi_orig && \
+echo "deb http://www.ubnt.com/downloads/unifi/debian unifi5 ubiquiti" >> /etc/apt/sources.list && \
+ apt-key adv --keyserver keyserver.ubuntu.com --recv C0A52C50 && \
 
-# clean up
-apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
+ apt-get update && \
+ apt-get install -y \
+	openjdk-8-jre-headless \
+	unifi \
+	wget && \
 
-# Adding Custom files
-ADD init/ /etc/my_init.d/
-ADD services/ /etc/service/
-RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh
+# add s6 overlay
+ wget -O /tmp/s6.tar.gz \
+	https://github.com/just-containers/s6-overlay/releases/download/v1.17.2.0/s6-overlay-amd64.tar.gz && \
+	tar xvf /tmp/s6.tar.gz -C / && \
+
+# cleanup
+ apt-get clean && \
+ rm -rfv /tmp/* /var/lib/apt/lists/* /var/tmp/*
+
+# add local files
+COPY root/ /
+
+ENTRYPOINT ["/init"]
 
 # Volumes and Ports
 WORKDIR /usr/lib/unifi
