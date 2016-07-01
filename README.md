@@ -35,7 +35,7 @@ docker create \
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
-It is based on xenial, for shell access whilst the container is running do `docker exec -it unifi /bin/bash`.
+It is based on xenial with s6 overlay, for shell access whilst the container is running do `docker exec -it unifi /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -60,5 +60,6 @@ The webui is at https://ip:8443 , setup with the first run wizard.
 
 
 ## Versions
++ **01.07.2016** Switch to lsiobase/xenial for conformity.
 + **25.06.2016** Rebase to xenial and use updated repository.
 + **02.11.2015** Initial Release.
