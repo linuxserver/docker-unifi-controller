@@ -60,6 +60,6 @@ The webui is at https://ip:8443 , setup with the first run wizard.
 
 
 ## Versions
-+ **01.07.2016** Switch to lsiobase/xenial for conformity.
-+ **25.06.2016** Rebase to xenial and use updated repository.
-+ **02.11.2015** Initial Release.
++ **01.07.16** Switch to lsiobase/xenial for conformity.
++ **25.06.16** Rebase to xenial and use updated repository.
++ **02.11.15** Initial Release.
