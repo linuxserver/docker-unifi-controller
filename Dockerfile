@@ -5,13 +5,8 @@ ARG DEBIAN_FRONTEND="noninteractive"
 
 # install packages
 RUN \
- apt-get update && \
- apt-get install -y \
-	apt-transport-https && \
-
  echo "deb http://www.ubnt.com/downloads/unifi/debian unifi5 ubiquiti" >> /etc/apt/sources.list && \
  apt-key adv --keyserver keyserver.ubuntu.com --recv C0A52C50 && \
-
  apt-get update && \
  apt-get install -y \
 	openjdk-8-jre-headless \
