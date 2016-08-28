@@ -6,8 +6,15 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/unifi
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/unifi.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/unifi.svg)][hub]
+[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-unifi)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-unifi/)
+[hub]: https://hub.docker.com/r/linuxserver/unifi/
 
-The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://www.ubnt.com/unifi/unifi-ap/)
+The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://www.ubnt.com/enterprise/#unifi)
+
+[![unifi](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)][unifiurl]
+[unifiurl]: https://www.ubnt.com/enterprise/#unifi
 
 ## Usage
 
@@ -60,6 +67,8 @@ The webui is at https://ip:8443 , setup with the first run wizard.
 
 
 ## Versions
+
++ **28.08.16** Add badges to README.
 + **01.07.16** Switch to lsiobase/xenial for conformity.
 + **25.06.16** Rebase to xenial and use updated repository.
 + **02.11.15** Initial Release.
