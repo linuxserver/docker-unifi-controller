@@ -11,7 +11,10 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 [![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-unifi)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-unifi/)
 [hub]: https://hub.docker.com/r/linuxserver/unifi/
 
-The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://www.ubnt.com/unifi/unifi-ap/)
+The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://www.ubnt.com/enterprise/#unifi)
+
+[![unifi](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)[unifiurl]
+[unifiurl]: https://www.ubnt.com/enterprise/#unifi
 
 ## Usage
 
