@@ -13,7 +13,7 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 
 The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://www.ubnt.com/enterprise/#unifi)
 
-[![unifi](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)[unifiurl]
+[![unifi](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)][unifiurl]
 [unifiurl]: https://www.ubnt.com/enterprise/#unifi
 
 ## Usage
