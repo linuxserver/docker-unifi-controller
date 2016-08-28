@@ -6,6 +6,10 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/unifi
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/unifi.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/unifi.svg)][hub]
+[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-unifi)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-unifi/)
+[hub]: https://hub.docker.com/r/linuxserver/unifi/
 
 The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://www.ubnt.com/unifi/unifi-ap/)
 
