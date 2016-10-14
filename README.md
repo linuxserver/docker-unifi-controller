@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/unifi
-[![](https://images.microbadger.com/badges/image/linuxserver/unifi.svg)](http://microbadger.com/images/linuxserver/unifi "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/unifi.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/unifi.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-unifi)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-unifi/)
+[![](https://images.microbadger.com/badges/version/linuxserver/unifi.svg)](https://microbadger.com/images/linuxserver/unifi "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/unifi.svg)](http://microbadger.com/images/linuxserver/unifi "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/unifi.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/unifi.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-unifi)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-unifi/)
 [hub]: https://hub.docker.com/r/linuxserver/unifi/
 
 The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://www.ubnt.com/enterprise/#unifi)
@@ -69,8 +69,18 @@ The webui is at https://ip:8443 , setup with the first run wizard.
 * To monitor the logs of the container in realtime: `docker logs -f unifi`
 
 
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' unifi`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/unifi`
+
+
 ## Versions
 
++ **14-10-16:** Add version layer information.
 + **20.09.16** Bump to pick up ver 5.27.
 + **10.09.16** Add layer badges to README.
 + **28.08.16** Add badges to README.
