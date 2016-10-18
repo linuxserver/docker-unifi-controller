@@ -86,7 +86,7 @@ The webui is at https://ip:8443 , setup with the first run wizard.
 
 ## Versions
 
-+ **14-10-16:** Add version layer information.
++ **14.10.16:** Add version layer information.
 + **20.09.16** Bump to pick up ver 5.27.
 + **10.09.16** Add layer badges to README.
 + **28.08.16** Add badges to README.
