@@ -1,4 +1,5 @@
 #!/usr/bin/with-contenv bash
-cd /config
-exec s6-setuidgid abc java -Xmx1024M -jar /usr/lib/unifi/lib/ace.jar start
+cd /config || exit
+exec \
+	s6-setuidgid abc java -Xmx1024M -jar /usr/lib/unifi/lib/ace.jar start
 
