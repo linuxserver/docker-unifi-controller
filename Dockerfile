@@ -14,13 +14,21 @@ RUN \
  apt-key adv --keyserver keyserver.ubuntu.com --recv C0A52C50 && \
  apt-get update && \
  apt-get install -y \
+	execstack \
 	openjdk-8-jre-headless \
 	unifi \
 	wget && \
 
+# fix execstack warning on library
+ execstack -c \
+	/usr/lib/unifi/lib/native/Linux/amd64/libubnt_webrtc_jni.so && \
+
 # cleanup
  apt-get clean && \
- rm -rfv /tmp/* /var/lib/apt/lists/* /var/tmp/*
+ rm -rf \
+	/tmp/* \
+	/var/lib/apt/lists/* \
+	/var/tmp/*
 
 # add local files
 COPY root/ /
