@@ -68,6 +68,15 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 The webui is at https://ip:8443 , setup with the first run wizard.
 
+To adopt a Unifi Access Point, and get it to show up in the software, take these steps:
+
+```
+ssh ubnt@$AP-IP
+mca-cli
+set-inform http://$address:8080/inform 
+```
+  
+Use `ubnt` as the password to login and `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
 ## Info
 
