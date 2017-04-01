@@ -70,12 +70,13 @@ The webui is at https://ip:8443 , setup with the first run wizard.
 
 To adopt a Unifi Access Point, and get it to show up in the software, take these steps:
 
-Find out which IP address the AP has got leased and ssh to that IP.
-Login using username and password as `ubnt`
-Then run:
- `mca-cli`
- `set-inform http://$address:8080/inform` 
-  where `$address` is the IP address of the host you are running this container on.
+```
+ssh ubnt@$AP-IP
+mca-cli
+set-inform http://$address:8080/inform 
+```
+  
+Use `ubnt` as the password to login and `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
 ## Info
 
