@@ -73,8 +73,9 @@ To adopt a Unifi Access Point, and get it to show up in the software, take these
 Find out which IP address the AP has got leased and ssh to that IP.
 Login using username and password as `ubnt`
 Then run:
-`mca-cli`
-`set-inform http://$address:8080/inform` where `$address` is the IP address of the host you are running this container on.
+ `mca-cli`
+ `set-inform http://$address:8080/inform` 
+  where `$address` is the IP address of the host you are running this container on.
 
 ## Info
 
