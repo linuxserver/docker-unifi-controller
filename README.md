@@ -95,6 +95,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 
 ## Versions
 
++ **05.07.17:** Change repo to stable. Remove execstack command, no longer required.
 + **18.03.17:** Fix execstack warning.
 + **14.10.16:** Add version layer information.
 + **20.09.16** Bump to pick up ver 5.27.
