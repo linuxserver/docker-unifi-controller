@@ -95,6 +95,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 
 ## Versions
 
++ **15.07.17:** Update to 5.5.19 and switch to using .deb package, no need to keep up with the unifi repo merry-go-round.
 + **05.07.17:** Change repo to stable. Remove execstack command, no longer required.
 + **18.03.17:** Fix execstack warning.
 + **14.10.16:** Add version layer information.
