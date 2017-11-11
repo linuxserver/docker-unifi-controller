@@ -95,6 +95,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 
 ## Versions
 
++ **11.11.17:** Update to 5.6.22.
 + **22.10.17:** Fix typos in Dockerfile and cert gen.
 + **05.10.17:** Update to 5.5.24.
 + **03.08.17:** Update to 5.5.20.
