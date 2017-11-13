@@ -26,6 +26,7 @@ docker create \
   --name=unifi \
   -v <path to data>:/config \
   -e PGID=<gid> -e PUID=<uid>  \
+  -p 3478:3478 \
   -p 8080:8080 \
   -p 8081:8081 \
   -p 8443:8443 \
@@ -42,6 +43,7 @@ So -p 8080:80 would expose port 80 from inside the container to be accessible fr
 http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.`
 
 
+* `-p 3478` - port(s)
 * `-p 8080` - port(s) required for Unifi to function
 * `-p 8081` - port(s)
 * `-p 8443` - port(s)
@@ -95,6 +97,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 
 ## Versions
 
++ **12.11.17:** Add STUN server port 3478 mapping to example.
 + **11.11.17:** Update to 5.6.22.
 + **22.10.17:** Fix typos in Dockerfile and cert gen.
 + **05.10.17:** Update to 5.5.24.
