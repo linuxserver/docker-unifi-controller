@@ -26,7 +26,7 @@ docker create \
   --name=unifi \
   -v <path to data>:/config \
   -e PGID=<gid> -e PUID=<uid>  \
-  -p 3478:3478 \
+  -p 3478:3478/udp \
   -p 8080:8080 \
   -p 8081:8081 \
   -p 8443:8443 \
