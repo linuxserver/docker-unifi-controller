@@ -27,6 +27,7 @@ docker create \
   -v <path to data>:/config \
   -e PGID=<gid> -e PUID=<uid>  \
   -p 3478:3478/udp \
+  -p 10001:10001/udp \
   -p 8080:8080 \
   -p 8081:8081 \
   -p 8443:8443 \
@@ -44,6 +45,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 
 * `-p 3478` - port(s)
+* `-p 10001` - port(s) required for AP discovery
 * `-p 8080` - port(s) required for Unifi to function
 * `-p 8081` - port(s)
 * `-p 8443` - port(s)
