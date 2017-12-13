@@ -99,6 +99,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 
 ## Versions
 
++ **09.12.17:** Fix continuation lines.
 + **12.11.17:** Add STUN server port 3478 mapping to example.
 + **11.11.17:** Update to 5.6.22.
 + **22.10.17:** Fix typos in Dockerfile and cert gen.
