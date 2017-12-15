@@ -38,7 +38,7 @@ docker create \
 
 ## Parameters
 
-`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
+`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side.
 For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container.
 So -p 8080:80 would expose port 80 from inside the container to be accessible from the host's IP on port 8080
 http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.`
@@ -77,9 +77,9 @@ To adopt a Unifi Access Point, and get it to show up in the software, take these
 ```
 ssh ubnt@$AP-IP
 mca-cli
-set-inform http://$address:8080/inform 
+set-inform http://$address:8080/inform
 ```
-  
+
 Use `ubnt` as the password to login and `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
 ## Info
@@ -88,7 +88,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 * To monitor the logs of the container in realtime: `docker logs -f unifi`
 
 
-* container version number 
+* container version number
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' unifi`
 
@@ -99,6 +99,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 
 ## Versions
 
++ **15.12.17:** Update to 5.6.26.
 + **09.12.17:** Fix continuation lines.
 + **12.11.17:** Add STUN server port 3478 mapping to example.
 + **11.11.17:** Update to 5.6.22.
