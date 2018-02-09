@@ -99,6 +99,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 
 ## Versions
 
++ **09.02.18:** Update to 5.6.30.
 + **08.02.18:** Use loop to simplify symlinks.
 + **08.01.18:** Update to 5.6.29.
 + **15.12.17:** Update to 5.6.26.
