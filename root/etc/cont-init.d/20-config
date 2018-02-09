@@ -4,13 +4,18 @@
 mkdir -p \
 	/config/{data,logs,run}
 
+
 # create symlinks for config
-[[ -L /usr/lib/unifi/data && ! /usr/lib/unifi/data -ef /config/data ]] && unlink /usr/lib/unifi/data
-[[ -L /usr/lib/unifi/logs && ! /usr/lib/unifi/logs -ef /config/logs ]] && unlink /usr/lib/unifi/logs
-[[ -L /usr/lib/unifi/run && ! /usr/lib/unifi/run -ef /config/run ]] && unlink /usr/lib/unifi/run
-[[ ! -L /usr/lib/unifi/data ]] && ln -s /config/data /usr/lib/unifi/data
-[[ ! -L /usr/lib/unifi/logs ]] && ln -s /config/logs /usr/lib/unifi/logs
-[[ ! -L /usr/lib/unifi/run ]] && ln -s /config/run /usr/lib/unifi/run
+symlinks=( \
+/usr/lib/unifi/data \
+/usr/lib/unifi/logs \
+/usr/lib/unifi/run )
+
+for i in "${symlinks[@]}"
+do
+[[ -L "$i" && ! "$i" -ef /config/"$(basename "$i")"  ]] && unlink "$i"
+[[ ! -L "$i" ]] && ln -s /config/"$(basename "$i")" "$i"
+done
 
 # permissions
 chown -R abc:abc \
