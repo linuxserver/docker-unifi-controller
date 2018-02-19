@@ -33,6 +33,7 @@ docker create \
   -p 8443:8443 \
   -p 8843:8843 \
   -p 8880:8880 \
+  -p 6789:6789 \
   linuxserver/unifi
 ```
 
@@ -51,6 +52,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 * `-p 8443` - port(s)
 * `-p 8843` - port(s)
 * `-p 8880` - port(s)
+* `-p 6789` - port(s) For throughput test
 * `-v /config` - where unifi stores it config files etc, needs 3gb free
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
@@ -99,6 +101,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 
 ## Versions
 
++ **19.02.18:** Add port 6789 to support throughput test
 + **09.02.18:** Update to 5.6.30.
 + **08.02.18:** Use loop to simplify symlinks.
 + **08.01.18:** Update to 5.6.29.
