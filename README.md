@@ -37,13 +37,13 @@ docker create \
   linuxserver/unifi
 ```
 
-You can choose between ,using tags, latest (default lts 5.6 release branch, and no tag required)  or the 5.7 release branch of unifi.
+You can choose between ,using tags, latest (default lts 5.6 release branch, and no tag required)  or the unstable (5.7) release branch of unifi.
 
-Add one of the tags, if required, to the linuxserver/unifi line of the run/create command in the following format, linuxserver/unifi:release-5.7
+Add one of the tags, if required, to the linuxserver/unifi line of the run/create command in the following format, linuxserver/unifi:unstable
 
 #### Tags
 
-+ **release-5.7** : releases from the 5.7x branch.
++ **unstable** : releases from the 5.7x branch.
 
 ## Parameters
 
@@ -109,7 +109,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 
 ## Versions
 
-+ **14.03.18:** Add branch for 5.7x releases.
++ **14.03.18:** Add unstable branch for 5.7x releases.
 + **19.02.18:** Add port 6789 to support throughput test
 + **09.02.18:** Update to 5.6.30.
 + **08.02.18:** Use loop to simplify symlinks.
