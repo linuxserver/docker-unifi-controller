@@ -109,6 +109,7 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 
 ## Versions
 
++ **24.03.18:** Update to 5.6.36.
 + **14.03.18:** Add unstable branch for 5.7x releases.
 + **19.02.18:** Add port 6789 to support throughput test
 + **09.02.18:** Update to 5.6.30.
