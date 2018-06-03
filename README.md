@@ -94,6 +94,10 @@ set-inform http://$address:8080/inform
 
 Use `ubnt` as the password to login and `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
+## Common problems
+
+When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
+
 ## Info
 
 * Shell access whilst the container is running: `docker exec -it unifi /bin/bash`
@@ -107,7 +111,6 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 * image version number
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/unifi`
-
 
 ## Versions
 
