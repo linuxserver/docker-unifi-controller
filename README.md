@@ -80,9 +80,11 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application
 
-The webui is at https://ip:8443 , setup with the first run wizard.
+The webui is at https://ip:8443, setup with the first run wizard.
 
-To adopt a Unifi Access Point, and get it to show up in the software, take these steps:
+For Unifi to adopt other devices, e.g. an Access Point, it is required to change the inform ip address. Because Unifi runs inside Docker by default it uses an ip address not accessable by other devices. To change this go to Settings > Controller > Controller Settings and set the Controller Hostname/IP to an ip address accessable by other devices.
+
+Alternatively to manually adopt a device take these steps:
 
 ```
 ssh ubnt@$AP-IP
@@ -91,6 +93,10 @@ set-inform http://$address:8080/inform
 ```
 
 Use `ubnt` as the password to login and `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
+
+## Common problems
+
+When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
 
 ## Info
 
@@ -105,7 +111,6 @@ Use `ubnt` as the password to login and `$address` is the IP address of the host
 * image version number
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/unifi`
-
 
 ## Versions
 
