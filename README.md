@@ -43,7 +43,7 @@ Add one of the tags, if required, to the linuxserver/unifi line of the run/creat
 
 #### Tags
 
-+ **unstable** : releases from the 5.7x branch.
++ **unstable** : releases from the 5.8x branch.
 
 ## Parameters
 
