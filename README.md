@@ -114,6 +114,7 @@ When using a Security Gateway (router) it could be that network connected device
 
 ## Versions
 
++ **06.07.18:** Update to 5.6.39.
 + **26.04.18:** Update to 5.6.37.
 + **24.03.18:** Update to 5.6.36.
 + **14.03.18:** Add unstable branch for 5.7x releases.
