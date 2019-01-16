@@ -15,7 +15,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 # linuxserver/unifi
 [![](https://images.microbadger.com/badges/version/linuxserver/unifi.svg)](https://microbadger.com/images/linuxserver/unifi "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/unifi.svg)](https://microbadger.com/images/linuxserver/unifi "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/unifi.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/unifi.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-unifi)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-unifi/)
 
-The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://www.ubnt.com/enterprise/#unifi)
+The [UniFi®](https://www.ubnt.com/enterprise/#unifi) Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.
 
 [![unifi](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)][appurl]
 
@@ -37,13 +37,14 @@ docker create \
   linuxserver/unifi
 ```
 
-You can choose between ,using tags, latest (default lts 5.6 release branch, and no tag required)  or the unstable (5.7) release branch of unifi.
+Using tags, you can choose between either the latest "LTS Stable" branch (the default, no tag required) or the "Unstable" branch of UniFi. See the UniFi [FAQ Page](https://help.ubnt.com/hc/en-us/articles/360008240754#1) for a breakdown of their various branches.
 
 Add one of the tags, if required, to the linuxserver/unifi line of the run/create command in the following format, linuxserver/unifi:unstable
 
 #### Tags
 
-+ **unstable** : releases from the 5.9x branch.
++ **latest** : releases from the 5.6.x "LTS Stable" branch
++ **unstable** : releases from the 5.9.x "Unstable" branch.
 
 ## Parameters
 
