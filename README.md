@@ -43,8 +43,14 @@ Add one of the tags, if required, to the linuxserver/unifi line of the run/creat
 
 #### Tags
 
-+ **latest** : releases from the 5.6.x "LTS Stable" branch
-+ **unstable** : releases from the 5.9.x "Unstable" branch.
++ **latest** : releases from the latest stable branch.
++ **LTS** : releases from the 5.6.x "LTS Stable" branch.
++ **5.10** : releases from the 5.10.x branch.
++ **5.9** : releases from the 5.9.x branch.
++ **5.8** : releases from the 5.8.x branch.
++ **5.7** : releases from the 5.7.x branch.
+
+
 
 ## Parameters
 
@@ -115,6 +121,7 @@ When using a Security Gateway (router) it could be that network connected device
 
 ## Versions
 
++ **27.01.19:** Adding pipeline logic and multi arch.
 + **14.09.18:** Update to 5.6.40.
 + **06.07.18:** Update to 5.6.39.
 + **26.04.18:** Update to 5.6.37.
