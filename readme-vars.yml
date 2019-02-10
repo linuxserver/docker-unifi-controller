@@ -1,7 +1,7 @@
 ---
 
 # project information
-project_name: unifi
+project_name: unifi-controller
 full_custom_readme: |
   {% raw -%}
   [linuxserverurl]: https://linuxserver.io

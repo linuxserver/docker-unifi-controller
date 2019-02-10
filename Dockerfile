@@ -8,7 +8,7 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="sparklyballs"
 
 # environment settings
-ARG UNIFI_BRANCH="unifi-5.8"
+ARG UNIFI_BRANCH="unifi-5.7"
 ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
