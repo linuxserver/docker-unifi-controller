@@ -1,7 +1,7 @@
 ---
 
 # jenkins variables
-project_name: docker-unifi
+project_name: docker-unifi-controller
 external_type: na
 custom_version_command: "curl -sX GET http://dl-origin.ubnt.com/unifi/debian/dists/unifi-5.8/ubiquiti/binary-amd64/Packages |grep -A 7 -m 1 'Package: unifi' | awk -F ': ' '/Version/{print $2;exit}' | awk -F '-' '{print $1}'"
 release_type: prerelease
@@ -10,11 +10,11 @@ ls_branch: 5.8
 repo_vars:
   - BUILD_VERSION_ARG = 'UNIFI_VERSION'
   - LS_USER = 'linuxserver'
-  - LS_REPO = 'docker-unifi'
-  - CONTAINER_NAME = 'unifi'
-  - DOCKERHUB_IMAGE = 'linuxserver/unifi'
-  - DEV_DOCKERHUB_IMAGE = 'lsiodev/unifi'
-  - PR_DOCKERHUB_IMAGE = 'lspipepr/unifi'
+  - LS_REPO = 'docker-unifi-controller'
+  - CONTAINER_NAME = 'unifi-controller'
+  - DOCKERHUB_IMAGE = 'linuxserver/unifi-controller'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/unifi-controller'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/unifi-controller'
   - DIST_IMAGE = 'ubuntu'
   - MULTIARCH='true'
   - CI='true'
