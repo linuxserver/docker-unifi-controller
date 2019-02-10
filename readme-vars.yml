@@ -1,7 +1,7 @@
 ---
 
 # project information
-project_name: unifi
+project_name: unifi-controller
 full_custom_readme: |
   {% raw -%}
   [linuxserverurl]: https://linuxserver.io
@@ -51,7 +51,6 @@ full_custom_readme: |
 
   + **latest** : releases from the latest stable branch.
   + **LTS** : releases from the 5.6.x "LTS Stable" branch.
-  + **5.10** : releases from the 5.10.x branch.
   + **5.9** : releases from the 5.9.x branch.
   + **5.8** : releases from the 5.8.x branch.
   + **5.7** : releases from the 5.7.x branch.

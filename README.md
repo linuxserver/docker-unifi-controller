@@ -45,7 +45,6 @@ Add one of the tags, if required, to the linuxserver/unifi line of the run/creat
 
 + **latest** : releases from the latest stable branch.
 + **LTS** : releases from the 5.6.x "LTS Stable" branch.
-+ **5.10** : releases from the 5.10.x branch.
 + **5.9** : releases from the 5.9.x branch.
 + **5.8** : releases from the 5.8.x branch.
 + **5.7** : releases from the 5.7.x branch.
