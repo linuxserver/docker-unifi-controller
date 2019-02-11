@@ -1,31 +1,65 @@
-[linuxserverurl]: https://linuxserver.io
-[forumurl]: https://forum.linuxserver.io
-[ircurl]: https://www.linuxserver.io/irc/
-[podcasturl]: https://www.linuxserver.io/podcast/
-[appurl]: https://www.ubnt.com/enterprise/#unifi
-[hub]: https://hub.docker.com/r/linuxserver/unifi/
+[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)](https://linuxserver.io)
 
-[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
+The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring :-
 
-The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
-* [forum.linuxserver.io][forumurl]
-* [IRC][ircurl] on freenode at `#linuxserver.io`
-* [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
+ * regular and timely application updates
+ * easy user mappings (PGID, PUID)
+ * custom base image with s6 overlay
+ * weekly base OS updates with common layers across the entire LinuxServer.io ecosystem to minimise space usage, down time and bandwidth
+ * regular security updates
 
-# linuxserver/unifi
-[![](https://images.microbadger.com/badges/version/linuxserver/unifi.svg)](https://microbadger.com/images/linuxserver/unifi "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/unifi.svg)](https://microbadger.com/images/linuxserver/unifi "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/unifi.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/unifi.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-unifi)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-unifi/)
+Find us at:
+* [Discord](https://discord.gg/YWrKVTn) - realtime support / chat with the community and the team.
+* [IRC](https://irc.linuxserver.io) - on freenode at `#linuxserver.io`. Our primary support channel is Discord.
+* [Blog](https://blog.linuxserver.io) - all the things you can do with our containers including How-To guides, opinions and much more!
+* [Podcast](https://anchor.fm/linuxserverio) - on hiatus. Coming back soon (late 2018).
 
-The [UniFi®](https://www.ubnt.com/enterprise/#unifi) Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.
+# PSA: Changes are happening
 
-[![unifi](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)][appurl]
+From August 2018 onwards, Linuxserver are in the midst of switching to a new CI platform which will enable us to build and release multiple architectures under a single repo. To this end, existing images for `arm64` and `armhf` builds are being deprecated. They are replaced by a manifest file in each container which automatically pulls the correct image for your architecture. You'll also be able to pull based on a specific architecture tag.
+
+TLDR: Multi-arch support is changing from multiple repos to one repo per container image.
+
+# [linuxserver/unifi-controller](https://github.com/linuxserver/docker-unifi-controller)
+[![](https://img.shields.io/discord/354974912613449730.svg?logo=discord&label=LSIO%20Discord&style=flat-square)](https://discord.gg/YWrKVTn)
+[![](https://images.microbadger.com/badges/version/linuxserver/unifi-controller.svg)](https://microbadger.com/images/linuxserver/unifi-controller "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/linuxserver/unifi-controller.svg)](https://microbadger.com/images/linuxserver/unifi-controller "Get your own version badge on microbadger.com")
+![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/unifi-controller.svg)
+![Docker Stars](https://img.shields.io/docker/stars/linuxserver/unifi-controller.svg)
+[![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Pipeline-Builders/docker-unifi-controller/master)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-unifi-controller/job/master/)
+[![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/unifi-controller/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/unifi-controller/latest/index.html)
+
+The [Unifi-controller](https://www.ubnt.com/enterprise/#unifi) Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.
+
+
+[![unifi-controller](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)](https://www.ubnt.com/enterprise/#unifi)
+
+## Supported Architectures
+
+Our images support multiple architectures such as `x86-64`, `arm64` and `armhf`. We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list). 
+
+Simply pulling `linuxserver/unifi-controller` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
+
+The architectures supported by this image are:
+
+| Architecture | Tag |
+| :----: | --- |
+| x86-64 | amd64-latest |
+| arm64 | arm64v8-latest |
+| armhf | arm32v6-latest |
+
 
 ## Usage
 
+Here are some example snippets to help you get started creating a container.
+
+### docker
+
 ```
 docker create \
-  --name=unifi \
-  -v <path to data>:/config \
-  -e PGID=<gid> -e PUID=<uid>  \
+  --name=unifi-controller \
+  -e PUID=1001 \
+  -e PGID=1001 \
   -p 3478:3478/udp \
   -p 10001:10001/udp \
   -p 8080:8080 \
@@ -34,57 +68,90 @@ docker create \
   -p 8843:8843 \
   -p 8880:8880 \
   -p 6789:6789 \
-  linuxserver/unifi
+  -v <path to data>:/config \
+  --restart unless-stopped \
+  linuxserver/unifi-controller
 ```
 
-Using tags, you can choose between either the latest "LTS Stable" branch (the default, no tag required) or the "Unstable" branch of UniFi. See the UniFi [FAQ Page](https://help.ubnt.com/hc/en-us/articles/360008240754#1) for a breakdown of their various branches.
+### Version Tags
 
-Add one of the tags, if required, to the linuxserver/unifi line of the run/create command in the following format, linuxserver/unifi:unstable
+This image provides various versions that are available via tags. `latest` tag provides the latest stable build from Unifi, but if this is a permanent setup you might consider using the LTS tag.
 
-#### Tags
+| Tag | Description |
+| :----: | --- |
+| latest | releases from the latest stable branch. |
+| LTS | releases from the 5.6.x "LTS Stable" branch. |
+| 5.9 | releases from the 5.9.x branch. |
+| 5.8 | releases from the 5.8.x branch. |
+| 5.7 | releases from the 5.7.x branch. |
 
-+ **latest** : releases from the latest stable branch.
-+ **LTS** : releases from the 5.6.x "LTS Stable" branch.
-+ **5.9** : releases from the 5.9.x branch.
-+ **5.8** : releases from the 5.8.x branch.
-+ **5.7** : releases from the 5.7.x branch.
+## Common problems
+When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
 
 
+### docker-compose
+
+Compatible with docker-compose v2 schemas.
+
+```
+---
+version: "2"
+services:
+  unifi-controller:
+    image: linuxserver/unifi-controller
+    container_name: unifi-controller
+    environment:
+      - PUID=1001
+      - PGID=1001
+    volumes:
+      - <path to data>:/config
+    ports:
+      - 3478:3478/udp
+      - 10001:10001/udp
+      - 8080:8080
+      - 8081:8081
+      - 8443:8443
+      - 8843:8843
+      - 8880:8880
+      - 6789:6789
+    mem_limit: 4096m
+    restart: unless-stopped
+```
 
 ## Parameters
 
-`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side.
-For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container.
-So -p 8080:80 would expose port 80 from inside the container to be accessible from the host's IP on port 8080
-http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.`
+Container images are configured using parameters passed at runtime (such as those above). These parameters are separated by a colon and indicate `<external>:<internal>` respectively. For example, `-p 8080:80` would expose port `80` from inside the container to be accessible from the host's IP on port `8080` outside the container.
 
+| Parameter | Function |
+| :----: | --- |
+| `-p 3478/udp` | Unifi communication port |
+| `-p 10001/udp` | required for AP discovery |
+| `-p 8080` | required for Unifi to function |
+| `-p 8081` | Unifi communication port |
+| `-p 8443` | Unifi communication port |
+| `-p 8843` | Unifi communication port |
+| `-p 8880` | Unifi communication port |
+| `-p 6789` | For throughput test |
+| `-e PUID=1001` | for UserID - see below for explanation |
+| `-e PGID=1001` | for GroupID - see below for explanation |
+| `-v /config` | All Unifi data stored here |
 
-* `-p 3478` - port(s)
-* `-p 10001` - port(s) required for AP discovery
-* `-p 8080` - port(s) required for Unifi to function
-* `-p 8081` - port(s)
-* `-p 8443` - port(s)
-* `-p 8843` - port(s)
-* `-p 8880` - port(s)
-* `-p 6789` - port(s) For throughput test
-* `-v /config` - where unifi stores it config files etc, needs 3gb free
-* `-e PGID` for GroupID - see below for explanation
-* `-e PUID` for UserID - see below for explanation
+## User / Group Identifiers
 
-It is based on xenial with s6 overlay, for shell access whilst the container is running do `docker exec -it unifi /bin/bash`.
+When using volumes (`-v` flags) permissions issues can arise between the host OS and the container, we avoid this issue by allowing you to specify the user `PUID` and group `PGID`.
 
-### User / Group Identifiers
+Ensure any volume directories on the host are owned by the same user you specify and any permissions issues will vanish like magic.
 
-Sometimes when using data volumes (`-v` flags) permissions issues can arise between the host OS and the container. We avoid this issue by allowing you to specify the user `PUID` and group `PGID`. Ensure the data volume directory on the host is owned by the same user you specify and it will "just work" <sup>TM</sup>.
-
-In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as below:
+In this instance `PUID=1001` and `PGID=1001`, to find yours use `id user` as below:
 
 ```
-  $ id dockeruser
+  $ id username
     uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
 ```
 
-## Setting up the application
+
+&nbsp;
+## Application Setup
 
 The webui is at https://ip:8443, setup with the first run wizard.
 
@@ -100,50 +167,36 @@ set-inform http://$address:8080/inform
 
 Use `ubnt` as the password to login and `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
-## Common problems
-
-When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
-
-## Info
-
-* Shell access whilst the container is running: `docker exec -it unifi /bin/bash`
-* To monitor the logs of the container in realtime: `docker logs -f unifi`
 
 
-* container version number
+## Support Info
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' unifi`
-
+* Shell access whilst the container is running: `docker exec -it unifi-controller /bin/bash`
+* To monitor the logs of the container in realtime: `docker logs -f unifi-controller`
+* container version number 
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' unifi-controller`
 * image version number
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/unifi-controller`
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/unifi`
+## Updating Info
+
+Most of our images are static, versioned, and require an image update and container recreation to update the app inside. With some exceptions (ie. nextcloud, plex), we do not recommend or support updating apps inside the container. Please consult the [Application Setup](#application-setup) section above to see if it is recommended for the image.  
+  
+Below are the instructions for updating containers:  
+  
+### Via Docker Run/Create
+* Update the image: `docker pull linuxserver/unifi-controller`
+* Stop the running container: `docker stop unifi-controller`
+* Delete the container: `docker rm unifi-controller`
+* Recreate a new container with the same docker create parameters as instructed above (if mapped correctly to a host folder, your `/config` folder and settings will be preserved)
+* Start the new container: `docker start unifi-controller`
+* You can also remove the old dangling images: `docker image prune`
+
+### Via Docker Compose
+* Update the image: `docker-compose pull linuxserver/unifi-controller`
+* Let compose update containers as necessary: `docker-compose up -d`
+* You can also remove the old dangling images: `docker image prune`
 
 ## Versions
 
-+ **27.01.19:** Adding pipeline logic and multi arch.
-+ **14.09.18:** Update to 5.6.40.
-+ **06.07.18:** Update to 5.6.39.
-+ **26.04.18:** Update to 5.6.37.
-+ **24.03.18:** Update to 5.6.36.
-+ **14.03.18:** Add unstable branch for 5.7x releases.
-+ **19.02.18:** Add port 6789 to support throughput test
-+ **09.02.18:** Update to 5.6.30.
-+ **08.02.18:** Use loop to simplify symlinks.
-+ **08.01.18:** Update to 5.6.29.
-+ **15.12.17:** Update to 5.6.26.
-+ **09.12.17:** Fix continuation lines.
-+ **12.11.17:** Add STUN server port 3478 mapping to example.
-+ **11.11.17:** Update to 5.6.22.
-+ **22.10.17:** Fix typos in Dockerfile and cert gen.
-+ **05.10.17:** Update to 5.5.24.
-+ **03.08.17:** Update to 5.5.20.
-+ **15.07.17:** Update to 5.5.19 and switch to using .deb package, no need to keep up with the unifi repo merry-go-round.
-+ **05.07.17:** Change repo to stable. Remove execstack command, no longer required.
-+ **18.03.17:** Fix execstack warning.
-+ **14.10.16:** Add version layer information.
-+ **20.09.16** Bump to pick up ver 5.27.
-+ **10.09.16** Add layer badges to README.
-+ **28.08.16** Add badges to README.
-+ **01.07.16** Switch to lsiobase/xenial for conformity.
-+ **25.06.16** Rebase to xenial and use updated repository.
-+ **02.11.15** Initial Release.
+* **10.02.19:** - Initial release of new unifi-controller image with new tags and pipeline logic
