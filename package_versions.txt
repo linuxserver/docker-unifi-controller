@@ -146,7 +146,7 @@ login/now 1:4.2-3.1ubuntu5.3
 lsb-base/now 9.20160110ubuntu0.2
 makedev/now 2.3.1-93ubuntu2~ubuntu16.04.1
 mawk/now 1.3.3-17ubuntu2
-mongodb-org-server/now 3.4.19
+mongodb-org-server/now 3.4.20
 mount/now 2.27.1-6ubuntu3.6
 multiarch-support/now 2.23-0ubuntu11
 ncurses-base/now 6.0+20160213-1ubuntu1
