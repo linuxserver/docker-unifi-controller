@@ -124,10 +124,10 @@ libsqlite3-0/now 3.11.0-1ubuntu1.1
 libss2/now 1.42.13-1ubuntu1
 libssl1.0.0/now 1.0.2g-1ubuntu4.15
 libstdc++6/now 5.4.0-6ubuntu1~16.04.11
-libsystemd0/now 229-4ubuntu21.16
+libsystemd0/now 229-4ubuntu21.17
 libtasn1-6/now 4.7-3ubuntu0.16.04.3
 libtinfo5/now 6.0+20160213-1ubuntu1
-libudev1/now 229-4ubuntu21.16
+libudev1/now 229-4ubuntu21.17
 libusb-0.1-4/now 2:0.1.12-28
 libustr-1.0-1/now 1.0.4-5
 libuuid1/now 2.27.1-6ubuntu3.6
@@ -159,8 +159,8 @@ procps/now 2:3.3.10-4ubuntu2.4
 readline-common/now 6.3-8ubuntu2
 sed/now 4.2.2-7
 sensible-utils/now 0.0.9ubuntu0.16.04.1
-systemd/now 229-4ubuntu21.16
-systemd-sysv/now 229-4ubuntu21.16
+systemd/now 229-4ubuntu21.17
+systemd-sysv/now 229-4ubuntu21.17
 sysv-rc/now 2.88dsf-59.3ubuntu2
 sysvinit-utils/now 2.88dsf-59.3ubuntu2
 tar/now 1.28-2.1ubuntu0.1
