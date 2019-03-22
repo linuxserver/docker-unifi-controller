@@ -167,7 +167,7 @@ tar/now 1.28-2.1ubuntu0.1
 tzdata/now 2018i-0ubuntu0.16.04
 ubuntu-keyring/now 2012.05.19
 ucf/now 3.0036
-unifi/now 5.10.19-11646-1
+unifi/now 5.10.20-11657-1
 util-linux/now 2.27.1-6ubuntu3.6
 wget/now 1.17.1-1ubuntu1.4
 x11-common/now 1:7.7+13ubuntu3.1
