@@ -1,174 +1,174 @@
-adduser/now 3.113+nmu3ubuntu4
-apt/now 1.2.29ubuntu0.1
-apt-utils/now 1.2.29ubuntu0.1
-base-files/now 9.4ubuntu4.8
-base-passwd/now 3.5.39
-bash/now 4.3-14ubuntu1.2
-binutils/now 2.26.1-1ubuntu1~16.04.8
-bsdutils/now 1:2.27.1-6ubuntu3.6
-ca-certificates/now 20170717~16.04.2
-ca-certificates-java/now 20160321ubuntu1
-coreutils/now 8.25-2ubuntu3~16.04
-curl/now 7.47.0-1ubuntu2.12
-dash/now 0.5.8-2.1ubuntu2
-dbus/now 1.10.6-1ubuntu3.3
-debconf/now 1.5.58ubuntu1
-debianutils/now 4.7
-diffutils/now 1:3.3-3
-dpkg/now 1.18.4ubuntu1.5
-e2fslibs/now 1.42.13-1ubuntu1
-e2fsprogs/now 1.42.13-1ubuntu1
-findutils/now 4.6.0+git+20160126-2
-fontconfig-config/now 2.11.94-0ubuntu1.1
-fonts-dejavu-core/now 2.35-1
-gcc-5-base/now 5.4.0-6ubuntu1~16.04.11
-gcc-6-base/now 6.0.1-0ubuntu1
-gnupg/now 1.4.20-1ubuntu3.3
-gpgv/now 1.4.20-1ubuntu3.3
-grep/now 2.25-1~16.04.1
-gzip/now 1.6-4ubuntu1
-hostname/now 3.16ubuntu2
-init/now 1.29ubuntu4
-init-system-helpers/now 1.29ubuntu4
-initscripts/now 2.88dsf-59.3ubuntu2
-insserv/now 1.14.0-5ubuntu3
-java-common/now 0.56ubuntu2
-jsvc/now 1.0.15-6
-krb5-locales/now 1.13.2+dfsg-5ubuntu2.1
-libacl1/now 2.2.52-3
-libapparmor1/now 2.10.95-0ubuntu2.10
-libapt-inst2.0/now 1.2.29ubuntu0.1
-libapt-pkg5.0/now 1.2.29ubuntu0.1
-libasn1-8-heimdal/now 1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libattr1/now 1:2.4.47-2
-libaudit-common/now 1:2.4.5-1ubuntu2.1
-libaudit1/now 1:2.4.5-1ubuntu2.1
-libavahi-client3/now 0.6.32~rc+dfsg-1ubuntu2.3
-libavahi-common-data/now 0.6.32~rc+dfsg-1ubuntu2.3
-libavahi-common3/now 0.6.32~rc+dfsg-1ubuntu2.3
-libblkid1/now 2.27.1-6ubuntu3.6
-libbz2-1.0/now 1.0.6-8
-libc-bin/now 2.23-0ubuntu11
-libc6/now 2.23-0ubuntu11
-libcap-ng0/now 0.7.7-1
-libcap2/now 1:2.24-12
-libcap2-bin/now 1:2.24-12
-libcomerr2/now 1.42.13-1ubuntu1
-libcommons-daemon-java/now 1.0.15-6
-libcryptsetup4/now 2:1.6.6-5ubuntu2.1
-libcups2/now 2.1.3-4ubuntu0.7
-libcurl3-gnutls/now 7.47.0-1ubuntu2.12
-libdb5.3/now 5.3.28-11ubuntu0.1
-libdbus-1-3/now 1.10.6-1ubuntu3.3
-libdebconfclient0/now 0.198ubuntu1
-libdevmapper1.02.1/now 2:1.02.110-1ubuntu10
-libexpat1/now 2.1.0-7ubuntu0.16.04.3
-libfdisk1/now 2.27.1-6ubuntu3.6
-libffi6/now 3.2.1-4
-libfontconfig1/now 2.11.94-0ubuntu1.1
-libfreetype6/now 2.6.1-0.1ubuntu2.3
-libgcc1/now 1:6.0.1-0ubuntu1
-libgcrypt20/now 1.6.5-2ubuntu0.5
-libgmp10/now 2:6.1.0+dfsg-2
-libgnutls30/now 3.4.10-4ubuntu1.4
-libgpg-error0/now 1.21-2ubuntu1
-libgssapi-krb5-2/now 1.13.2+dfsg-5ubuntu2.1
-libgssapi3-heimdal/now 1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libhcrypto4-heimdal/now 1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libheimbase1-heimdal/now 1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libheimntlm0-heimdal/now 1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libhogweed4/now 3.2-1ubuntu0.16.04.1
-libhx509-5-heimdal/now 1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libidn11/now 1.32-3ubuntu1.2
-libjpeg-turbo8/now 1.4.2-0ubuntu3.1
-libjpeg8/now 8c-2ubuntu8
-libk5crypto3/now 1.13.2+dfsg-5ubuntu2.1
-libkeyutils1/now 1.5.9-8ubuntu1
-libkmod2/now 22-1ubuntu5.2
-libkrb5-26-heimdal/now 1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libkrb5-3/now 1.13.2+dfsg-5ubuntu2.1
-libkrb5support0/now 1.13.2+dfsg-5ubuntu2.1
-liblcms2-2/now 2.6-3ubuntu2.1
-libldap-2.4-2/now 2.4.42+dfsg-2ubuntu3.4
-liblz4-1/now 0.0~r131-2ubuntu2
-liblzma5/now 5.1.1alpha+20120614-2ubuntu2
-libmount1/now 2.27.1-6ubuntu3.6
-libncurses5/now 6.0+20160213-1ubuntu1
-libncursesw5/now 6.0+20160213-1ubuntu1
-libnettle6/now 3.2-1ubuntu0.16.04.1
-libnspr4/now 2:4.13.1-0ubuntu0.16.04.1
-libnss3/now 2:3.28.4-0ubuntu0.16.04.5
-libnss3-nssdb/now 2:3.28.4-0ubuntu0.16.04.5
-libp11-kit0/now 0.23.2-5~ubuntu16.04.1
-libpam-modules/now 1.1.8-3.2ubuntu2.1
-libpam-modules-bin/now 1.1.8-3.2ubuntu2.1
-libpam-runtime/now 1.1.8-3.2ubuntu2.1
-libpam0g/now 1.1.8-3.2ubuntu2.1
-libpcre3/now 2:8.38-3.1
-libpcsclite1/now 1.8.14-1ubuntu1.16.04.1
-libpng12-0/now 1.2.54-1ubuntu1.1
-libprocps4/now 2:3.3.10-4ubuntu2.4
-libreadline6/now 6.3-8ubuntu2
-libroken18-heimdal/now 1.7~git20150920+dfsg-4ubuntu1.16.04.1
-librtmp1/now 2.4+20151223.gitfa8646d-1ubuntu0.1
-libsasl2-2/now 2.1.26.dfsg1-14ubuntu0.1
-libsasl2-modules/now 2.1.26.dfsg1-14ubuntu0.1
-libsasl2-modules-db/now 2.1.26.dfsg1-14ubuntu0.1
-libseccomp2/now 2.3.1-2.1ubuntu2~16.04.1
-libselinux1/now 2.4-3build2
-libsemanage-common/now 2.3-1build3
-libsemanage1/now 2.3-1build3
-libsepol1/now 2.4-2
-libsmartcols1/now 2.27.1-6ubuntu3.6
-libsqlite3-0/now 3.11.0-1ubuntu1.1
-libss2/now 1.42.13-1ubuntu1
-libssl1.0.0/now 1.0.2g-1ubuntu4.15
-libstdc++6/now 5.4.0-6ubuntu1~16.04.11
-libsystemd0/now 229-4ubuntu21.17
-libtasn1-6/now 4.7-3ubuntu0.16.04.3
-libtinfo5/now 6.0+20160213-1ubuntu1
-libudev1/now 229-4ubuntu21.17
-libusb-0.1-4/now 2:0.1.12-28
-libustr-1.0-1/now 1.0.4-5
-libuuid1/now 2.27.1-6ubuntu3.6
-libwind0-heimdal/now 1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libx11-6/now 2:1.6.3-1ubuntu2.1
-libx11-data/now 2:1.6.3-1ubuntu2.1
-libxau6/now 1:1.0.8-1
-libxcb1/now 1.11.1-1ubuntu1
-libxdmcp6/now 1:1.1.2-1.1
-libxext6/now 2:1.3.3-1
-libxi6/now 2:1.7.6-1
-libxrender1/now 1:0.9.9-0ubuntu1
-libxtst6/now 2:1.2.2-1
-locales/now 2.23-0ubuntu11
-login/now 1:4.2-3.1ubuntu5.3
-lsb-base/now 9.20160110ubuntu0.2
-makedev/now 2.3.1-93ubuntu2~ubuntu16.04.1
-mawk/now 1.3.3-17ubuntu2
-mongodb-org-server/now 3.4.20
-mount/now 2.27.1-6ubuntu3.6
-multiarch-support/now 2.23-0ubuntu11
-ncurses-base/now 6.0+20160213-1ubuntu1
-ncurses-bin/now 6.0+20160213-1ubuntu1
-openjdk-8-jre-headless/now 8u191-b12-2ubuntu0.16.04.1
-openssl/now 1.0.2g-1ubuntu4.15
-passwd/now 1:4.2-3.1ubuntu5.3
-perl-base/now 5.22.1-9ubuntu0.6
-procps/now 2:3.3.10-4ubuntu2.4
-readline-common/now 6.3-8ubuntu2
-sed/now 4.2.2-7
-sensible-utils/now 0.0.9ubuntu0.16.04.1
-systemd/now 229-4ubuntu21.17
-systemd-sysv/now 229-4ubuntu21.17
-sysv-rc/now 2.88dsf-59.3ubuntu2
-sysvinit-utils/now 2.88dsf-59.3ubuntu2
-tar/now 1.28-2.1ubuntu0.1
-tzdata/now 2018i-0ubuntu0.16.04
-ubuntu-keyring/now 2012.05.19
-ucf/now 3.0036
-unifi/now 5.6.40-10370-1
-util-linux/now 2.27.1-6ubuntu3.6
-wget/now 1.17.1-1ubuntu1.4
-x11-common/now 1:7.7+13ubuntu3.1
-zlib1g/now 1:1.2.8.dfsg-2ubuntu4.1
+adduser3.113+nmu3ubuntu4
+apt1.2.29ubuntu0.1
+apt-utils1.2.29ubuntu0.1
+base-files9.4ubuntu4.8
+base-passwd3.5.39
+bash4.3-14ubuntu1.2
+binutils2.26.1-1ubuntu1~16.04.8
+bsdutils1:2.27.1-6ubuntu3.6
+ca-certificates20170717~16.04.2
+ca-certificates-java20160321ubuntu1
+coreutils8.25-2ubuntu3~16.04
+curl7.47.0-1ubuntu2.12
+dash0.5.8-2.1ubuntu2
+dbus1.10.6-1ubuntu3.3
+debconf1.5.58ubuntu1
+debianutils4.7
+diffutils1:3.3-3
+dpkg1.18.4ubuntu1.5
+e2fslibs1.42.13-1ubuntu1
+e2fsprogs1.42.13-1ubuntu1
+findutils4.6.0+git+20160126-2
+fontconfig-config2.11.94-0ubuntu1.1
+fonts-dejavu-core2.35-1
+gcc-5-base5.4.0-6ubuntu1~16.04.11
+gcc-6-base6.0.1-0ubuntu1
+gnupg1.4.20-1ubuntu3.3
+gpgv1.4.20-1ubuntu3.3
+grep2.25-1~16.04.1
+gzip1.6-4ubuntu1
+hostname3.16ubuntu2
+init1.29ubuntu4
+initscripts2.88dsf-59.3ubuntu2
+init-system-helpers1.29ubuntu4
+insserv1.14.0-5ubuntu3
+java-common0.56ubuntu2
+jsvc1.0.15-6
+krb5-locales1.13.2+dfsg-5ubuntu2.1
+libacl12.2.52-3
+libapparmor12.10.95-0ubuntu2.10
+libapt-inst2.01.2.29ubuntu0.1
+libapt-pkg5.01.2.29ubuntu0.1
+libasn1-8-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
+libattr11:2.4.47-2
+libaudit11:2.4.5-1ubuntu2.1
+libaudit-common1:2.4.5-1ubuntu2.1
+libavahi-client30.6.32~rc+dfsg-1ubuntu2.3
+libavahi-common30.6.32~rc+dfsg-1ubuntu2.3
+libavahi-common-data0.6.32~rc+dfsg-1ubuntu2.3
+libblkid12.27.1-6ubuntu3.6
+libbz2-1.01.0.6-8
+libc62.23-0ubuntu11
+libcap21:2.24-12
+libcap2-bin1:2.24-12
+libcap-ng00.7.7-1
+libc-bin2.23-0ubuntu11
+libcomerr21.42.13-1ubuntu1
+libcommons-daemon-java1.0.15-6
+libcryptsetup42:1.6.6-5ubuntu2.1
+libcups22.1.3-4ubuntu0.7
+libcurl3-gnutls7.47.0-1ubuntu2.12
+libdb5.35.3.28-11ubuntu0.1
+libdbus-1-31.10.6-1ubuntu3.3
+libdebconfclient00.198ubuntu1
+libdevmapper1.02.12:1.02.110-1ubuntu10
+libexpat12.1.0-7ubuntu0.16.04.3
+libfdisk12.27.1-6ubuntu3.6
+libffi63.2.1-4
+libfontconfig12.11.94-0ubuntu1.1
+libfreetype62.6.1-0.1ubuntu2.3
+libgcc11:6.0.1-0ubuntu1
+libgcrypt201.6.5-2ubuntu0.5
+libgmp102:6.1.0+dfsg-2
+libgnutls303.4.10-4ubuntu1.4
+libgpg-error01.21-2ubuntu1
+libgssapi3-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
+libgssapi-krb5-21.13.2+dfsg-5ubuntu2.1
+libhcrypto4-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
+libheimbase1-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
+libheimntlm0-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
+libhogweed43.2-1ubuntu0.16.04.1
+libhx509-5-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
+libidn111.32-3ubuntu1.2
+libjpeg88c-2ubuntu8
+libjpeg-turbo81.4.2-0ubuntu3.1
+libk5crypto31.13.2+dfsg-5ubuntu2.1
+libkeyutils11.5.9-8ubuntu1
+libkmod222-1ubuntu5.2
+libkrb5-26-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
+libkrb5-31.13.2+dfsg-5ubuntu2.1
+libkrb5support01.13.2+dfsg-5ubuntu2.1
+liblcms2-22.6-3ubuntu2.1
+libldap-2.4-22.4.42+dfsg-2ubuntu3.4
+liblz4-10.0~r131-2ubuntu2
+liblzma55.1.1alpha+20120614-2ubuntu2
+libmount12.27.1-6ubuntu3.6
+libncurses56.0+20160213-1ubuntu1
+libncursesw56.0+20160213-1ubuntu1
+libnettle63.2-1ubuntu0.16.04.1
+libnspr42:4.13.1-0ubuntu0.16.04.1
+libnss32:3.28.4-0ubuntu0.16.04.5
+libnss3-nssdb2:3.28.4-0ubuntu0.16.04.5
+libp11-kit00.23.2-5~ubuntu16.04.1
+libpam0g1.1.8-3.2ubuntu2.1
+libpam-modules1.1.8-3.2ubuntu2.1
+libpam-modules-bin1.1.8-3.2ubuntu2.1
+libpam-runtime1.1.8-3.2ubuntu2.1
+libpcre32:8.38-3.1
+libpcsclite11.8.14-1ubuntu1.16.04.1
+libpng12-01.2.54-1ubuntu1.1
+libprocps42:3.3.10-4ubuntu2.4
+libreadline66.3-8ubuntu2
+libroken18-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
+librtmp12.4+20151223.gitfa8646d-1ubuntu0.1
+libsasl2-22.1.26.dfsg1-14ubuntu0.1
+libsasl2-modules2.1.26.dfsg1-14ubuntu0.1
+libsasl2-modules-db2.1.26.dfsg1-14ubuntu0.1
+libseccomp22.3.1-2.1ubuntu2~16.04.1
+libselinux12.4-3build2
+libsemanage12.3-1build3
+libsemanage-common2.3-1build3
+libsepol12.4-2
+libsmartcols12.27.1-6ubuntu3.6
+libsqlite3-03.11.0-1ubuntu1.1
+libss21.42.13-1ubuntu1
+libssl1.0.01.0.2g-1ubuntu4.15
+libstdc++65.4.0-6ubuntu1~16.04.11
+libsystemd0229-4ubuntu21.17
+libtasn1-64.7-3ubuntu0.16.04.3
+libtinfo56.0+20160213-1ubuntu1
+libudev1229-4ubuntu21.17
+libusb-0.1-42:0.1.12-28
+libustr-1.0-11.0.4-5
+libuuid12.27.1-6ubuntu3.6
+libwind0-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
+libx11-62:1.6.3-1ubuntu2.1
+libx11-data2:1.6.3-1ubuntu2.1
+libxau61:1.0.8-1
+libxcb11.11.1-1ubuntu1
+libxdmcp61:1.1.2-1.1
+libxext62:1.3.3-1
+libxi62:1.7.6-1
+libxrender11:0.9.9-0ubuntu1
+libxtst62:1.2.2-1
+locales2.23-0ubuntu11
+login1:4.2-3.1ubuntu5.3
+lsb-base9.20160110ubuntu0.2
+makedev2.3.1-93ubuntu2~ubuntu16.04.1
+mawk1.3.3-17ubuntu2
+mongodb-org-server3.4.20
+mount2.27.1-6ubuntu3.6
+multiarch-support2.23-0ubuntu11
+ncurses-base6.0+20160213-1ubuntu1
+ncurses-bin6.0+20160213-1ubuntu1
+openjdk-8-jre-headless8u191-b12-2ubuntu0.16.04.1
+openssl1.0.2g-1ubuntu4.15
+passwd1:4.2-3.1ubuntu5.3
+perl-base5.22.1-9ubuntu0.6
+procps2:3.3.10-4ubuntu2.4
+readline-common6.3-8ubuntu2
+sed4.2.2-7
+sensible-utils0.0.9ubuntu0.16.04.1
+systemd229-4ubuntu21.17
+systemd-sysv229-4ubuntu21.17
+sysvinit-utils2.88dsf-59.3ubuntu2
+sysv-rc2.88dsf-59.3ubuntu2
+tar1.28-2.1ubuntu0.1
+tzdata2018i-0ubuntu0.16.04
+ubuntu-keyring2012.05.19
+ucf3.0036
+unifi5.6.40-10370-1
+util-linux2.27.1-6ubuntu3.6
+wget1.17.1-1ubuntu1.4
+x11-common1:7.7+13ubuntu3.1
+zlib1g1:1.2.8.dfsg-2ubuntu4.1
