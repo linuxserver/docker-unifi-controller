@@ -89,7 +89,7 @@ libkrb5-26-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 libkrb5-31.13.2+dfsg-5ubuntu2.1
 libkrb5support01.13.2+dfsg-5ubuntu2.1
 liblcms2-22.6-3ubuntu2.1
-libldap-2.4-22.4.42+dfsg-2ubuntu3.4
+libldap-2.4-22.4.42+dfsg-2ubuntu3.5
 liblz4-10.0~r131-2ubuntu2
 liblzma55.1.1alpha+20120614-2ubuntu2
 libmount12.27.1-6ubuntu3.6
@@ -142,7 +142,7 @@ libxi62:1.7.6-1
 libxrender11:0.9.9-0ubuntu1
 libxtst62:1.2.2-1
 locales2.23-0ubuntu11
-login1:4.2-3.1ubuntu5.3
+login1:4.2-3.1ubuntu5.4
 lsb-base9.20160110ubuntu0.2
 makedev2.3.1-93ubuntu2~ubuntu16.04.1
 mawk1.3.3-17ubuntu2
@@ -153,7 +153,7 @@ ncurses-base6.0+20160213-1ubuntu1
 ncurses-bin6.0+20160213-1ubuntu1
 openjdk-8-jre-headless8u191-b12-2ubuntu0.16.04.1
 openssl1.0.2g-1ubuntu4.15
-passwd1:4.2-3.1ubuntu5.3
+passwd1:4.2-3.1ubuntu5.4
 perl-base5.22.1-9ubuntu0.6
 procps2:3.3.10-4ubuntu2.4
 readline-common6.3-8ubuntu2
@@ -164,7 +164,7 @@ systemd-sysv229-4ubuntu21.21
 sysvinit-utils2.88dsf-59.3ubuntu2
 sysv-rc2.88dsf-59.3ubuntu2
 tar1.28-2.1ubuntu0.1
-tzdata2018i-0ubuntu0.16.04
+tzdata2019a-0ubuntu0.16.04
 ubuntu-keyring2012.05.19
 ucf3.0036
 unifi5.7.23-10670
