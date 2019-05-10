@@ -167,7 +167,7 @@ tar1.28-2.1ubuntu0.1
 tzdata2019a-0ubuntu0.16.04
 ubuntu-keyring2012.05.19
 ucf3.0036
-unifi5.6.40-10370-1
+unifi5.6.42-10376-1
 util-linux2.27.1-6ubuntu3.6
 wget1.17.1-1ubuntu1.5
 x11-common1:7.7+13ubuntu3.1
