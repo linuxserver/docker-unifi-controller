@@ -70,13 +70,13 @@ docker create \
 
 This image provides various versions that are available via tags. `latest` tag provides the latest stable build from Unifi, but if this is a permanent setup you might consider using the LTS tag.
 
-| Tag | Description |
-| :----: | --- |
-| latest | releases from the latest stable branch. |
-| LTS | releases from the 5.6.x "LTS Stable" branch. |
-| 5.9 | releases from the 5.9.x branch. |
-| 5.8 | releases from the 5.8.x branch. |
-| 5.7 | releases from the 5.7.x branch. |
+| Tag    | Description                                  |
+| :----: | -------------------------------------------- |
+| latest | releases from the latest stable branch.      |
+| LTS    | releases from the 5.6.x "LTS Stable" branch. |
+| 5.9    | releases from the now EOL 5.9.x branch.      |
+| 5.8    | releases from the now EOL 5.8.x branch.      |
+| 5.7    | releases from the now EOL 5.7.x branch.      |
 
 ## Common problems
 When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
