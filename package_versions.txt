@@ -62,7 +62,7 @@ libdb5.35.3.28-11ubuntu0.2
 libdbus-1-31.10.6-1ubuntu3.4
 libdebconfclient00.198ubuntu1
 libdevmapper1.02.12:1.02.110-1ubuntu10
-libexpat12.1.0-7ubuntu0.16.04.3
+libexpat12.1.0-7ubuntu0.16.04.4
 libfdisk12.27.1-6ubuntu3.7
 libffi63.2.1-4
 libfontconfig12.11.94-0ubuntu1.1
@@ -120,7 +120,7 @@ libsemanage12.3-1build3
 libsemanage-common2.3-1build3
 libsepol12.4-2
 libsmartcols12.27.1-6ubuntu3.7
-libsqlite3-03.11.0-1ubuntu1.1
+libsqlite3-03.11.0-1ubuntu1.2
 libss21.42.13-1ubuntu1
 libssl1.0.01.0.2g-1ubuntu4.15
 libstdc++65.4.0-6ubuntu1~16.04.11
