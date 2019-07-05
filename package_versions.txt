@@ -47,7 +47,7 @@ libavahi-client30.6.32~rc+dfsg-1ubuntu2.3
 libavahi-common30.6.32~rc+dfsg-1ubuntu2.3
 libavahi-common-data0.6.32~rc+dfsg-1ubuntu2.3
 libblkid12.27.1-6ubuntu3.7
-libbz2-1.01.0.6-8
+libbz2-1.01.0.6-8ubuntu0.1
 libc62.23-0ubuntu11
 libcap21:2.24-12
 libcap2-bin1:2.24-12
