@@ -97,8 +97,8 @@ libncurses56.0+20160213-1ubuntu1
 libncursesw56.0+20160213-1ubuntu1
 libnettle63.2-1ubuntu0.16.04.1
 libnspr42:4.13.1-0ubuntu0.16.04.1
-libnss32:3.28.4-0ubuntu0.16.04.5
-libnss3-nssdb2:3.28.4-0ubuntu0.16.04.5
+libnss32:3.28.4-0ubuntu0.16.04.6
+libnss3-nssdb2:3.28.4-0ubuntu0.16.04.6
 libp11-kit00.23.2-5~ubuntu16.04.1
 libpam0g1.1.8-3.2ubuntu2.1
 libpam-modules1.1.8-3.2ubuntu2.1
