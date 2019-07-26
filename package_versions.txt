@@ -3,7 +3,7 @@ apt1.2.32
 apt-utils1.2.32
 base-files9.4ubuntu4.8
 base-passwd3.5.39
-bash4.3-14ubuntu1.3
+bash4.3-14ubuntu1.4
 binutils2.26.1-1ubuntu1~16.04.8
 bsdutils1:2.27.1-6ubuntu3.7
 ca-certificates20170717~16.04.2
