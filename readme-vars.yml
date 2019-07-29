@@ -14,6 +14,11 @@ available_architectures:
   - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
   - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
 
+# optional container parameters
+opt_param_usage_include_env: true
+opt_param_env_vars:
+  - { env_var: "MEM_LIMIT", env_value: "1024M", desc: "Optionally change the Java memory limit (-Xmx) (default is 1024M)." }
+
 # Optional Block
 optional_block_1: true
 optional_block_1_items:
@@ -70,5 +75,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "29.07.19:", desc: "Allow for changing Java mem limit via new optional environment variable." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
   - { date: "10.02.19:", desc: "Initial release of new unifi-controller image with new tags and pipeline logic" }
