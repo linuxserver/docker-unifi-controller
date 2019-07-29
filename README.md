@@ -53,6 +53,7 @@ docker create \
   --name=unifi-controller \
   -e PUID=1000 \
   -e PGID=1000 \
+  -e MEM_LIMIT=1024M `#optional` \
   -p 3478:3478/udp \
   -p 10001:10001/udp \
   -p 8080:8080 \
@@ -96,6 +97,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
+      - MEM_LIMIT=1024M #optional
     volumes:
       - <path to data>:/config
     ports:
@@ -126,6 +128,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-p 6789` | For throughput test |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
+| `-e MEM_LIMIT=1024M` | Optionally change the Java memory limit (-Xmx) (default is 1024M). |
 | `-v /config` | All Unifi data stored here |
 
 ## User / Group Identifiers
@@ -225,5 +228,6 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **29.07.19:** - Allow for changing Java mem limit via new optional environment variable.
 * **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.
 * **10.02.19:** - Initial release of new unifi-controller image with new tags and pipeline logic
