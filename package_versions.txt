@@ -146,12 +146,12 @@ login1:4.2-3.1ubuntu5.4
 lsb-base9.20160110ubuntu0.2
 makedev2.3.1-93ubuntu2~ubuntu16.04.1
 mawk1.3.3-17ubuntu2
-mongodb-org-server3.4.21
+mongodb-org-server3.4.22
 mount2.27.1-6ubuntu3.7
 multiarch-support2.23-0ubuntu11
 ncurses-base6.0+20160213-1ubuntu1
 ncurses-bin6.0+20160213-1ubuntu1
-openjdk-8-jre-headless8u212-b03-0ubuntu1.16.04.1
+openjdk-8-jre-headless8u222-b10-1ubuntu1~16.04.1
 openssl1.0.2g-1ubuntu4.15
 passwd1:4.2-3.1ubuntu5.4
 perl-base5.22.1-9ubuntu0.6
