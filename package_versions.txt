@@ -15,7 +15,7 @@ dbus1.10.6-1ubuntu3.4
 debconf1.5.58ubuntu2
 debianutils4.7
 diffutils1:3.3-3
-dpkg1.18.4ubuntu1.5
+dpkg1.18.4ubuntu1.6
 e2fslibs1.42.13-1ubuntu1
 e2fsprogs1.42.13-1ubuntu1
 findutils4.6.0+git+20160126-2
@@ -56,7 +56,7 @@ libc-bin2.23-0ubuntu11
 libcomerr21.42.13-1ubuntu1
 libcommons-daemon-java1.0.15-6
 libcryptsetup42:1.6.6-5ubuntu2.1
-libcups22.1.3-4ubuntu0.9
+libcups22.1.3-4ubuntu0.10
 libcurl3-gnutls7.47.0-1ubuntu2.13
 libdb5.35.3.28-11ubuntu0.2
 libdbus-1-31.10.6-1ubuntu3.4
