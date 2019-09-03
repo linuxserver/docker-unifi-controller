@@ -89,7 +89,7 @@ libkrb5-26-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 libkrb5-31.13.2+dfsg-5ubuntu2.1
 libkrb5support01.13.2+dfsg-5ubuntu2.1
 liblcms2-22.6-3ubuntu2.1
-libldap-2.4-22.4.42+dfsg-2ubuntu3.6
+libldap-2.4-22.4.42+dfsg-2ubuntu3.7
 liblz4-10.0~r131-2ubuntu2
 liblzma55.1.1alpha+20120614-2ubuntu2
 libmount12.27.1-6ubuntu3.7
@@ -167,7 +167,7 @@ tar1.28-2.1ubuntu0.1
 tzdata2019b-0ubuntu0.16.04
 ubuntu-keyring2012.05.19
 ucf3.0036
-unifi5.10.26-11685-1
+unifi5.10.27-11687-1
 util-linux2.27.1-6ubuntu3.7
 wget1.17.1-1ubuntu1.5
 x11-common1:7.7+13ubuntu3.1
