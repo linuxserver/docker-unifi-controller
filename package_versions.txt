@@ -9,7 +9,7 @@ bsdutils1:2.27.1-6ubuntu3.8
 ca-certificates20170717~16.04.2
 ca-certificates-java20160321ubuntu1
 coreutils8.25-2ubuntu3~16.04
-curl7.47.0-1ubuntu2.13
+curl7.47.0-1ubuntu2.14
 dash0.5.8-2.1ubuntu2
 dbus1.10.6-1ubuntu3.4
 debconf1.5.58ubuntu2
@@ -57,7 +57,7 @@ libcomerr21.42.13-1ubuntu1
 libcommons-daemon-java1.0.15-6
 libcryptsetup42:1.6.6-5ubuntu2.1
 libcups22.1.3-4ubuntu0.10
-libcurl3-gnutls7.47.0-1ubuntu2.13
+libcurl3-gnutls7.47.0-1ubuntu2.14
 libdb5.35.3.28-11ubuntu0.2
 libdbus-1-31.10.6-1ubuntu3.4
 libdebconfclient00.198ubuntu1
