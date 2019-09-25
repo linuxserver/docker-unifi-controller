@@ -172,6 +172,8 @@ set-inform http://$address:8080/inform
 
 Use `ubnt` as the password to login and `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
+Note: Unifi cannot adopt a device that is already set up as a standalone device, for example initialized using the smartphone app. In this case, you will need to factory reset your device to adopt it. One way to do this is with the `set-default` command over SSH.
+
 
 
 ## Support Info
