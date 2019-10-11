@@ -16,8 +16,8 @@ debconf1.5.58ubuntu2
 debianutils4.7
 diffutils1:3.3-3
 dpkg1.18.4ubuntu1.6
-e2fslibs1.42.13-1ubuntu1
-e2fsprogs1.42.13-1ubuntu1
+e2fslibs1.42.13-1ubuntu1.1
+e2fsprogs1.42.13-1ubuntu1.1
 findutils4.6.0+git+20160126-2
 fontconfig-config2.11.94-0ubuntu1.1
 fonts-dejavu-core2.35-1
@@ -53,7 +53,7 @@ libcap21:2.24-12
 libcap2-bin1:2.24-12
 libcap-ng00.7.7-1
 libc-bin2.23-0ubuntu11
-libcomerr21.42.13-1ubuntu1
+libcomerr21.42.13-1ubuntu1.1
 libcommons-daemon-java1.0.15-6
 libcryptsetup42:1.6.6-5ubuntu2.1
 libcups22.1.3-4ubuntu0.10
@@ -121,7 +121,7 @@ libsemanage-common2.3-1build3
 libsepol12.4-2
 libsmartcols12.27.1-6ubuntu3.8
 libsqlite3-03.11.0-1ubuntu1.2
-libss21.42.13-1ubuntu1
+libss21.42.13-1ubuntu1.1
 libssl1.0.01.0.2g-1ubuntu4.15
 libstdc++65.4.0-6ubuntu1~16.04.11
 libsystemd0229-4ubuntu21.22
@@ -164,7 +164,7 @@ systemd-sysv229-4ubuntu21.22
 sysvinit-utils2.88dsf-59.3ubuntu2
 sysv-rc2.88dsf-59.3ubuntu2
 tar1.28-2.1ubuntu0.1
-tzdata2019b-0ubuntu0.16.04
+tzdata2019c-0ubuntu0.16.04
 ubuntu-keyring2012.05.19
 ucf3.0036
 unifi5.6.42-10376-1
