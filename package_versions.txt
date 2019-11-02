@@ -5,7 +5,7 @@ base-files9.4ubuntu4.11
 base-passwd3.5.39
 bash4.3-14ubuntu1.4
 binutils2.26.1-1ubuntu1~16.04.8
-bsdutils1:2.27.1-6ubuntu3.8
+bsdutils1:2.27.1-6ubuntu3.9
 ca-certificates20170717~16.04.2
 ca-certificates-java20160321ubuntu1
 coreutils8.25-2ubuntu3~16.04
@@ -46,7 +46,7 @@ libaudit-common1:2.4.5-1ubuntu2.1
 libavahi-client30.6.32~rc+dfsg-1ubuntu2.3
 libavahi-common30.6.32~rc+dfsg-1ubuntu2.3
 libavahi-common-data0.6.32~rc+dfsg-1ubuntu2.3
-libblkid12.27.1-6ubuntu3.8
+libblkid12.27.1-6ubuntu3.9
 libbz2-1.01.0.6-8ubuntu0.2
 libc62.23-0ubuntu11
 libcap21:2.24-12
@@ -63,7 +63,7 @@ libdbus-1-31.10.6-1ubuntu3.4
 libdebconfclient00.198ubuntu1
 libdevmapper1.02.12:1.02.110-1ubuntu10
 libexpat12.1.0-7ubuntu0.16.04.5
-libfdisk12.27.1-6ubuntu3.8
+libfdisk12.27.1-6ubuntu3.9
 libffi63.2.1-4
 libfontconfig12.11.94-0ubuntu1.1
 libfreetype62.6.1-0.1ubuntu2.4
@@ -92,7 +92,7 @@ liblcms2-22.6-3ubuntu2.1
 libldap-2.4-22.4.42+dfsg-2ubuntu3.7
 liblz4-10.0~r131-2ubuntu2
 liblzma55.1.1alpha+20120614-2ubuntu2
-libmount12.27.1-6ubuntu3.8
+libmount12.27.1-6ubuntu3.9
 libncurses56.0+20160213-1ubuntu1
 libncursesw56.0+20160213-1ubuntu1
 libnettle63.2-1ubuntu0.16.04.1
@@ -119,7 +119,7 @@ libselinux12.4-3build2
 libsemanage12.3-1build3
 libsemanage-common2.3-1build3
 libsepol12.4-2
-libsmartcols12.27.1-6ubuntu3.8
+libsmartcols12.27.1-6ubuntu3.9
 libsqlite3-03.11.0-1ubuntu1.2
 libss21.42.13-1ubuntu1.1
 libssl1.0.01.0.2g-1ubuntu4.15
@@ -130,7 +130,7 @@ libtinfo56.0+20160213-1ubuntu1
 libudev1229-4ubuntu21.22
 libusb-0.1-42:0.1.12-28
 libustr-1.0-11.0.4-5
-libuuid12.27.1-6ubuntu3.8
+libuuid12.27.1-6ubuntu3.9
 libwind0-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 libx11-62:1.6.3-1ubuntu2.1
 libx11-data2:1.6.3-1ubuntu2.1
@@ -147,7 +147,7 @@ lsb-base9.20160110ubuntu0.2
 makedev2.3.1-93ubuntu2~ubuntu16.04.1
 mawk1.3.3-17ubuntu2
 mongodb-org-server3.4.23
-mount2.27.1-6ubuntu3.8
+mount2.27.1-6ubuntu3.9
 multiarch-support2.23-0ubuntu11
 ncurses-base6.0+20160213-1ubuntu1
 ncurses-bin6.0+20160213-1ubuntu1
@@ -168,7 +168,7 @@ tzdata2019c-0ubuntu0.16.04
 ubuntu-keyring2012.05.19
 ucf3.0036
 unifi5.11.50-12745-1
-util-linux2.27.1-6ubuntu3.8
+util-linux2.27.1-6ubuntu3.9
 wget1.17.1-1ubuntu1.5
 x11-common1:7.7+13ubuntu3.1
 zlib1g1:1.2.8.dfsg-2ubuntu4.1
