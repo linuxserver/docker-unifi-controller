@@ -75,6 +75,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "14.11.19:", desc: "Changed url for deb package to match new Ubiquity domain." }
   - { date: "29.07.19:", desc: "Allow for changing Java mem limit via new optional environment variable." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
   - { date: "10.02.19:", desc: "Initial release of new unifi-controller image with new tags and pipeline logic" }
