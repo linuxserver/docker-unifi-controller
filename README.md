@@ -244,6 +244,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **14.11.19:** - Changed url for deb package to match new Ubiquity domain.
 * **29.07.19:** - Allow for changing Java mem limit via new optional environment variable.
 * **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.
 * **10.02.19:** - Initial release of new unifi-controller image with new tags and pipeline logic
