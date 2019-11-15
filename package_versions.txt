@@ -21,7 +21,7 @@ e2fsprogs1.42.13-1ubuntu1.1
 findutils4.6.0+git+20160126-2
 fontconfig-config2.11.94-0ubuntu1.1
 fonts-dejavu-core2.35-1
-gcc-5-base5.4.0-6ubuntu1~16.04.11
+gcc-5-base5.4.0-6ubuntu1~16.04.12
 gcc-6-base6.0.1-0ubuntu1
 gnupg1.4.20-1ubuntu3.3
 gpgv1.4.20-1ubuntu3.3
@@ -81,7 +81,7 @@ libhogweed43.2-1ubuntu0.16.04.1
 libhx509-5-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 libidn111.32-3ubuntu1.2
 libjpeg88c-2ubuntu8
-libjpeg-turbo81.4.2-0ubuntu3.1
+libjpeg-turbo81.4.2-0ubuntu3.3
 libk5crypto31.13.2+dfsg-5ubuntu2.1
 libkeyutils11.5.9-8ubuntu1
 libkmod222-1ubuntu5.2
@@ -123,7 +123,7 @@ libsmartcols12.27.1-6ubuntu3.9
 libsqlite3-03.11.0-1ubuntu1.2
 libss21.42.13-1ubuntu1.1
 libssl1.0.01.0.2g-1ubuntu4.15
-libstdc++65.4.0-6ubuntu1~16.04.11
+libstdc++65.4.0-6ubuntu1~16.04.12
 libsystemd0229-4ubuntu21.22
 libtasn1-64.7-3ubuntu0.16.04.3
 libtinfo56.0+20160213-1ubuntu1
