@@ -68,7 +68,7 @@ libffi63.2.1-4
 libfontconfig12.11.94-0ubuntu1.1
 libfreetype62.6.1-0.1ubuntu2.4
 libgcc11:6.0.1-0ubuntu1
-libgcrypt201.6.5-2ubuntu0.5
+libgcrypt201.6.5-2ubuntu0.6
 libgmp102:6.1.0+dfsg-2
 libgnutls303.4.10-4ubuntu1.6
 libgpg-error01.21-2ubuntu1
@@ -146,7 +146,7 @@ login1:4.2-3.1ubuntu5.4
 lsb-base9.20160110ubuntu0.2
 makedev2.3.1-93ubuntu2~ubuntu16.04.1
 mawk1.3.3-17ubuntu2
-mongodb-org-server3.4.23
+mongodb-org-server3.4.24
 mount2.27.1-6ubuntu3.9
 multiarch-support2.23-0ubuntu11
 ncurses-base6.0+20160213-1ubuntu1
