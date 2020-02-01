@@ -70,7 +70,7 @@ libfreetype62.6.1-0.1ubuntu2.4
 libgcc11:6.0.1-0ubuntu1
 libgcrypt201.6.5-2ubuntu0.6
 libgmp102:6.1.0+dfsg-2
-libgnutls303.4.10-4ubuntu1.6
+libgnutls303.4.10-4ubuntu1.7
 libgpg-error01.21-2ubuntu1
 libgssapi3-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 libgssapi-krb5-21.13.2+dfsg-5ubuntu2.1
@@ -151,7 +151,7 @@ mount2.27.1-6ubuntu3.9
 multiarch-support2.23-0ubuntu11
 ncurses-base6.0+20160213-1ubuntu1
 ncurses-bin6.0+20160213-1ubuntu1
-openjdk-8-jre-headless8u232-b09-0ubuntu1~16.04.1
+openjdk-8-jre-headless8u242-b08-0ubuntu3~16.04
 openssl1.0.2g-1ubuntu4.15
 passwd1:4.2-3.1ubuntu5.4
 perl-base5.22.1-9ubuntu0.6
