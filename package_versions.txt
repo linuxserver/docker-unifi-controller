@@ -107,7 +107,7 @@ libpam-runtime1.1.8-3.2ubuntu2.1
 libpcre32:8.38-3.1
 libpcsclite11.8.14-1ubuntu1.16.04.1
 libpng12-01.2.54-1ubuntu1.1
-libprocps42:3.3.10-4ubuntu2.4
+libprocps42:3.3.10-4ubuntu2.5
 libreadline66.3-8ubuntu2
 libroken18-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 librtmp12.4+20151223.gitfa8646d-1ubuntu0.1
@@ -155,7 +155,7 @@ openjdk-8-jre-headless8u242-b08-0ubuntu3~16.04
 openssl1.0.2g-1ubuntu4.15
 passwd1:4.2-3.1ubuntu5.4
 perl-base5.22.1-9ubuntu0.6
-procps2:3.3.10-4ubuntu2.4
+procps2:3.3.10-4ubuntu2.5
 readline-common6.3-8ubuntu2
 sed4.2.2-7
 sensible-utils0.0.9ubuntu0.16.04.1
