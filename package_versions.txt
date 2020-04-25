@@ -151,7 +151,7 @@ mount2.27.1-6ubuntu3.10
 multiarch-support2.23-0ubuntu11
 ncurses-base6.0+20160213-1ubuntu1
 ncurses-bin6.0+20160213-1ubuntu1
-openjdk-8-jre-headless8u242-b08-0ubuntu3~16.04
+openjdk-8-jre-headless8u252-b09-1~16.04
 openssl1.0.2g-1ubuntu4.15
 passwd1:4.2-3.1ubuntu5.4
 perl-base5.22.1-9ubuntu0.6
