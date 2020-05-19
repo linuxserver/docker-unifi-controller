@@ -8,7 +8,6 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="sparklyballs"
 
 # environment settings
-ENV MEM_LIMIT=1024M
 ARG UNIFI_BRANCH="stable"
 ARG DEBIAN_FRONTEND="noninteractive"
 
