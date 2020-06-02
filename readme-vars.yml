@@ -46,15 +46,19 @@ param_volumes:
 
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "3478", internal_port: "3478/udp", port_desc: "Unifi communication port" }
-  - { external_port: "10001", internal_port: "10001/udp", port_desc: "required for AP discovery" }
-  - { external_port: "8080", internal_port: "8080", port_desc: "required for Unifi to function" }
-  - { external_port: "8081", internal_port: "8081", port_desc: "Unifi communication port" }
-  - { external_port: "8443", internal_port: "8443", port_desc: "Unifi communication port" }
-  - { external_port: "8843", internal_port: "8843", port_desc: "Unifi communication port" }
-  - { external_port: "8880", internal_port: "8880", port_desc: "Unifi communication port" }
-  - { external_port: "6789", internal_port: "6789", port_desc: "For throughput test" }
+  - { external_port: "3478", internal_port: "3478/udp", port_desc: "Unifi STUN port" }
+  - { external_port: "10001", internal_port: "10001/udp", port_desc: "Required for AP discovery" }
+  - { external_port: "8080", internal_port: "8080", port_desc: "Required for device communication" }
+  - { external_port: "8443", internal_port: "8443", port_desc: "Unifi web admin port" }
 param_usage_include_env: false
+
+opt_param_usage_include_ports: true
+opt_param_ports:
+  - { external_port: "1900", internal_port: "1900/udp", port_desc: "Required for "Make controller discoverable on L2 network" option" }
+  - { external_port: "8843", internal_port: "8843", port_desc: "Unifi guest portal HTTPS redirect port" }
+  - { external_port: "8880", internal_port: "8880", port_desc: "Unifi guest portal HTTP redirect port" }
+  - { external_port: "6789", internal_port: "6789", port_desc: "For mobile throughput test" }
+  - { external_port: "5514", internal_port: "5514", port_desc: "Remote syslog port" }
 
 # application setup block
 app_setup_block_enabled: true
@@ -67,7 +71,6 @@ app_setup_block: |
 
   ```
   ssh ubnt@$AP-IP
-  mca-cli
   set-inform http://$address:8080/inform
   ```
 
@@ -75,6 +78,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "02.06.20:", desc: "Updated port list & descriptions. Moved some ports to optional."}
   - { date: "14.11.19:", desc: "Changed url for deb package to match new Ubiquity domain." }
   - { date: "29.07.19:", desc: "Allow for changing Java mem limit via new optional environment variable." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
