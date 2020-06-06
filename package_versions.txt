@@ -6,7 +6,7 @@ base-passwd3.5.39
 bash4.3-14ubuntu1.4
 binutils2.26.1-1ubuntu1~16.04.8
 bsdutils1:2.27.1-6ubuntu3.10
-ca-certificates20170717~16.04.2
+ca-certificates20190110~16.04.1
 ca-certificates-java20160321ubuntu1
 coreutils8.25-2ubuntu3~16.04
 curl7.47.0-1ubuntu2.14
@@ -122,7 +122,7 @@ libsepol12.4-2
 libsmartcols12.27.1-6ubuntu3.10
 libsqlite3-03.11.0-1ubuntu1.4
 libss21.42.13-1ubuntu1.2
-libssl1.0.01.0.2g-1ubuntu4.15
+libssl1.0.01.0.2g-1ubuntu4.16
 libstdc++65.4.0-6ubuntu1~16.04.12
 libsystemd0229-4ubuntu21.28
 libtasn1-64.7-3ubuntu0.16.04.3
@@ -152,7 +152,7 @@ multiarch-support2.23-0ubuntu11
 ncurses-base6.0+20160213-1ubuntu1
 ncurses-bin6.0+20160213-1ubuntu1
 openjdk-8-jre-headless8u252-b09-1~16.04
-openssl1.0.2g-1ubuntu4.15
+openssl1.0.2g-1ubuntu4.16
 passwd1:4.2-3.1ubuntu5.4
 perl-base5.22.1-9ubuntu0.6
 procps2:3.3.10-4ubuntu2.5
