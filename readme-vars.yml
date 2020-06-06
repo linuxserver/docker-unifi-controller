@@ -54,7 +54,7 @@ param_usage_include_env: false
 
 opt_param_usage_include_ports: true
 opt_param_ports:
-  - { external_port: "1900", internal_port: "1900/udp", port_desc: "Required for "Make controller discoverable on L2 network" option" }
+  - { external_port: "1900", internal_port: "1900/udp", port_desc: "Required for `Make controller discoverable on L2 network` option" }
   - { external_port: "8843", internal_port: "8843", port_desc: "Unifi guest portal HTTPS redirect port" }
   - { external_port: "8880", internal_port: "8880", port_desc: "Unifi guest portal HTTP redirect port" }
   - { external_port: "6789", internal_port: "6789", port_desc: "For mobile throughput test" }
