@@ -81,7 +81,7 @@ libhogweed43.2-1ubuntu0.16.04.1
 libhx509-5-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 libidn111.32-3ubuntu1.2
 libjpeg88c-2ubuntu8
-libjpeg-turbo81.4.2-0ubuntu3.3
+libjpeg-turbo81.4.2-0ubuntu3.4
 libk5crypto31.13.2+dfsg-5ubuntu2.1
 libkeyutils11.5.9-8ubuntu1
 libkmod222-1ubuntu5.2
