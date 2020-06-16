@@ -78,6 +78,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "16.06.20:", desc: "Add logrotate."}
   - { date: "02.06.20:", desc: "Updated port list & descriptions. Moved some ports to optional."}
   - { date: "14.11.19:", desc: "Changed url for deb package to match new Ubiquity domain." }
   - { date: "29.07.19:", desc: "Allow for changing Java mem limit via new optional environment variable." }

@@ -29,7 +29,7 @@ pipeline {
     CI_WEB='true'
     CI_PORT='8443'
     CI_SSL='true'
-    CI_DELAY='120'
+    CI_DELAY='180'
     CI_DOCKERENV='TZ=US/Pacific'
     CI_AUTH='user:password'
     CI_WEBPATH=''

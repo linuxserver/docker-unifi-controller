@@ -5,7 +5,7 @@ ARG BUILD_DATE
 ARG VERSION
 ARG UNIFI_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
+LABEL maintainer="aptalca"
 
 # environment settings
 ARG UNIFI_BRANCH="stable"
@@ -20,6 +20,7 @@ RUN \
  apt-get install -y \
 	binutils \
 	jsvc \
+	logrotate \
 	mongodb-org-server \
 	openjdk-8-jre-headless \
 	wget && \
