@@ -265,6 +265,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **16.06.20:** - Add logrotate.
 * **02.06.20:** - Updated port list & descriptions. Moved some ports to optional.
 * **14.11.19:** - Changed url for deb package to match new Ubiquity domain.
 * **29.07.19:** - Allow for changing Java mem limit via new optional environment variable.
