@@ -9,6 +9,7 @@ bsdutils1:2.27.1-6ubuntu3.10
 ca-certificates20190110~16.04.1
 ca-certificates-java20160321ubuntu1
 coreutils8.25-2ubuntu3~16.04
+cron3.0pl1-128ubuntu2
 curl7.47.0-1ubuntu2.14
 dash0.5.8-2.1ubuntu2
 dbus1.10.6-1ubuntu3.5
@@ -107,6 +108,7 @@ libpam-runtime1.1.8-3.2ubuntu2.1
 libpcre32:8.38-3.1
 libpcsclite11.8.14-1ubuntu1.16.04.1
 libpng12-01.2.54-1ubuntu1.1
+libpopt01.16-10
 libprocps42:3.3.10-4ubuntu2.5
 libreadline66.3-8ubuntu2
 libroken18-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
@@ -120,7 +122,7 @@ libsemanage12.3-1build3
 libsemanage-common2.3-1build3
 libsepol12.4-2
 libsmartcols12.27.1-6ubuntu3.10
-libsqlite3-03.11.0-1ubuntu1.4
+libsqlite3-03.11.0-1ubuntu1.5
 libss21.42.13-1ubuntu1.2
 libssl1.0.01.0.2g-1ubuntu4.16
 libstdc++65.4.0-6ubuntu1~16.04.12
@@ -143,6 +145,7 @@ libxrender11:0.9.9-0ubuntu1
 libxtst62:1.2.2-1
 locales2.23-0ubuntu11
 login1:4.2-3.1ubuntu5.4
+logrotate3.8.7-2ubuntu2.16.04.2
 lsb-base9.20160110ubuntu0.2
 makedev2.3.1-93ubuntu2~ubuntu16.04.1
 mawk1.3.3-17ubuntu2
@@ -167,7 +170,7 @@ tar1.28-2.1ubuntu0.1
 tzdata2020a-0ubuntu0.16.04
 ubuntu-keyring2012.05.19
 ucf3.0036
-unifi5.12.72-13103-1
+unifi5.13.29-13635-1
 util-linux2.27.1-6ubuntu3.10
 wget1.17.1-1ubuntu1.5
 x11-common1:7.7+13ubuntu3.1
