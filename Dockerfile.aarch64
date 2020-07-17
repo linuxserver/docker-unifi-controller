@@ -17,6 +17,7 @@ RUN \
  apt-get install -y \
 	binutils \
 	jsvc \
+	libcap2 \
 	logrotate \
 	mongodb-server \
 	openjdk-8-jre-headless \
