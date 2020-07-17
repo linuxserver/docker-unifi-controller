@@ -78,6 +78,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "17.07.20:", desc: "Rebase 64 bit containers to Bionic and Mongo 3.6."}
   - { date: "16.06.20:", desc: "Add logrotate."}
   - { date: "02.06.20:", desc: "Updated port list & descriptions. Moved some ports to optional."}
   - { date: "14.11.19:", desc: "Changed url for deb package to match new Ubiquity domain." }
