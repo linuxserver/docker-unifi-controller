@@ -1,7 +1,7 @@
 adduser3.116ubuntu1
 apt1.6.12ubuntu0.1
 apt-utils1.6.12ubuntu0.1
-base-files10.1ubuntu2.8
+base-files10.1ubuntu2.9
 base-passwd3.5.44
 bash4.4.18-2ubuntu1.2
 binutils2.30-21ubuntu1~18.04.4
@@ -102,7 +102,7 @@ libncursesw56.1-1ubuntu1.18.04
 libnettle63.4-1
 libnghttp2-141.30.0-1ubuntu1
 libnspr42:4.18-1ubuntu1
-libnss32:3.35-2ubuntu2.9
+libnss32:3.35-2ubuntu2.11
 libp11-kit00.23.9-2
 libpam0g1.1.8-3.6ubuntu2.18.04.1
 libpam-modules1.1.8-3.6ubuntu2.18.04.1
@@ -133,11 +133,11 @@ libss21.44.1-1ubuntu1.3
 libssl1.11.1.1-1ubuntu2.1~18.04.6
 libstdc++68.4.0-1ubuntu1~18.04
 libstemmer0d0+svn585-1build1
-libsystemd0237-3ubuntu10.41
+libsystemd0237-3ubuntu10.42
 libtasn1-64.13-2
 libtcmalloc-minimal42.5-2.2ubuntu3
 libtinfo56.1-1ubuntu1.18.04
-libudev1237-3ubuntu10.41
+libudev1237-3ubuntu10.42
 libunistring20.9.9-0ubuntu2
 libunwind81.2.1-8
 libuuid12.31.1-0.4ubuntu3.6
