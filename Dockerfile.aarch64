@@ -46,4 +46,4 @@ COPY root/ /
 # Volumes and Ports
 WORKDIR /usr/lib/unifi
 VOLUME /config
-EXPOSE 8080 8081 8443 8843 8880
+EXPOSE 8080 8443 8843 8880
