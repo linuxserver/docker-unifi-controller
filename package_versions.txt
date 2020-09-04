@@ -132,8 +132,8 @@ libusb-0.1-42:0.1.12-28
 libustr-1.0-11.0.4-5
 libuuid12.27.1-6ubuntu3.10
 libwind0-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libx11-62:1.6.3-1ubuntu2.1
-libx11-data2:1.6.3-1ubuntu2.1
+libx11-62:1.6.3-1ubuntu2.2
+libx11-data2:1.6.3-1ubuntu2.2
 libxau61:1.0.8-1
 libxcb11.11.1-1ubuntu1
 libxdmcp61:1.1.2-1.1
