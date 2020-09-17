@@ -179,7 +179,7 @@ tar1.29b-2ubuntu0.1
 tzdata2020a-0ubuntu0.18.04
 ubuntu-keyring2018.09.18.1~18.04.0
 ucf3.0038
-unifi6.0.20-14236-1
+unifi6.0.22-14249-1
 util-linux2.31.1-0.4ubuntu3.6
 wget1.19.4-1ubuntu2.2
 x11-common1:7.7+19ubuntu7.1
