@@ -66,7 +66,7 @@ libexpat12.1.0-7ubuntu0.16.04.5
 libfdisk12.27.1-6ubuntu3.10
 libffi63.2.1-4
 libfontconfig12.11.94-0ubuntu1.1
-libfreetype62.6.1-0.1ubuntu2.4
+libfreetype62.6.1-0.1ubuntu2.5
 libgcc11:6.0.1-0ubuntu1
 libgcrypt201.6.5-2ubuntu0.6
 libgmp102:6.1.0+dfsg-2
@@ -100,10 +100,10 @@ libnspr42:4.13.1-0ubuntu0.16.04.1
 libnss32:3.28.4-0ubuntu0.16.04.14
 libnss3-nssdb2:3.28.4-0ubuntu0.16.04.14
 libp11-kit00.23.2-5~ubuntu16.04.1
-libpam0g1.1.8-3.2ubuntu2.1
-libpam-modules1.1.8-3.2ubuntu2.1
-libpam-modules-bin1.1.8-3.2ubuntu2.1
-libpam-runtime1.1.8-3.2ubuntu2.1
+libpam0g1.1.8-3.2ubuntu2.3
+libpam-modules1.1.8-3.2ubuntu2.3
+libpam-modules-bin1.1.8-3.2ubuntu2.3
+libpam-runtime1.1.8-3.2ubuntu2.3
 libpcre32:8.38-3.1
 libpcsclite11.8.14-1ubuntu1.16.04.1
 libpng12-01.2.54-1ubuntu1.1
