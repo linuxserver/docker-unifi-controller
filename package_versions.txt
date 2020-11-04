@@ -6,7 +6,7 @@ base-passwd3.5.39
 bash4.3-14ubuntu1.4
 binutils2.26.1-1ubuntu1~16.04.8
 bsdutils1:2.27.1-6ubuntu3.10
-ca-certificates20190110~16.04.1
+ca-certificates20201027ubuntu0.16.04.1
 ca-certificates-java20160321ubuntu1
 coreutils8.25-2ubuntu3~16.04
 curl7.47.0-1ubuntu2.16
@@ -154,7 +154,7 @@ ncurses-bin6.0+20160213-1ubuntu1
 openjdk-8-jre-headless8u272-b10-0ubuntu1~16.04
 openssl1.0.2g-1ubuntu4.17
 passwd1:4.2-3.1ubuntu5.4
-perl-base5.22.1-9ubuntu0.6
+perl-base5.22.1-9ubuntu0.9
 procps2:3.3.10-4ubuntu2.5
 readline-common6.3-8ubuntu2
 sed4.2.2-7
@@ -164,7 +164,7 @@ systemd-sysv229-4ubuntu21.29
 sysvinit-utils2.88dsf-59.3ubuntu2
 sysv-rc2.88dsf-59.3ubuntu2
 tar1.28-2.1ubuntu0.1
-tzdata2020a-0ubuntu0.16.04
+tzdata2020d-0ubuntu0.16.04
 ubuntu-keyring2012.05.19.1
 ucf3.0036
 unifi5.6.42-10376-1
