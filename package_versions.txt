@@ -34,7 +34,7 @@ init-system-helpers1.29ubuntu4
 insserv1.14.0-5ubuntu3
 java-common0.56ubuntu2
 jsvc1.0.15-6
-krb5-locales1.13.2+dfsg-5ubuntu2.1
+krb5-locales1.13.2+dfsg-5ubuntu2.2
 libacl12.2.52-3
 libapparmor12.10.95-0ubuntu2.11
 libapt-inst2.01.2.32ubuntu0.1
@@ -73,7 +73,7 @@ libgmp102:6.1.0+dfsg-2
 libgnutls303.4.10-4ubuntu1.8
 libgpg-error01.21-2ubuntu1
 libgssapi3-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libgssapi-krb5-21.13.2+dfsg-5ubuntu2.1
+libgssapi-krb5-21.13.2+dfsg-5ubuntu2.2
 libhcrypto4-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 libheimbase1-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 libheimntlm0-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
@@ -82,14 +82,14 @@ libhx509-5-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 libidn111.32-3ubuntu1.2
 libjpeg88c-2ubuntu8
 libjpeg-turbo81.4.2-0ubuntu3.4
-libk5crypto31.13.2+dfsg-5ubuntu2.1
+libk5crypto31.13.2+dfsg-5ubuntu2.2
 libkeyutils11.5.9-8ubuntu1
 libkmod222-1ubuntu5.2
 libkrb5-26-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
-libkrb5-31.13.2+dfsg-5ubuntu2.1
-libkrb5support01.13.2+dfsg-5ubuntu2.1
+libkrb5-31.13.2+dfsg-5ubuntu2.2
+libkrb5support01.13.2+dfsg-5ubuntu2.2
 liblcms2-22.6-3ubuntu2.1
-libldap-2.4-22.4.42+dfsg-2ubuntu3.10
+libldap-2.4-22.4.42+dfsg-2ubuntu3.11
 liblz4-10.0~r131-2ubuntu2
 liblzma55.1.1alpha+20120614-2ubuntu2
 libmount12.27.1-6ubuntu3.10
