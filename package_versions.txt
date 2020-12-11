@@ -1,6 +1,6 @@
 adduser3.113+nmu3ubuntu4
-apt1.2.32ubuntu0.1
-apt-utils1.2.32ubuntu0.1
+apt1.2.32ubuntu0.2
+apt-utils1.2.32ubuntu0.2
 base-files9.4ubuntu4.13
 base-passwd3.5.39
 bash4.3-14ubuntu1.4
@@ -9,7 +9,7 @@ bsdutils1:2.27.1-6ubuntu3.10
 ca-certificates20201027ubuntu0.16.04.1
 ca-certificates-java20160321ubuntu1
 coreutils8.25-2ubuntu3~16.04
-curl7.47.0-1ubuntu2.16
+curl7.47.0-1ubuntu2.18
 dash0.5.8-2.1ubuntu2
 dbus1.10.6-1ubuntu3.6
 debconf1.5.58ubuntu2
@@ -37,8 +37,8 @@ jsvc1.0.15-6
 krb5-locales1.13.2+dfsg-5ubuntu2.2
 libacl12.2.52-3
 libapparmor12.10.95-0ubuntu2.11
-libapt-inst2.01.2.32ubuntu0.1
-libapt-pkg5.01.2.32ubuntu0.1
+libapt-inst2.01.2.32ubuntu0.2
+libapt-pkg5.01.2.32ubuntu0.2
 libasn1-8-heimdal1.7~git20150920+dfsg-4ubuntu1.16.04.1
 libattr11:2.4.47-2
 libaudit11:2.4.5-1ubuntu2.1
@@ -57,7 +57,7 @@ libcomerr21.42.13-1ubuntu1.2
 libcommons-daemon-java1.0.15-6
 libcryptsetup42:1.6.6-5ubuntu2.1
 libcups22.1.3-4ubuntu0.11
-libcurl3-gnutls7.47.0-1ubuntu2.16
+libcurl3-gnutls7.47.0-1ubuntu2.18
 libdb5.35.3.28-11ubuntu0.2
 libdbus-1-31.10.6-1ubuntu3.6
 libdebconfclient00.198ubuntu1
@@ -122,7 +122,7 @@ libsepol12.4-2
 libsmartcols12.27.1-6ubuntu3.10
 libsqlite3-03.11.0-1ubuntu1.5
 libss21.42.13-1ubuntu1.2
-libssl1.0.01.0.2g-1ubuntu4.17
+libssl1.0.01.0.2g-1ubuntu4.18
 libstdc++65.4.0-6ubuntu1~16.04.12
 libsystemd0229-4ubuntu21.29
 libtasn1-64.7-3ubuntu0.16.04.3
@@ -152,7 +152,7 @@ multiarch-support2.23-0ubuntu11.2
 ncurses-base6.0+20160213-1ubuntu1
 ncurses-bin6.0+20160213-1ubuntu1
 openjdk-8-jre-headless8u275-b01-0ubuntu1~16.04
-openssl1.0.2g-1ubuntu4.17
+openssl1.0.2g-1ubuntu4.18
 passwd1:4.2-3.1ubuntu5.4
 perl-base5.22.1-9ubuntu0.9
 procps2:3.3.10-4ubuntu2.5
