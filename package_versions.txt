@@ -153,7 +153,7 @@ libxrender11:0.9.10-1
 libxtst62:1.2.3-1
 libyaml-cpp0.5v50.5.2-4ubuntu1
 libzstd11.3.3+dfsg-2ubuntu1.1
-locales2.27-3ubuntu1.3
+locales2.27-3ubuntu1.4
 login1:4.5-1ubuntu2
 logrotate3.11.0-0.1ubuntu1
 lsb-base9.20170808ubuntu1
