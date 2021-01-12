@@ -119,10 +119,10 @@ This image provides various versions that are available via tags. `latest` tag p
 | Tag | Description |
 | :----: | --- |
 | latest | releases from the latest stable branch. |
-| LTS | releases from the 5.6.x "LTS Stable" branch. |
-| 5.9 | releases from the 5.9.x branch. |
-| 5.8 | releases from the 5.8.x branch. |
-| 5.7 | releases from the 5.7.x branch. |
+| LTS | DEPRECATED - releases from the now EOL 5.6.x "LTS Stable" branch. |
+| 5.9 | DEPRECATED - releases from the now EOL 5.9.x branch. |
+| 5.8 | DEPRECATED - releases from the now EOL 5.8.x branch. |
+| 5.7 | DEPRECATED - releases from the now EOL 5.7.x branch. |
 
 ## Common problems
 When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
@@ -267,6 +267,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **12.01.21:** - Deprecate the `LTS` tag as unifi no longer releases LTS builds. Existing users can switch to the `latest` tag.
 * **29.07.19:** - Allow for changing Java mem limit via new optional environment variable.
 * **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.
 * **10.02.19:** - Initial release of new unifi-controller image with new tags and pipeline logic
