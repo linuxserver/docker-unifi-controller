@@ -1,0 +1,21 @@
+#!/usr/bin/with-contenv bash
+
+echo '
+********************************************************
+********************************************************
+*                                                      *
+*                                                      *
+*      This image tag LTS has been deprecated          *
+*                                                      *
+*            Use the tag "latest" at                   *
+*                                                      *
+*         ghcr.io/linuxserver/unifi-controller         *
+*                                                      *
+*https://hub.docker.com/r/linuxserver/unifi-controller *
+*                                                      *
+*https://github.com/linuxserver/docker-unifi-controller*
+*                                                      *
+*                                                      *
+*                                                      *
+********************************************************
+********************************************************'
