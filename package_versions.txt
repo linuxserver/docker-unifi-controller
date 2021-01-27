@@ -40,8 +40,8 @@ libapt-inst2.01.6.12ubuntu0.2
 libapt-pkg5.01.6.12ubuntu0.2
 libasn1-8-heimdal7.5.0+dfsg-1
 libattr11:2.4.47-2build1
-libaudit11:2.8.2-1ubuntu1
-libaudit-common1:2.8.2-1ubuntu1
+libaudit11:2.8.2-1ubuntu1.1
+libaudit-common1:2.8.2-1ubuntu1.1
 libavahi-client30.7-3.1ubuntu1.2
 libavahi-common30.7-3.1ubuntu1.2
 libavahi-common-data0.7-3.1ubuntu1.2
@@ -179,7 +179,7 @@ tar1.29b-2ubuntu0.2
 tzdata2020f-0ubuntu0.18.04
 ubuntu-keyring2018.09.18.1~18.04.0
 ucf3.0038
-unifi6.0.43-14348-1
+unifi6.0.45-14358-1
 util-linux2.31.1-0.4ubuntu3.7
 wget1.19.4-1ubuntu2.2
 x11-common1:7.7+19ubuntu7.1
