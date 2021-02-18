@@ -58,7 +58,7 @@ opt_param_ports:
   - { external_port: "8843", internal_port: "8843", port_desc: "Unifi guest portal HTTPS redirect port" }
   - { external_port: "8880", internal_port: "8880", port_desc: "Unifi guest portal HTTP redirect port" }
   - { external_port: "6789", internal_port: "6789", port_desc: "For mobile throughput test" }
-  - { external_port: "5514", internal_port: "5514", port_desc: "Remote syslog port" }
+  - { external_port: "5514", internal_port: "5514/udp", port_desc: "Remote syslog port" }
 
 # application setup block
 app_setup_block_enabled: true
