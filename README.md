@@ -186,16 +186,16 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 
 The webui is at https://ip:8443, setup with the first run wizard.
 
-For Unifi to adopt other devices, e.g. an Access Point, it is required to change the inform ip address. Because Unifi runs inside Docker by default it uses an ip address not accessable by other devices. To change this go to Settings > Controller > Controller Settings and set the Controller Hostname/IP to an ip address accessable by other devices.
+For Unifi to adopt other devices, e.g. an Access Point, it is required to change the inform IP address. Because Unifi runs inside Docker by default it uses an IP address not accessible by other devices. To change this go to Settings > System Settings > Controller Configuration and set the Controller Hostname/IP to a hostname or IP address accessible by your devices. Additionally the checkbox "Override inform host with controller hostname/IP" has to be checked, so that devices can connect to the controller during adoption (devices use the inform-endpoint during adoption).
 
-Alternatively to manually adopt a device take these steps:
+In order to manually adopt a device take these steps:
 
 ```
 ssh ubnt@$AP-IP
 set-inform http://$address:8080/inform
 ```
 
-Use `ubnt` as the password to login and `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
+The default device password is `ubnt`. `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
 
 ## Docker Mods
