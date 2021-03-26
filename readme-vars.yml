@@ -74,7 +74,7 @@ app_setup_block: |
   set-inform http://$address:8080/inform
   ```
 
- The default device password is `ubnt`. `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
+  The default device password is `ubnt`. `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
 # changelog
 changelogs:
