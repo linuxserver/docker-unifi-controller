@@ -6,5 +6,9 @@ if [ -z ${MEM_LIMIT+x} ]; then
   MEM_LIMIT="1024M"
 fi
 
+if [ -z ${MEM_STARTUP+x} ]; then
+  MEM_STARTUP="1024M"
+fi
+
 exec \
-	s6-setuidgid abc java -Xmx"${MEM_LIMIT}" -jar /usr/lib/unifi/lib/ace.jar start
+	s6-setuidgid abc java -Xms"${MEM_STARTUP}" -Xmx"${MEM_LIMIT}" -jar /usr/lib/unifi/lib/ace.jar start

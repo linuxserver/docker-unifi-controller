@@ -18,6 +18,7 @@ available_architectures:
 opt_param_usage_include_env: true
 opt_param_env_vars:
   - { env_var: "MEM_LIMIT", env_value: "1024M", desc: "Optionally change the Java memory limit (-Xmx) (default is 1024M)." }
+  - { env_var: "MEM_STARTUP", env_value: "1024M", desc: "Optionally change the Java initial memory (-Xms) (default is 1024M)." }
 
 # Optional Block
 optional_block_1: true
@@ -78,6 +79,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "11.06.21:", desc: "Allow for changing Java initial mem via new optional environment variable."}
   - { date: "12.01.21:", desc: "Deprecate the `LTS` tag as Unifi no longer releases LTS stable builds. Existing users can switch to the `latest` tag. Direct upgrade from 5.6.42 (LTS) to 6.0.42 (latest) tested successfully."}
   - { date: "17.07.20:", desc: "Rebase 64 bit containers to Bionic and Mongo 3.6."}
   - { date: "16.06.20:", desc: "Add logrotate."}
