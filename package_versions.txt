@@ -133,11 +133,11 @@ libss21.44.1-1ubuntu1.3
 libssl1.11.1.1-1ubuntu2.1~18.04.9
 libstdc++68.4.0-1ubuntu1~18.04
 libstemmer0d0+svn585-1build1
-libsystemd0237-3ubuntu10.49
+libsystemd0237-3ubuntu10.50
 libtasn1-64.13-2
 libtcmalloc-minimal42.5-2.2ubuntu3
 libtinfo56.1-1ubuntu1.18.04
-libudev1237-3ubuntu10.49
+libudev1237-3ubuntu10.50
 libunistring20.9.9-0ubuntu2
 libunwind81.2.1-8
 libuuid12.31.1-0.4ubuntu3.7
