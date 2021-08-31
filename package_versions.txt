@@ -158,9 +158,9 @@ login1:4.5-1ubuntu2
 logrotate3.11.0-0.1ubuntu1
 lsb-base9.20170808ubuntu1
 mawk1.3.3-17ubuntu3
-mongodb-clients1:3.6.3-0ubuntu1.1
-mongodb-server1:3.6.3-0ubuntu1.1
-mongodb-server-core1:3.6.3-0ubuntu1.1
+mongodb-clients1:3.6.3-0ubuntu1.3
+mongodb-server1:3.6.3-0ubuntu1.3
+mongodb-server-core1:3.6.3-0ubuntu1.3
 mongo-tools3.6.3-0ubuntu1
 mount2.31.1-0.4ubuntu3.7
 multiarch-support2.27-3ubuntu1.4
