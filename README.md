@@ -91,8 +91,6 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - MEM_LIMIT=1024M #optional
-      - MEM_STARTUP=1024M #optional
     volumes:
       - <path to data>:/config
     ports:
@@ -115,8 +113,6 @@ docker run -d \
   --name=unifi-controller \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e MEM_LIMIT=1024M `#optional` \
-  -e MEM_STARTUP=1024M `#optional` \
   -p 3478:3478/udp \
   -p 10001:10001/udp \
   -p 8080:8080 \
@@ -148,8 +144,6 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-p 5514/udp` | Remote syslog port |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e MEM_LIMIT=1024M` | Optionally change the Java memory limit (-Xmx) (default is 1024M). |
-| `-e MEM_STARTUP=1024M` | Optionally change the Java initial memory (-Xms) (default is 1024M). |
 | `-v /config` | All Unifi data stored here |
 
 ## Environment variables from files (Docker secrets)
