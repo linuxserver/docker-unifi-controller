@@ -1,5 +1,11 @@
 #!/usr/bin/with-contenv bash
 
+if [ -d /usr/lib/unifi-tmp ]; then
+    echo "New container detected. Setting up app folder and fixing permissions."
+    mv /usr/lib/unifi-tmp /usr/lib/unifi
+    chown -R abc:abc /usr/lib/unifi
+fi
+
 # create our folders
 mkdir -p \
 	/config/{data,logs,run}
