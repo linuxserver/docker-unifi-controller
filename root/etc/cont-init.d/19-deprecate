@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/with-contenv bash
 
 if [[ "$(uname -m)" == "armv7l" ]]; then
 cat <<-EOF
