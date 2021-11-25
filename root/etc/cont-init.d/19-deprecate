@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+if [[ "$(uname -m)" == "armv7l" ]]; then
+cat <<-EOF
+    ********************************************************
+    ********************************************************
+    *                                                      *
+    *                         !!!!                         *
+    *       This 32 bit ARM image will be deprecated       *
+    *     in June 2022 due to lack of upstream support.    *
+    *                                                      *
+    *         For further information please visit         *
+    * https://info.linuxserver.io/issues/2021-11-25-unifi/ *
+    *                                                      *
+    *                                                      *
+    ********************************************************
+    ********************************************************
+EOF
+fi
