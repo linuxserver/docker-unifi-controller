@@ -8,8 +8,8 @@ fi
 
 if [ -z ${MEM_STARTUP+x} ]; then
     exec \
-        s6-setuidgid abc java -Xmx"${MEM_LIMIT}" -jar /usr/lib/unifi/lib/ace.jar start;
+        s6-setuidgid abc java -Xmx"${MEM_LIMIT}" -Dlog4j2.formatMsgNoLookups=true -jar /usr/lib/unifi/lib/ace.jar start;
 else
     exec \
-        s6-setuidgid abc java -Xms"${MEM_STARTUP}" -Xmx"${MEM_LIMIT}" -jar /usr/lib/unifi/lib/ace.jar start;
+        s6-setuidgid abc java -Xms"${MEM_STARTUP}" -Xmx"${MEM_LIMIT}" -Dlog4j2.formatMsgNoLookups=true -jar /usr/lib/unifi/lib/ace.jar start;
 fi
