@@ -64,7 +64,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - { date: "13.12.20:", desc: "Rebase 64 bit containers to Focal."}
+  - { date: "13.12.21:", desc: "Rebase 64 bit containers to Focal."}
   - { date: "11.12.21:", desc: "Add java opts to mitigate CVE-2021-44228."}
   - { date: "11.06.21:", desc: "Allow for changing Java initial mem via new optional environment variable."}
   - { date: "12.01.21:", desc: "Deprecate the `LTS` tag as Unifi no longer releases LTS stable builds. Existing users can switch to the `latest` tag. Direct upgrade from 5.6.42 (LTS) to 6.0.42 (latest) tested successfully."}
