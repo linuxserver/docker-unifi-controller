@@ -260,7 +260,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **13.12.20:** - Rebase 64 bit containers to Focal.
+* **13.12.21:** - Rebase 64 bit containers to Focal.
 * **11.12.21:** - Add java opts to mitigate CVE-2021-44228.
 * **11.06.21:** - Allow for changing Java initial mem via new optional environment variable.
 * **12.01.21:** - Deprecate the `LTS` tag as Unifi no longer releases LTS stable builds. Existing users can switch to the `latest` tag. Direct upgrade from 5.6.42 (LTS) to 6.0.42 (latest) tested successfully.
