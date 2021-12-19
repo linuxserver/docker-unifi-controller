@@ -32,13 +32,13 @@ param_usage_include_ports: true
 param_ports:
   - { external_port: "3478", internal_port: "3478/udp", port_desc: "Unifi STUN port" }
   - { external_port: "10001", internal_port: "10001/udp", port_desc: "Required for AP discovery" }
-  - { external_port: "8080", internal_port: "8080", port_desc: "Required for device communication" }
-  - { external_port: "8443", internal_port: "8443", port_desc: "Unifi web admin port" }
+  - { external_port: "8081", internal_port: "8081", port_desc: "Required for device communication" }
+  - { external_port: "8442", internal_port: "8442", port_desc: "Unifi web admin port" }
 param_usage_include_env: false
 
 opt_param_usage_include_ports: true
 opt_param_ports:
-  - { external_port: "1900", internal_port: "1900/udp", port_desc: "Required for `Make controller discoverable on L2 network` option" }
+  - { external_port: "1899", internal_port: "1899/udp", port_desc: "Required for `Make controller discoverable on L2 network` option" }
   - { external_port: "8843", internal_port: "8843", port_desc: "Unifi guest portal HTTPS redirect port" }
   - { external_port: "8880", internal_port: "8880", port_desc: "Unifi guest portal HTTP redirect port" }
   - { external_port: "6789", internal_port: "6789", port_desc: "For mobile throughput test" }
@@ -47,7 +47,7 @@ opt_param_ports:
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  The webui is at https://ip:8443, setup with the first run wizard.
+  The webui is at https://ip:8442, setup with the first run wizard.
 
   For Unifi to adopt other devices, e.g. an Access Point, it is required to change the inform IP address. Because Unifi runs inside Docker by default it uses an IP address not accessible by other devices. To change this go to Settings > System Settings > Controller Configuration and set the Controller Hostname/IP to a hostname or IP address accessible by your devices. Additionally the checkbox "Override inform host with controller hostname/IP" has to be checked, so that devices can connect to the controller during adoption (devices use the inform-endpoint during adoption).
 
@@ -55,7 +55,7 @@ app_setup_block: |
 
   ```
   ssh ubnt@$AP-IP
-  set-inform http://$address:8080/inform
+  set-inform http://$address:8081/inform
   ```
 
   The default device password is `ubnt`. `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.

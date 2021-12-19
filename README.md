@@ -60,7 +60,7 @@ The architectures supported by this image are:
 
 ## Application Setup
 
-The webui is at https://ip:8443, setup with the first run wizard.
+The webui is at https://ip:8442, setup with the first run wizard.
 
 For Unifi to adopt other devices, e.g. an Access Point, it is required to change the inform IP address. Because Unifi runs inside Docker by default it uses an IP address not accessible by other devices. To change this go to Settings > System Settings > Controller Configuration and set the Controller Hostname/IP to a hostname or IP address accessible by your devices. Additionally the checkbox "Override inform host with controller hostname/IP" has to be checked, so that devices can connect to the controller during adoption (devices use the inform-endpoint during adoption).
 
@@ -68,7 +68,7 @@ In order to manually adopt a device take these steps:
 
 ```
 ssh ubnt@$AP-IP
-set-inform http://$address:8080/inform
+set-inform http://$address:8081/inform
 ```
 
 The default device password is `ubnt`. `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
@@ -98,9 +98,9 @@ services:
     ports:
       - 3478:3478/udp
       - 10001:10001/udp
-      - 8080:8080
-      - 8443:8443
-      - 1900:1900/udp #optional
+      - 8081:8081
+      - 8442:8442
+      - 1899:1899/udp #optional
       - 8843:8843 #optional
       - 8880:8880 #optional
       - 6789:6789 #optional
@@ -119,9 +119,9 @@ docker run -d \
   -e MEM_STARTUP=1024M `#optional` \
   -p 3478:3478/udp \
   -p 10001:10001/udp \
-  -p 8080:8080 \
-  -p 8443:8443 \
-  -p 1900:1900/udp `#optional` \
+  -p 8081:8081 \
+  -p 8442:8442 \
+  -p 1899:1899/udp `#optional` \
   -p 8843:8843 `#optional` \
   -p 8880:8880 `#optional` \
   -p 6789:6789 `#optional` \
@@ -133,15 +133,15 @@ docker run -d \
 
 ## Parameters
 
-Container images are configured using parameters passed at runtime (such as those above). These parameters are separated by a colon and indicate `<external>:<internal>` respectively. For example, `-p 8080:80` would expose port `80` from inside the container to be accessible from the host's IP on port `8080` outside the container.
+Container images are configured using parameters passed at runtime (such as those above). These parameters are separated by a colon and indicate `<external>:<internal>` respectively. For example, `-p 8081:80` would expose port `80` from inside the container to be accessible from the host's IP on port `8081` outside the container.
 
 | Parameter | Function |
 | :----: | --- |
 | `-p 3478/udp` | Unifi STUN port |
 | `-p 10001/udp` | Required for AP discovery |
-| `-p 8080` | Required for device communication |
-| `-p 8443` | Unifi web admin port |
-| `-p 1900/udp` | Required for `Make controller discoverable on L2 network` option |
+| `-p 8081` | Required for device communication |
+| `-p 8442` | Unifi web admin port |
+| `-p 1899/udp` | Required for `Make controller discoverable on L2 network` option |
 | `-p 8843` | Unifi guest portal HTTPS redirect port |
 | `-p 8880` | Unifi guest portal HTTP redirect port |
 | `-p 6789` | For mobile throughput test |
