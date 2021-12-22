@@ -261,6 +261,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **22.12.21:** - Move deb package install to first init to avoid overlayfs performance issues.
 * **13.12.21:** - Rebase 64 bit containers to Focal.
 * **11.12.21:** - Add java opts to mitigate CVE-2021-44228.
 * **11.06.21:** - Allow for changing Java initial mem via new optional environment variable.
