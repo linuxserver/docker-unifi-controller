@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+if [[ ! -d /usr/lib/unifi ]]; then
+    dpkg -i /app/unifi.deb
+fi

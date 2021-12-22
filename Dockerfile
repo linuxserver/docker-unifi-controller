@@ -29,10 +29,11 @@ RUN \
     | awk -F ': ' '/Version/{print $2;exit}' \
     | awk -F '-' '{print $1}'); \
   fi && \
+  mkdir -p /app && \
   curl -o \
-  /tmp/unifi.deb -L \
+  /app/unifi.deb -L \
     "https://dl.ui.com/unifi/${UNIFI_VERSION}/unifi_sysvinit_all.deb" && \
-  dpkg -i /tmp/unifi.deb && \
+#  dpkg -i /tmp/unifi.deb && \
   echo "**** cleanup ****" && \
   apt-get clean && \
   rm -rf \
