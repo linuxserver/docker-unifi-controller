@@ -138,7 +138,7 @@ librtmp12.4+20151223.gitfa8646d.1-2build1
 libsasl2-22.1.27+dfsg-2
 libsasl2-modules2.1.27+dfsg-2
 libsasl2-modules-db2.1.27+dfsg-2
-libseccomp22.5.1-1ubuntu1~20.04.1
+libseccomp22.5.1-1ubuntu1~20.04.2
 libselinux13.0-1build2
 libsemanage13.0-1build2
 libsemanage-common3.0-1build2
@@ -199,7 +199,6 @@ tar1.30+dfsg-7ubuntu0.20.04.1
 tzdata2021e-0ubuntu0.20.04
 ubuntu-keyring2020.02.11.4
 ucf3.0038+nmu1
-unifi6.5.55-16678-1
 util-linux2.34-0.1ubuntu9.1
 wget1.20.3-1ubuntu2
 x11-common1:7.7+19ubuntu14
