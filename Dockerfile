@@ -33,7 +33,6 @@ RUN \
   curl -o \
   /app/unifi.deb -L \
     "https://dl.ui.com/unifi/${UNIFI_VERSION}/unifi_sysvinit_all.deb" && \
-#  dpkg -i /tmp/unifi.deb && \
   echo "**** cleanup ****" && \
   apt-get clean && \
   rm -rf \
