@@ -23,10 +23,8 @@ param_volumes:
   - { vol_path: "/config", vol_host_path: "<path to data>", desc: "All Unifi data stored here" }
 
 # optional container parameters
-opt_param_usage_include_env: true
+opt_param_usage_include_env: false
 opt_param_env_vars:
-  - { env_var: "MEM_LIMIT", env_value: "1024M", desc: "Optionally change the Java memory limit (-Xmx) (default is 1024M)." }
-  - { env_var: "MEM_STARTUP", env_value: "1024M", desc: "Optionally change the Java initial memory (-Xms) (default is 1024M)." }
 
 param_usage_include_ports: true
 param_ports:
@@ -64,6 +62,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "23.12.21:", desc: "Remove MEM_LIMIT and MEM_STARTUP environment variables to favor the system.properties file values."}
   - { date: "22.12.21:", desc: "Move deb package install to first init to avoid overlayfs performance issues."}
   - { date: "13.12.21:", desc: "Rebase 64 bit containers to Focal."}
   - { date: "11.12.21:", desc: "Add java opts to mitigate CVE-2021-44228."}
