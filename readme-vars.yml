@@ -64,6 +64,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "23.12.21:", desc: "Move min/max memory config from run to system.properties."}
   - { date: "22.12.21:", desc: "Move deb package install to first init to avoid overlayfs performance issues."}
   - { date: "13.12.21:", desc: "Rebase 64 bit containers to Focal."}
   - { date: "11.12.21:", desc: "Add java opts to mitigate CVE-2021-44228."}
