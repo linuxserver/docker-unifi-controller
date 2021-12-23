@@ -25,19 +25,19 @@ if grep -q "xmx" /config/data/system.properties && grep -q "xms" /config/data/sy
 
     if [[ -n $MEM_LIMIT ]]; then
         echo "*** Setting Java memory limit to $MEM_LIMIT ***"
-        sed -i "s/unifi.xmx=[0-9]\{1,5\}/unifi.xmx=$MEM_LIMIT/" /config/data/system.properties 
+        sed -i "s/unifi.xmx=.*/unifi.xmx=$MEM_LIMIT/" /config/data/system.properties 
     fi
 
     if [[ -n $MEM_STARTUP ]]; then
         echo "*** Setting Java memory minimum to $MEM_STARTUP ***"
-        sed -i "s/unifi.xms=[0-9]\{1,5\}/unifi.xms=$MEM_STARTUP/" /config/data/system.properties
+        sed -i "s/unifi.xms=.*/unifi.xms=$MEM_STARTUP/" /config/data/system.properties
     fi
 
 elif grep -q "xmx" /config/data/system.properties; then
 
     if [[ -n $MEM_LIMIT ]]; then
         echo "*** Setting Java memory limit to $MEM_LIMIT ***"
-        sed -i "s/unifi.xmx=[0-9]\{1,5\}/unifi.xmx=$MEM_LIMIT/" /config/data/system.properties 
+        sed -i "s/unifi.xmx=.*/unifi.xmx=$MEM_LIMIT/" /config/data/system.properties 
     fi
 
     if [[ -n $MEM_STARTUP ]]; then
@@ -49,7 +49,7 @@ elif grep -q "xms" /config/data/system.properties; then
 
     if [[ -n $MEM_STARTUP ]]; then
         echo "*** Setting Java memory minimum to $MEM_STARTUP ***"
-        sed -i "s/unifi.xms=[0-9]\{1,5\}/unifi.xms=$MEM_STARTUP/" /config/data/system.properties
+        sed -i "s/unifi.xms=.*/unifi.xms=$MEM_STARTUP/" /config/data/system.properties
     fi
 
     if [[ -n $MEM_LIMIT ]]; then
