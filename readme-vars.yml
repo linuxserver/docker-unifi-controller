@@ -25,8 +25,8 @@ param_volumes:
 # optional container parameters
 opt_param_usage_include_env: true
 opt_param_env_vars:
-  - { env_var: "MEM_LIMIT", env_value: "1024M", desc: "Optionally change the Java memory limit (-Xmx) (default is 1024M)." }
-  - { env_var: "MEM_STARTUP", env_value: "1024M", desc: "Optionally change the Java initial memory (-Xms) (default is 1024M)." }
+  - { env_var: "MEM_LIMIT", env_value: "1024", desc: "Optionally change the Java memory limit. Set to `default` to reset to default" }
+  - { env_var: "MEM_STARTUP", env_value: "1024", desc: "Optionally change the Java initial/minimum memory. Set to `default` to reset to default" }
 
 param_usage_include_ports: true
 param_ports:
