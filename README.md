@@ -91,8 +91,8 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - MEM_LIMIT=1024M #optional
-      - MEM_STARTUP=1024M #optional
+      - MEM_LIMIT=1024 #optional
+      - MEM_STARTUP=1024 #optional
     volumes:
       - <path to data>:/config
     ports:
@@ -115,8 +115,8 @@ docker run -d \
   --name=unifi-controller \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e MEM_LIMIT=1024M `#optional` \
-  -e MEM_STARTUP=1024M `#optional` \
+  -e MEM_LIMIT=1024 `#optional` \
+  -e MEM_STARTUP=1024 `#optional` \
   -p 3478:3478/udp \
   -p 10001:10001/udp \
   -p 8080:8080 \
@@ -148,8 +148,8 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-p 5514/udp` | Remote syslog port |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e MEM_LIMIT=1024M` | Optionally change the Java memory limit (-Xmx) (default is 1024M). |
-| `-e MEM_STARTUP=1024M` | Optionally change the Java initial memory (-Xms) (default is 1024M). |
+| `-e MEM_LIMIT=1024` | Optionally change the Java memory limit. Set to `default` to reset to default |
+| `-e MEM_STARTUP=1024` | Optionally change the Java initial/minimum memory. Set to `default` to reset to default |
 | `-v /config` | All Unifi data stored here |
 
 ## Environment variables from files (Docker secrets)
@@ -261,6 +261,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **23.12.21:** - Move min/max memory config from run to system.properties.
 * **22.12.21:** - Move deb package install to first init to avoid overlayfs performance issues.
 * **13.12.21:** - Rebase 64 bit containers to Focal.
 * **11.12.21:** - Add java opts to mitigate CVE-2021-44228.
