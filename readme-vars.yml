@@ -79,6 +79,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "07.01.22:", desc: "Rebased to Focal (Excluding armv7 due to lack of support for mongodb)."}
   - { date: "11.06.21:", desc: "Allow for changing Java initial mem via new optional environment variable."}
   - { date: "12.01.21:", desc: "Deprecate the `LTS` tag as Unifi no longer releases LTS stable builds. Existing users can switch to the `latest` tag. Direct upgrade from 5.6.42 (LTS) to 6.0.42 (latest) tested successfully."}
   - { date: "17.07.20:", desc: "Rebase 64 bit containers to Bionic and Mongo 3.6."}
