@@ -4,8 +4,7 @@
 project_name: unifi-controller
 project_url: "https://www.ubnt.com/enterprise/#unifi"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png"
-project_blurb: |
-  The [{{ project_name|capitalize }}]({{ project_url }}) Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.
+project_blurb: "The [{{ project_name|capitalize }}]({{ project_url }}) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 
 # supported architectures
@@ -14,36 +13,20 @@ available_architectures:
   - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
   - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
 
-# optional container parameters
-opt_param_usage_include_env: true
-opt_param_env_vars:
-  - { env_var: "MEM_LIMIT", env_value: "1024M", desc: "Optionally change the Java memory limit (-Xmx) (default is 1024M)." }
-  - { env_var: "MEM_STARTUP", env_value: "1024M", desc: "Optionally change the Java initial memory (-Xms) (default is 1024M)." }
-
-# Optional Block
-optional_block_1: true
-optional_block_1_items:
-  - |
-    ### Version Tags
-
-    This image provides various versions that are available via tags. `latest` tag provides the latest stable build from Unifi, but if this is a permanent setup you might consider using the LTS tag.
-   
-    | Tag    | Description                                  |
-    | :----: | -------------------------------------------- |
-    | latest | releases from the latest stable branch.      |
-    | LTS    | DEPRECATED - releases from the now EOL 5.6.x "LTS Stable" branch. |
-    | 5.9    | DEPRECATED - releases from the now EOL 5.9.x branch.      |
-    | 5.8    | DEPRECATED - releases from the now EOL 5.8.x branch.      |
-    | 5.7    | DEPRECATED - releases from the now EOL 5.7.x branch.      |
-    
-    ## Common problems
-    When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
+# development version
+development_versions: false
 
 # container parameters
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "<path to data>", desc: "All Unifi data stored here" }
+
+# optional container parameters
+opt_param_usage_include_env: true
+opt_param_env_vars:
+  - { env_var: "MEM_LIMIT", env_value: "1024", desc: "Optionally change the Java memory limit. Set to `default` to reset to default" }
+  - { env_var: "MEM_STARTUP", env_value: "1024", desc: "Optionally change the Java initial/minimum memory. Set to `default` to reset to default" }
 
 param_usage_include_ports: true
 param_ports:
@@ -77,9 +60,15 @@ app_setup_block: |
 
   The default device password is `ubnt`. `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
+  When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
+
 # changelog
 changelogs:
   - { date: "07.01.22:", desc: "Rebased to Focal (Excluding armv7 due to lack of support for mongodb)."}
+  - { date: "23.12.21:", desc: "Move min/max memory config from run to system.properties."}
+  - { date: "22.12.21:", desc: "Move deb package install to first init to avoid overlayfs performance issues."}
+  - { date: "13.12.21:", desc: "Rebase 64 bit containers to Focal."}
+  - { date: "11.12.21:", desc: "Add java opts to mitigate CVE-2021-44228."}
   - { date: "11.06.21:", desc: "Allow for changing Java initial mem via new optional environment variable."}
   - { date: "12.01.21:", desc: "Deprecate the `LTS` tag as Unifi no longer releases LTS stable builds. Existing users can switch to the `latest` tag. Direct upgrade from 5.6.42 (LTS) to 6.0.42 (latest) tested successfully."}
   - { date: "17.07.20:", desc: "Rebase 64 bit containers to Bionic and Mongo 3.6."}

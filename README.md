@@ -29,6 +29,7 @@ Find us at:
 
 # [linuxserver/unifi-controller](https://github.com/linuxserver/docker-unifi-controller)
 
+[![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver%2Funifi-controller?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh/gateway/linuxserver-ci/docker/linuxserver%2Funifi-controller)
 [![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-unifi-controller.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-unifi-controller)
 [![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-unifi-controller.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-unifi-controller/releases)
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver/docker-unifi-controller/packages)
@@ -39,7 +40,7 @@ Find us at:
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.linuxserver.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-unifi-controller%2Fjob%2Fmaster%2F&logo=jenkins)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-unifi-controller/job/master/)
 [![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Funifi-controller%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/linuxserver/unifi-controller/latest/index.html)
 
-The [Unifi-controller](https://www.ubnt.com/enterprise/#unifi) Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.
+The [Unifi-controller](https://www.ubnt.com/enterprise/#unifi) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.
 
 [![unifi-controller](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)](https://www.ubnt.com/enterprise/#unifi)
 
@@ -72,6 +73,8 @@ set-inform http://$address:8080/inform
 
 The default device password is `ubnt`. `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
+When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
+
 ## Usage
 
 Here are some example snippets to help you get started creating a container.
@@ -88,8 +91,8 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - MEM_LIMIT=1024M #optional
-      - MEM_STARTUP=1024M #optional
+      - MEM_LIMIT=1024 #optional
+      - MEM_STARTUP=1024 #optional
     volumes:
       - <path to data>:/config
     ports:
@@ -112,8 +115,8 @@ docker run -d \
   --name=unifi-controller \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e MEM_LIMIT=1024M `#optional` \
-  -e MEM_STARTUP=1024M `#optional` \
+  -e MEM_LIMIT=1024 `#optional` \
+  -e MEM_STARTUP=1024 `#optional` \
   -p 3478:3478/udp \
   -p 10001:10001/udp \
   -p 8080:8080 \
@@ -127,21 +130,6 @@ docker run -d \
   --restart unless-stopped \
   lscr.io/linuxserver/unifi-controller
 ```
-
-### Version Tags
-
-This image provides various versions that are available via tags. `latest` tag provides the latest stable build from Unifi, but if this is a permanent setup you might consider using the LTS tag.
-
-| Tag    | Description                                  |
-| :----: | -------------------------------------------- |
-| latest | releases from the latest stable branch.      |
-| LTS    | DEPRECATED - releases from the now EOL 5.6.x "LTS Stable" branch. |
-| 5.9    | DEPRECATED - releases from the now EOL 5.9.x branch.      |
-| 5.8    | DEPRECATED - releases from the now EOL 5.8.x branch.      |
-| 5.7    | DEPRECATED - releases from the now EOL 5.7.x branch.      |
-
-## Common problems
-When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
 
 ## Parameters
 
@@ -160,8 +148,8 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-p 5514/udp` | Remote syslog port |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e MEM_LIMIT=1024M` | Optionally change the Java memory limit (-Xmx) (default is 1024M). |
-| `-e MEM_STARTUP=1024M` | Optionally change the Java initial memory (-Xms) (default is 1024M). |
+| `-e MEM_LIMIT=1024` | Optionally change the Java memory limit. Set to `default` to reset to default |
+| `-e MEM_STARTUP=1024` | Optionally change the Java initial/minimum memory. Set to `default` to reset to default |
 | `-v /config` | All Unifi data stored here |
 
 ## Environment variables from files (Docker secrets)
@@ -273,6 +261,10 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **23.12.21:** - Move min/max memory config from run to system.properties.
+* **22.12.21:** - Move deb package install to first init to avoid overlayfs performance issues.
+* **13.12.21:** - Rebase 64 bit containers to Focal.
+* **11.12.21:** - Add java opts to mitigate CVE-2021-44228.
 * **11.06.21:** - Allow for changing Java initial mem via new optional environment variable.
 * **12.01.21:** - Deprecate the `LTS` tag as Unifi no longer releases LTS stable builds. Existing users can switch to the `latest` tag. Direct upgrade from 5.6.42 (LTS) to 6.0.42 (latest) tested successfully.
 * **17.07.20:** - Rebase 64 bit containers to Bionic and Mongo 3.6.
