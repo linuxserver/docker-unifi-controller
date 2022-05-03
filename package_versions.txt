@@ -13,7 +13,7 @@ ca-certificates20210119~20.04.2
 ca-certificates-java20190405ubuntu1
 coreutils8.30-3ubuntu2
 cron3.0pl1-136ubuntu1
-curl7.68.0-1ubuntu2.7
+curl7.68.0-1ubuntu2.10
 dash0.5.10.2-6
 dbus1.12.16-2ubuntu2.1
 debconf1.5.73
@@ -73,7 +73,7 @@ libcrypt11:4.4.10-10ubuntu4
 libctf02.34-6ubuntu1.3
 libctf-nobfd02.34-6ubuntu1.3
 libcups22.3.1-9ubuntu1.1
-libcurl47.68.0-1ubuntu2.7
+libcurl47.68.0-1ubuntu2.10
 libdb5.35.3.28+dfsg1-0.6ubuntu2
 libdbus-1-31.12.16-2ubuntu2.1
 libdebconfclient00.251ubuntu1
