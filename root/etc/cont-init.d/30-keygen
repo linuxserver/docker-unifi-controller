@@ -1,11 +1,16 @@
 #!/usr/bin/with-contenv bash
 
+if [[ "$(uname -m)" == "armv7l" ]]; then
+    # We don't support armhf any more
+    exit 0
+fi
+
 # generate key
 [[ ! -f /config/data/keystore ]] && \
-	keytool -genkey -keyalg RSA -alias unifi -keystore /config/data/keystore \
-	-storepass aircontrolenterprise -keypass aircontrolenterprise -validity 1825 \
-	-keysize 4096 -dname "cn=unifi"
+    keytool -genkey -keyalg RSA -alias unifi -keystore /config/data/keystore \
+    -storepass aircontrolenterprise -keypass aircontrolenterprise -validity 1825 \
+    -keysize 4096 -dname "cn=unifi"
 
 # permissions
 chown abc:abc \
-	/config/data/keystore
+    /config/data/keystore
