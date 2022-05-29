@@ -22,19 +22,22 @@ param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "<path to data>", desc: "All Unifi data stored here" }
 
-# optional container parameters
-opt_param_usage_include_env: true
-opt_param_env_vars:
-  - { env_var: "MEM_LIMIT", env_value: "1024", desc: "Optionally change the Java memory limit. Set to `default` to reset to default" }
-  - { env_var: "MEM_STARTUP", env_value: "1024", desc: "Optionally change the Java initial/minimum memory. Set to `default` to reset to default" }
-
 param_usage_include_ports: true
 param_ports:
   - { external_port: "8443", internal_port: "8443", port_desc: "Unifi web admin port" }
   - { external_port: "3478", internal_port: "3478/udp", port_desc: "Unifi STUN port" }
   - { external_port: "10001", internal_port: "10001/udp", port_desc: "Required for AP discovery" }
   - { external_port: "8080", internal_port: "8080", port_desc: "Required for device communication" }
-param_usage_include_env: false
+
+param_usage_include_env: true
+param_env_vars:
+  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use (e.g. Europe/London) - [see list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)" }
+
+# optional container parameters
+opt_param_usage_include_env: true
+opt_param_env_vars:
+  - { env_var: "MEM_LIMIT", env_value: "1024", desc: "Optionally change the Java memory limit. Set to `default` to reset to default" }
+  - { env_var: "MEM_STARTUP", env_value: "1024", desc: "Optionally change the Java initial/minimum memory. Set to `default` to reset to default" }
 
 opt_param_usage_include_ports: true
 opt_param_ports:
