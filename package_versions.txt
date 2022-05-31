@@ -72,7 +72,7 @@ libcommons-daemon-java1.0.15-8
 libcrypt11:4.4.10-10ubuntu4
 libctf02.34-6ubuntu1.3
 libctf-nobfd02.34-6ubuntu1.3
-libcups22.3.1-9ubuntu1.1
+libcups22.3.1-9ubuntu1.2
 libcurl47.68.0-1ubuntu2.11
 libdb5.35.3.28+dfsg1-0.6ubuntu2
 libdbus-1-31.12.16-2ubuntu2.2
