@@ -11,7 +11,6 @@ project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_
 available_architectures:
   - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
   - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
 
 # development version
 development_versions: false
@@ -64,6 +63,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "01.06.22:", desc: "Deprecate armhf."}
   - { date: "23.12.21:", desc: "Move min/max memory config from run to system.properties."}
   - { date: "22.12.21:", desc: "Move deb package install to first init to avoid overlayfs performance issues."}
   - { date: "13.12.21:", desc: "Rebase 64 bit containers to Focal."}

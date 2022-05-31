@@ -2,5 +2,10 @@
 
 cd /config || exit
 
+if [[ "$(uname -m)" == "armv7l" ]]; then
+    # We don't support armhf any more
+    sleep infinity
+fi
+
 exec \
     s6-setuidgid abc java -Dlog4j2.formatMsgNoLookups=true -jar /usr/lib/unifi/lib/ace.jar start;
