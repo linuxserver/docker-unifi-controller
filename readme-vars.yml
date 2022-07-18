@@ -26,6 +26,14 @@ opt_param_usage_include_env: true
 opt_param_env_vars:
   - { env_var: "MEM_LIMIT", env_value: "1024", desc: "Optionally change the Java memory limit. Set to `default` to reset to default" }
   - { env_var: "MEM_STARTUP", env_value: "1024", desc: "Optionally change the Java initial/minimum memory. Set to `default` to reset to default" }
+  - { env_var: "MONGO_REMOTE", env_value: "false", desc: "If system.properties not defined and sets on true, adds mongo properties for remote access (can be used in other container). If it's false, variables `DATABASE_*` are not required. Default: false" }
+  - { env_var: "DATABASE_HOST", env_value: "", desc: " Sets MongoDB hostname connection. Used for remote connection" }
+  - { env_var: "DATABASE_PORT", env_value: "27017", desc: "Sets MongoDB port. Used for remote connection" }
+  - { env_var: "DATABASE_NAME", env_value: "", desc: "Unifi database name to connect. if not exist, will create it by default" }
+  - { env_var: "DATABASE_USER", env_value: "", desc: "MongoDB user for authentication" }
+  - { env_var: "DATABASE_PASS", env_value: "", desc: "MongoDB user's password for authentication" }
+  - { env_var: "AUTHENTICATION_DATABASE", env_value: "", desc: "MongoDB authentication database to connect. Required if DATABASE_USER is defined" }
+
 
 param_usage_include_ports: true
 param_ports:

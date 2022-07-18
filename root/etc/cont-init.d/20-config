@@ -45,7 +45,7 @@ if [[ ! -e /config/data/system.properties ]]; then
            if [[ -z "$DATABASE_USER" ]]; then
                printf "db.mongo.uri=mongodb://%s:%s/\n" $DATABASE_HOST $DATABASE_PORT >> /config/data/system.properties
            else
-               printf "db.mongo.uri=mongodb://%s:%s@%s:%s/\n" $DATABASE_USER $DATABASE_PASS $DATABASE_HOST $DATABASE_PORT >> /config/data/system.properties
+               printf "db.mongo.uri=mongodb://%s:%s@%s:%s/%s\n" $DATABASE_USER $DATABASE_PASS $DATABASE_HOST $DATABASE_PORT $AUTHENTICATION_DATABASE >> /config/data/system.properties
            fi
         else
            echo "Mongo connection failed"
