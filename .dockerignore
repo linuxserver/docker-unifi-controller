@@ -2,5 +2,10 @@
 .gitignore
 .github
 .gitattributes
+.editorconfig 
 READMETEMPLATE.md
 README.md
+LICENSE
+JenkinsFile
+jenkins-var.yml
+package_versions.txt

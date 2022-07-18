@@ -22,9 +22,44 @@ do
 [[ ! -L "$i" ]] && ln -s /config/"$(basename "$i")" "$i"
 done
 
+#export COMP_WORDBREAKS=${COMP_WORDBREAKS//:}
+
 if [[ ! -e /config/data/system.properties ]]; then
     cp /defaults/system.properties /config/data
+    echo "Running remote? $MONGO_REMOTE"
+    if [[ "$MONGO_REMOTE" = true ]]; then
+        echo "Using mongodb remote server $DATABASE_HOST:$DATABASE_PORT"
+        #mongo $MONGODB_CONNECTION --eval "db.stats()" > /dev/null
+        COUNTER=0
+        nc -zv $DATABASE_HOST $DATABASE_PORT
+        while [[ $? -ne 0 && $COUNTER -lt 60 ]] ; do
+    	    sleep 2
+    	    let COUNTER+=2
+    	    echo "Waiting for mongo to initialize... ($COUNTER seconds so far)"
+    	    nc -zv $DATABASE_HOST $DATABASE_PORT
+	    done
+        
+        if [[ $COUNTER -ne 60 ]]; then
+           echo "Mongo connection worked"
+	   
+           if [[ -z "$DATABASE_USER" ]]; then
+               printf "db.mongo.uri=mongodb://%s:%s/\n" $DATABASE_HOST $DATABASE_PORT >> /config/data/system.properties
+           else
+               printf "db.mongo.uri=mongodb://%s:%s@%s:%s/\n" $DATABASE_USER $DATABASE_PASS $DATABASE_HOST $DATABASE_PORT >> /config/data/system.properties
+           fi
+        else
+           echo "Mongo connection failed"
+           exit 1
+        fi
+        echo "db.mongo.local=false" >> /config/data/system.properties
+        echo "unifi.db.name=$DATABASE_NAME" >> /config/data/system.properties
+        tail -n 10 /config/data/system.properties
+    elif [ ! -f /usr/bin/mongod ]; then
+        echo "MongoDB Server not installed, use the full version image"
+        exit 1
+    fi
 fi
+
 
 if grep -q "xmx" /config/data/system.properties && grep -q "xms" /config/data/system.properties; then
 
