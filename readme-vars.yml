@@ -32,7 +32,8 @@ opt_param_env_vars:
   - { env_var: "DATABASE_NAME", env_value: "", desc: "Unifi database name to connect. if not exist, will create it by default" }
   - { env_var: "DATABASE_USER", env_value: "", desc: "MongoDB user for authentication" }
   - { env_var: "DATABASE_PASS", env_value: "", desc: "MongoDB user's password for authentication" }
-  - { env_var: "AUTHENTICATION_DATABASE", env_value: "", desc: "MongoDB authentication database to connect. Required if DATABASE_USER is defined" }
+  - { env_var: "STAT_DATABASE_NAME", env_value: "", desc: "MongoDB stat database name, if not defined will work with '$DATABASE_NAME'_stat. Just make sure to have the proper permissions and roles for the user" }
+  - { env_var: "AUTHENTICATION_DATABASE", env_value: "", desc: "MongoDB authentication database to connect. If is not defined, will work with the Mongo's admin database, check to have connection with your own setup" }
 
 
 param_usage_include_ports: true
@@ -68,6 +69,24 @@ app_setup_block: |
   The default device password is `ubnt`. `$address` is the IP address of the host you are running this container on and `$AP-IP` is the Access Point IP address.
 
   When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
+
+  For MongoDB server remote use.
+
+  On initial setup, the image supports environment variables that add the required properties to the system.properties according to the needs. Make sure to setup your MongoDB previously and provide the credentials using the $DATABASE_* variables.
+
+  MongoDB requires two databases, that the $DATABASE_USER, MUST have a readWrite role if authentication is enabled.
+
+  1. Unifi database: It's setup using the $DATABASE_NAME variable. Stores data that the core application requires to work.
+  2. Unifi status database: Can be assign using $STAT_DATABASE_NAME, holds statistics data about the unifi controller.
+
+  If required, you can use this command instructions into MongoDB server to create an user.
+
+  ```
+  use admin
+  db.createuser({user:"<<username>>", pwd:"<<password>>", roles:[{db:'unifi', role: 'readWrite'},{db:'unifi_stat', role: 'readWrite'}]})
+  ```
+
+  Change the unifi and unifi_stat database names to your preference, set the $DATABASE_NAME and $STAT_DATABASE_NAME if it's required.
 
 # changelog
 changelogs:

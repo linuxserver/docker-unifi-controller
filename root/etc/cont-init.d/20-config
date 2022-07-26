@@ -22,14 +22,21 @@ do
 [[ ! -L "$i" ]] && ln -s /config/"$(basename "$i")" "$i"
 done
 
-#export COMP_WORDBREAKS=${COMP_WORDBREAKS//:}
-
 if [[ ! -e /config/data/system.properties ]]; then
     cp /defaults/system.properties /config/data
     echo "Running remote? $MONGO_REMOTE"
     if [[ "$MONGO_REMOTE" = true ]]; then
+
+        if [[ -z $DATABASE_HOST ]]; then
+            echo "Missing DATABASE_HOST, this variable is required"
+            exit 1
+        fi
+
+        if [[ -z $DATABASE_PORT ]]; then 
+            $DATABASE_PORT = 27017
+        fi
+
         echo "Using mongodb remote server $DATABASE_HOST:$DATABASE_PORT"
-        #mongo $MONGODB_CONNECTION --eval "db.stats()" > /dev/null
         COUNTER=0
         nc -zv $DATABASE_HOST $DATABASE_PORT
         while [[ $? -ne 0 && $COUNTER -lt 60 ]] ; do
@@ -41,19 +48,50 @@ if [[ ! -e /config/data/system.properties ]]; then
         
         if [[ $COUNTER -ne 60 ]]; then
            echo "Mongo connection worked"
-	   
-           if [[ -z "$DATABASE_USER" ]]; then
-               printf "db.mongo.uri=mongodb://%s:%s/\n" $DATABASE_HOST $DATABASE_PORT >> /config/data/system.properties
-           else
-               printf "db.mongo.uri=mongodb://%s:%s@%s:%s/%s\n" $DATABASE_USER $DATABASE_PASS $DATABASE_HOST $DATABASE_PORT $AUTHENTICATION_DATABASE >> /config/data/system.properties
+           if [[ -z $DATABASE_NAME ]]; then
+                echo "Missing database name"
+                exit 1
            fi
+
+           if [[ -z "$DATABASE_USER" ]]; then
+               MONGO_URI=$( printf "mongodb://%s:%s/" $DATABASE_HOST $DATABASE_PORT )
+           elif [[ "$DATABASE_USER" && "$DATABASE_PASS" && -z $AUTHENTICATION_DATABASE ]]; then
+               MONGO_URI=$( printf "mongodb://%s:%s@%s:%s/" $DATABASE_USER $DATABASE_PASS $DATABASE_HOST $DATABASE_PORT )
+           elif [[ "$DATABASE_USER" && "$DATABASE_PASS" && "$AUTHENTICATION_DATABASE" ]]; then
+               MONGO_URI=$( printf "mongodb://%s:%s@%s:%s/%s?authSource=%s" $DATABASE_USER $DATABASE_PASS $DATABASE_HOST $DATABASE_PORT "%s" $AUTHENTICATION_DATABASE  )
+           else
+               echo "Not supported use case, check environments"
+               exit 1
+           fi
+
+            #echo "$MONGO_URI"
+
+            if [[ "$AUTHENTICATION_DATABASE" ]]; then
+                printf "db.mongo.uri=$MONGO_URI\n" $DATABASE_NAME >> /config/data/system.properties
+            else
+                echo "db.mongo.uri=$MONGO_URI\n" >> /config/data/system.properties
+            fi
+
+            if [[ -z $STAT_DATABASE_NAME && "$AUTHENTICATION_DATABASE" ]]; then
+                printf "statdb.mongo.uri=$MONGO_URI\n" "${DATABASE_NAME}_stat" >> /config/data/system.properties
+            elif [[ "$STAT_DATABASE_NAME" && "$AUTHENTICATION_DATABASE" ]]; then
+                printf "statdb.mongo.uri=$MONGO_URI\n" $STAT_DATABASE_NAME >> /config/data/system.properties
+            elif [[ "$STAT_DATABASE_NAME" && -z $AUTHENTICATION_DATABASE ]]; then
+                echo "statdb.mongo.uri=${MONGO_URI}${STAT_DATABASE_NAME}\n" >> /config/data/system.properties
+            else
+                echo "Skiping stat database property... unifi controller will try to handle it"
+            fi
+
         else
            echo "Mongo connection failed"
            exit 1
         fi
         echo "db.mongo.local=false" >> /config/data/system.properties
         echo "unifi.db.name=$DATABASE_NAME" >> /config/data/system.properties
-        tail -n 10 /config/data/system.properties
+
+        # Tail for debugging propuses
+        #tail -n 10 /config/data/system.properties
+        
     elif [ ! -f /usr/bin/mongod ]; then
         echo "MongoDB Server not installed, use the full version image"
         exit 1
