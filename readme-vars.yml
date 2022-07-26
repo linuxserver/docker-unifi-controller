@@ -74,10 +74,10 @@ app_setup_block: |
 
   On initial setup, the image supports environment variables that add the required properties to the system.properties according to the needs. Make sure to setup your MongoDB previously and provide the credentials using the $DATABASE_* variables.
 
-  MongoDB requires two databases, that the $DATABASE_USER, MUST have a readWrite role if authentication is enabled.
+  Unifi uses two databases that MUST have a readWrite role if authentication is enabled. Those are:
 
-  1. Unifi database: It's setup using the $DATABASE_NAME variable. Stores data that the core application requires to work.
-  2. Unifi status database: Can be assign using $STAT_DATABASE_NAME, holds statistics data about the unifi controller.
+  1. Unifi database: can be set up by  using the $DATABASE_NAME variable. Stores data that the core application requires to work.
+  2. Unifi status database: Can be assigned using $STAT_DATABASE_NAME, but if not defined, will work with '$DATABASE_NAME'_stat. Holds statistics data about the unifi controller.
 
   If required, you can use this command instructions into MongoDB server to create an user.
 
