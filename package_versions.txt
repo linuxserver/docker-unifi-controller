@@ -82,7 +82,7 @@ libext2fs21.45.5-2ubuntu1
 libfdisk12.34-0.1ubuntu9.3
 libffi73.3-4
 libfontconfig12.13.1-2ubuntu3
-libfreetype62.10.1-2ubuntu0.1
+libfreetype62.10.1-2ubuntu0.2
 libgcc-s110.3.0-1ubuntu1~20.04
 libgcrypt201.8.5-5ubuntu1.1
 libgmp102:6.2.0+dfsg-4
