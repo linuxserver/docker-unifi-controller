@@ -19,6 +19,7 @@ RUN \
     jsvc \
     libcap2 \
     logrotate \
+    netcat \
     mongodb-server \
     openjdk-8-jre-headless \
     wget && \
