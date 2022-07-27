@@ -19,8 +19,8 @@ RUN \
     jsvc \
     libcap2 \
     logrotate \
-    mongodb-server \
     netcat \
+    mongodb-server \
     openjdk-8-jre-headless \
     wget && \
   echo "**** install unifi ****" && \
