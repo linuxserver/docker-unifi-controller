@@ -184,7 +184,7 @@ mongo-tools3.6.3-0ubuntu1
 mount2.34-0.1ubuntu9.3
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
-openjdk-8-jre-headless8u312-b07-0ubuntu1~20.04
+openjdk-8-jre-headless8u342-b07-0ubuntu1~20.04
 openssl1.1.1f-1ubuntu2.16
 passwd1:4.8.1-1ubuntu5.20.04.1
 perl-base5.30.0-9ubuntu0.2
