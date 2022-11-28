@@ -6,7 +6,7 @@ cat <<-EOF
     ********************************************************
     *                                                      *
     *                         !!!!                         *
-    *      This Unif-Controller image does not support     *
+    *     This Unifi-Controller image does not support     *
     *        32 bit ARM due to a lack of OS packages       *
     *                                                      *
     *                                                      *
