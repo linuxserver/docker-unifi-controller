@@ -1,12 +1,12 @@
 #!/usr/bin/with-contenv bash
 
-if [ -z ${MEM_LIMIT+x} ]; then
+if [[ -z ${MEM_LIMIT} ]] || [[ ${MEM_LIMIT} = "default" ]]; then
     MEM_LIMIT="1024"
 fi
 
 cd /config || exit
 
-if [ -z ${MEM_STARTUP+x} ]; then
+if [[ -z ${MEM_STARTUP} ]] || [[ ${MEM_STARTUP} = "default" ]]; then
     exec \
         s6-setuidgid abc java -Xmx"${MEM_LIMIT}M" -Dlog4j2.formatMsgNoLookups=true -jar /usr/lib/unifi/lib/ace.jar start;
 else
