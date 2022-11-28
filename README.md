@@ -151,8 +151,8 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Europe/London` | Specify a timezone to use (e.g. Europe/London) - [see list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) |
-| `-e MEM_LIMIT=1024` | Optionally change the Java memory limit. Set to `default` to reset to default |
-| `-e MEM_STARTUP=1024` | Optionally change the Java initial/minimum memory. Set to `default` to reset to default |
+| `-e MEM_LIMIT=1024` | Optionally change the Java memory limit (in Megabytes). Set to `default` to reset to default |
+| `-e MEM_STARTUP=1024` | Optionally change the Java initial/minimum memory (in Megabytes). Set to `default` to reset to default |
 | `-v /config` | All Unifi data stored here |
 
 ## Environment variables from files (Docker secrets)
