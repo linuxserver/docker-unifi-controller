@@ -1,10 +1,5 @@
 #!/usr/bin/with-contenv bash
 
-if [[ "$(uname -m)" == "armv7l" ]]; then
-    # We don't support armhf any more
-    exit 0
-fi
-
 # create our folders
 mkdir -p \
     /config/{data,logs,run}

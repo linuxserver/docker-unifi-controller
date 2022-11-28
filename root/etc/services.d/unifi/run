@@ -1,11 +1,15 @@
 #!/usr/bin/with-contenv bash
 
-cd /config || exit
-
-if [[ "$(uname -m)" == "armv7l" ]]; then
-    # We don't support armhf any more
-    sleep infinity
+if [[ -z ${MEM_LIMIT} ]] || [[ ${MEM_LIMIT} = "default" ]]; then
+    MEM_LIMIT="1024"
 fi
 
-exec \
-    s6-setuidgid abc java -Dlog4j2.formatMsgNoLookups=true -jar /usr/lib/unifi/lib/ace.jar start;
+cd /config || exit
+
+if [[ -z ${MEM_STARTUP} ]] || [[ ${MEM_STARTUP} = "default" ]]; then
+    exec \
+        s6-setuidgid abc java -Xmx"${MEM_LIMIT}M" -Dlog4j2.formatMsgNoLookups=true -jar /usr/lib/unifi/lib/ace.jar start;
+else
+    exec \
+        s6-setuidgid abc java -Xms"${MEM_STARTUP}M" -Xmx"${MEM_LIMIT}M" -Dlog4j2.formatMsgNoLookups=true -jar /usr/lib/unifi/lib/ace.jar start;
+fi
