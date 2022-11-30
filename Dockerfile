@@ -20,7 +20,7 @@ RUN \
     libcap2 \
     logrotate \
     mongodb-server \
-    openjdk-8-jre-headless \
+    openjdk-11-jre-headless \
     wget && \
   echo "**** install unifi ****" && \
   if [ -z ${UNIFI_VERSION+x} ]; then \
