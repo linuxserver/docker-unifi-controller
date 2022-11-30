@@ -1,4 +1,6 @@
 adduser3.118ubuntu2
+alsa-topology-conf1.2.2-1
+alsa-ucm-conf1.2.2-1ubuntu0.13
 apt2.0.9
 apt-utils2.0.9
 base-files11ubuntu5.5
@@ -48,6 +50,8 @@ libacl12.2.53-6
 libapparmor12.13.3-7ubuntu5.1
 libapt-pkg6.02.0.9
 libasn1-8-heimdal7.7.0+dfsg-1ubuntu1.1
+libasound21.2.2-2.1ubuntu2.5
+libasound2-data1.2.2-2.1ubuntu2.5
 libassuan02.5.3-7ubuntu2
 libattr11:2.4.48-5
 libaudit11:2.8.5-2ubuntu6
@@ -61,7 +65,6 @@ libboost-filesystem1.71.01.71.0-6ubuntu6
 libboost-iostreams1.71.01.71.0-6ubuntu6
 libboost-program-options1.71.01.71.0-6ubuntu6
 libbrotli11.0.7-6ubuntu0.1
-libbsd00.10.0-1
 libbz2-1.01.0.8-2
 libc62.31-0ubuntu9.7
 libcap21:2.32-1
@@ -85,17 +88,22 @@ libfontconfig12.13.1-2ubuntu3
 libfreetype62.10.1-2ubuntu0.2
 libgcc-s110.3.0-1ubuntu1~20.04
 libgcrypt201.8.5-5ubuntu1.1
+libglib2.0-02.64.6-1~ubuntu20.04.4
+libglib2.0-data2.64.6-1~ubuntu20.04.4
 libgmp102:6.2.0+dfsg-4
 libgnutls303.6.13-2ubuntu1.6
 libgoogle-perftools42.7-1ubuntu2
 libgpg-error01.37-1
+libgraphite2-31.3.13-11build1
 libgssapi3-heimdal7.7.0+dfsg-1ubuntu1.1
 libgssapi-krb5-21.17-6ubuntu4.1
+libharfbuzz0b2.6.4-1ubuntu4.2
 libhcrypto4-heimdal7.7.0+dfsg-1ubuntu1.1
 libheimbase1-heimdal7.7.0+dfsg-1ubuntu1.1
 libheimntlm0-heimdal7.7.0+dfsg-1ubuntu1.1
 libhogweed53.5.1+really3.5.1-2ubuntu0.2
 libhx509-5-heimdal7.7.0+dfsg-1ubuntu1.1
+libicu6666.1-2ubuntu2.1
 libidn2-02.2.0-2
 libjpeg88c-2ubuntu8
 libjpeg-turbo82.0.3-0ubuntu1.20.04.3
@@ -160,15 +168,7 @@ libunistring20.9.10-2
 libunwind81.2.1-9build1
 libuuid12.34-0.1ubuntu9.3
 libwind0-heimdal7.7.0+dfsg-1ubuntu1.1
-libx11-62:1.6.9-2ubuntu1.2
-libx11-data2:1.6.9-2ubuntu1.2
-libxau61:1.0.9-0ubuntu1
-libxcb11.14-2
-libxdmcp61:1.1.3-0ubuntu1
-libxext62:1.3.4-0ubuntu1
-libxi62:1.7.10-0ubuntu1
-libxrender11:0.9.10-1
-libxtst62:1.2.3-1
+libxml22.9.10+dfsg-5ubuntu0.20.04.4
 libyaml-cpp0.60.6.2-4ubuntu1
 libzstd11.4.4+dfsg-3ubuntu0.1
 locales2.31-0ubuntu9.9
@@ -184,7 +184,7 @@ mongo-tools3.6.3-0ubuntu1
 mount2.34-0.1ubuntu9.3
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
-openjdk-8-jre-headless8u352-ga-1~20.04
+openjdk-11-jre-headless11.0.17+8-1ubuntu2~20.04
 openssl1.1.1f-1ubuntu2.16
 passwd1:4.8.1-1ubuntu5.20.04.1
 perl-base5.30.0-9ubuntu0.2
@@ -194,6 +194,7 @@ publicsuffix20200303.0012-1
 readline-common8.0-4
 sed4.7-1
 sensible-utils0.0.12+nmu1
+shared-mime-info1.15-1
 sysvinit-utils2.96-2.1ubuntu1
 tar1.30+dfsg-7ubuntu0.20.04.2
 tzdata2022f-0ubuntu0.20.04.1
@@ -201,5 +202,5 @@ ubuntu-keyring2020.02.11.4
 ucf3.0038+nmu1
 util-linux2.34-0.1ubuntu9.3
 wget1.20.3-1ubuntu2
-x11-common1:7.7+19ubuntu14
+xdg-user-dirs0.17-2ubuntu1
 zlib1g1:1.2.11.dfsg-2ubuntu1.2
