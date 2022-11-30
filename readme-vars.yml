@@ -66,6 +66,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "30.11.22:", desc: "Bump JRE to 11."}
   - { date: "01.06.22:", desc: "Deprecate armhf."}
   - { date: "23.12.21:", desc: "Move min/max memory config from run to system.properties."}
   - { date: "22.12.21:", desc: "Move deb package install to first init to avoid overlayfs performance issues."}

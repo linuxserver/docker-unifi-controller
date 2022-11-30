@@ -264,6 +264,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **30.11.22:** - Bump JRE to 11.
 * **01.06.22:** - Deprecate armhf.
 * **23.12.21:** - Move min/max memory config from run to system.properties.
 * **22.12.21:** - Move deb package install to first init to avoid overlayfs performance issues.
