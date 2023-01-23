@@ -2,14 +2,13 @@
 
 # create our folders
 mkdir -p \
-    /config/{data,logs,run}
+    /config/{data,logs}
 
 
 # create symlinks for config
 symlinks=( \
 /usr/lib/unifi/data \
-/usr/lib/unifi/logs \
-/usr/lib/unifi/run )
+/usr/lib/unifi/logs )
 
 for i in "${symlinks[@]}"
 do
