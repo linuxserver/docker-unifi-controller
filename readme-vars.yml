@@ -66,6 +66,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "23.01.23:", desc: "Exclude `run` from `/config` volume."}
   - { date: "30.11.22:", desc: "Bump JRE to 11."}
   - { date: "01.06.22:", desc: "Deprecate armhf."}
   - { date: "23.12.21:", desc: "Move min/max memory config from run to system.properties."}
