@@ -85,4 +85,5 @@ fi
 # permissions
 chown -R abc:abc \
 	/config \
-	/usr/lib/unifi
+	/usr/lib/unifi \
+	/run/unifi
