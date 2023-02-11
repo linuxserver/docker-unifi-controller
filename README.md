@@ -56,7 +56,7 @@ The architectures supported by this image are:
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
 | arm64 | ✅ | arm64v8-\<version tag\> |
-| armhf| ❌ | |
+| armhf | ❌ | |
 
 ## Application Setup
 
@@ -75,6 +75,11 @@ The default device password is `ubnt`. `$address` is the IP address of the host 
 
 When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
 
+### Strict reverse proxies
+
+This image uses a self-signed certificate by default. This naturally means the scheme is `https`.
+If you are using a reverse proxy which validates certificates, you need to [disable this check for the container](https://docs.linuxserver.io/faq#strict-proxy).
+
 ## Usage
 
 Here are some example snippets to help you get started creating a container.
@@ -91,7 +96,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Etc/UTC
       - MEM_LIMIT=1024 #optional
       - MEM_STARTUP=1024 #optional
     volumes:
@@ -116,7 +121,7 @@ docker run -d \
   --name=unifi-controller \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e TZ=Europe/London \
+  -e TZ=Etc/UTC \
   -e MEM_LIMIT=1024 `#optional` \
   -e MEM_STARTUP=1024 `#optional` \
   -p 8443:8443 \
@@ -131,6 +136,7 @@ docker run -d \
   -v <path to data>:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/unifi-controller:latest
+
 ```
 
 ## Parameters
@@ -150,7 +156,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-p 5514/udp` | Remote syslog port |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e TZ=Europe/London` | Specify a timezone to use (e.g. Europe/London) - [see list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) |
+| `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-e MEM_LIMIT=1024` | Optionally change the Java memory limit (in Megabytes). Set to `default` to reset to default |
 | `-e MEM_STARTUP=1024` | Optionally change the Java initial/minimum memory (in Megabytes). Set to `default` to reset to default |
 | `-v /config` | All Unifi data stored here |
