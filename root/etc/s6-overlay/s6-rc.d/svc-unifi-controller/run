@@ -1,8 +1,6 @@
 #!/usr/bin/with-contenv bash
 # shellcheck shell=bash
 
-WEB_PORT=$(grep 'unifi.https.port=' '/config/data/system.properties' | awk -F '=' '{print $2}')
-
 if [[ -z ${MEM_LIMIT} ]] || [[ ${MEM_LIMIT} = "default" ]]; then
     MEM_LIMIT="1024"
 fi
