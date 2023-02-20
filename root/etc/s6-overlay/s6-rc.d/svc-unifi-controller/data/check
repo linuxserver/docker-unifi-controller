@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ $(curl -skL "https://localhost:${WEB_PORT:-8443}/status" | jq -r '.meta.up' 2>/dev/null) = true ]]; then
+    exit 0
+else
+    exit 1
+fi
