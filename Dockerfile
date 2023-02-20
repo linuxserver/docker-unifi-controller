@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-ubuntu:focal-da661a62-ls106
+FROM ghcr.io/linuxserver/baseimage-ubuntu:focal
 
 # set version label
 ARG BUILD_DATE
@@ -33,8 +33,9 @@ RUN \
   fi && \
   mkdir -p /app && \
   curl -o \
-  /app/unifi.deb -L \
+  /tmp/unifi.deb -L \
     "https://dl.ui.com/unifi/${UNIFI_VERSION}/unifi_sysvinit_all.deb" && \
+  dpkg -i /tmp/unifi.deb && \
   echo "**** cleanup ****" && \
   apt-get clean && \
   rm -rf \
