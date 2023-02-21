@@ -44,6 +44,7 @@ gzip1.10-0ubuntu4
 hostname3.23
 init-system-helpers1.57
 java-common0.72
+jq1.6-1ubuntu0.20.04.1
 jsvc1.0.15-8
 krb5-locales1.17-6ubuntu4.2
 libacl12.2.53-6
@@ -65,6 +66,7 @@ libboost-filesystem1.71.01.71.0-6ubuntu6
 libboost-iostreams1.71.01.71.0-6ubuntu6
 libboost-program-options1.71.01.71.0-6ubuntu6
 libbrotli11.0.7-6ubuntu0.1
+libbsd00.10.0-1
 libbz2-1.01.0.8-2
 libc62.31-0ubuntu9.7
 libcap21:2.32-1
@@ -107,6 +109,7 @@ libicu6666.1-2ubuntu2.1
 libidn2-02.2.0-2
 libjpeg88c-2ubuntu8
 libjpeg-turbo82.0.3-0ubuntu1.20.04.3
+libjq11.6-1ubuntu0.20.04.1
 libk5crypto31.17-6ubuntu4.2
 libkeyutils11.6-6ubuntu1.1
 libkrb5-26-heimdal7.7.0+dfsg-1ubuntu1.4
@@ -126,6 +129,7 @@ libnghttp2-141.40.0-1build1
 libnpth01.6-1
 libnspr42:4.25-1
 libnss32:3.49.1-1ubuntu1.8
+libonig56.9.4-1
 libp11-kit00.23.20-1ubuntu0.1
 libpam0g1.3.1-5ubuntu4.3
 libpam-modules1.3.1-5ubuntu4.3
@@ -184,6 +188,8 @@ mongo-tools3.6.3-0ubuntu1
 mount2.34-0.1ubuntu9.3
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
+netcat1.206-1ubuntu1
+netcat-openbsd1.206-1ubuntu1
 openjdk-11-jre-headless11.0.17+8-1ubuntu2~20.04
 openssl1.1.1f-1ubuntu2.17
 passwd1:4.8.1-1ubuntu5.20.04.1
@@ -200,6 +206,7 @@ tar1.30+dfsg-7ubuntu0.20.04.2
 tzdata2022g-0ubuntu0.20.04.1
 ubuntu-keyring2020.02.11.4
 ucf3.0038+nmu1
+unifi7.3.83-19645-1
 util-linux2.34-0.1ubuntu9.3
 wget1.20.3-1ubuntu2
 xdg-user-dirs0.17-2ubuntu1
