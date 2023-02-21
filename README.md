@@ -100,7 +100,7 @@ services:
       - MEM_LIMIT=1024 #optional
       - MEM_STARTUP=1024 #optional
     volumes:
-      - <path to data>:/config
+      - /path/to/data:/config
     ports:
       - 8443:8443
       - 3478:3478/udp
@@ -133,7 +133,7 @@ docker run -d \
   -p 8880:8880 `#optional` \
   -p 6789:6789 `#optional` \
   -p 5514:5514/udp `#optional` \
-  -v <path to data>:/config \
+  -v /path/to/data:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/unifi-controller:latest
 
@@ -270,6 +270,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **20.02.23:** - Migrate to s6v3, install deb package on build, fix permissions.
 * **23.01.23:** - Exclude `run` from `/config` volume.
 * **30.11.22:** - Bump JRE to 11.
 * **01.06.22:** - Deprecate armhf.

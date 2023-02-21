@@ -19,7 +19,7 @@ development_versions: false
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "All Unifi data stored here" }
+  - { vol_path: "/config", vol_host_path: "/path/to/data", desc: "All Unifi data stored here" }
 
 param_usage_include_ports: true
 param_ports:
@@ -66,6 +66,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "20.02.23:", desc: "Migrate to s6v3, install deb package on build, fix permissions."}
   - { date: "23.01.23:", desc: "Exclude `run` from `/config` volume."}
   - { date: "30.11.22:", desc: "Bump JRE to 11."}
   - { date: "01.06.22:", desc: "Deprecate armhf."}

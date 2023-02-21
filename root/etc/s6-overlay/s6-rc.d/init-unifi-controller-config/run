@@ -1,27 +1,30 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 # create our folders
 mkdir -p \
     /config/{data,logs}
-
 
 # create symlinks for config
 symlinks=( \
 /usr/lib/unifi/data \
 /usr/lib/unifi/logs )
 
-for i in "${symlinks[@]}"
-do
-[[ -L "$i" && ! "$i" -ef /config/"$(basename "$i")"  ]] && unlink "$i"
-[[ ! -L "$i" ]] && ln -s /config/"$(basename "$i")" "$i"
+for i in "${symlinks[@]}"; do
+    if [[ -L "$i" && ! "$i" -ef /config/"$(basename "$i")"  ]]; then
+        unlink "$i"
+    fi
+    if [[ ! -L "$i" ]]; then
+        ln -s /config/"$(basename "$i")" "$i"
+    fi
 done
 
 if [[ ! -e /config/data/system.properties ]]; then
     cp /defaults/system.properties /config/data
 fi
 
+# Configure memory limits
 if grep -q "xmx" /config/data/system.properties && grep -q "xms" /config/data/system.properties; then
-
     if [[ $MEM_LIMIT == "default" ]]; then
         echo "*** Setting Java memory limit to default ***"
         sed -i "/unifi.xmx=.*/d" /config/data/system.properties
@@ -29,7 +32,6 @@ if grep -q "xmx" /config/data/system.properties && grep -q "xms" /config/data/sy
         echo "*** Setting Java memory limit to $MEM_LIMIT ***"
         sed -i "s/unifi.xmx=.*/unifi.xmx=$MEM_LIMIT/" /config/data/system.properties 
     fi
-
     if [[ $MEM_STARTUP == "default" ]]; then
         echo "*** Setting Java memory minimum to default ***"
         sed -i "/unifi.xms=.*/d" /config/data/system.properties
@@ -37,9 +39,7 @@ if grep -q "xmx" /config/data/system.properties && grep -q "xms" /config/data/sy
         echo "*** Setting Java memory minimum to $MEM_STARTUP ***"
         sed -i "s/unifi.xms=.*/unifi.xms=$MEM_STARTUP/" /config/data/system.properties
     fi
-
 elif grep -q "xmx" /config/data/system.properties; then
-
     if [[ $MEM_LIMIT == "default" ]]; then
         echo "*** Setting Java memory limit to default ***"
         sed -i "/unifi.xmx=.*/d" /config/data/system.properties
@@ -47,14 +47,11 @@ elif grep -q "xmx" /config/data/system.properties; then
         echo "*** Setting Java memory limit to $MEM_LIMIT ***"
         sed -i "s/unifi.xmx=.*/unifi.xmx=$MEM_LIMIT/" /config/data/system.properties
     fi
-
     if [[ -n $MEM_STARTUP ]]; then
         echo "*** Setting Java memory minimum to $MEM_STARTUP ***"
         echo "unifi.xms=$MEM_STARTUP" >> /config/data/system.properties
     fi
-
 elif grep -q "xms" /config/data/system.properties; then
-
     if [[ $MEM_STARTUP == "default" ]]; then
         echo "*** Setting Java memory minimum to default ***"
         sed -i "/unifi.xms=.*/d" /config/data/system.properties
@@ -62,28 +59,32 @@ elif grep -q "xms" /config/data/system.properties; then
         echo "*** Setting Java memory minimum to $MEM_STARTUP ***"
         sed -i "s/unifi.xms=.*/unifi.xms=$MEM_STARTUP/" /config/data/system.properties
     fi
-
     if [[ -n $MEM_LIMIT ]]; then
         echo "*** Setting Java memory limit to $MEM_LIMIT ***"
         echo "unifi.xmx=$MEM_LIMIT" >> /config/data/system.properties 
     fi
-
 else
-
     if [[ -n $MEM_LIMIT ]]; then
         echo "*** Setting Java memory limit to $MEM_LIMIT ***"
         echo "unifi.xmx=$MEM_LIMIT" >> /config/data/system.properties 
     fi
-
     if [[ -n $MEM_STARTUP ]]; then
         echo "*** Setting Java memory minimum to $MEM_STARTUP ***"
         echo "unifi.xms=$MEM_STARTUP" >> /config/data/system.properties
     fi
+fi
 
+# generate key
+if [[ ! -f /config/data/keystore ]]; then
+    keytool -genkey -keyalg RSA -alias unifi -keystore /config/data/keystore \
+    -storepass aircontrolenterprise -keypass aircontrolenterprise -validity 3650 \
+    -keysize 4096 -dname "cn=unifi"
 fi
 
 # permissions
-chown -R abc:abc \
+lsiown -R abc:abc \
 	/config \
-	/usr/lib/unifi \
 	/run/unifi
+
+lsiown abc:abc \
+    /config/data/keystore

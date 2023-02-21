@@ -1,7 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-if [[ ! -d /usr/lib/unifi/bin ]]; then
-    echo "*** installing unifi packages ***"
-    export DEBIAN_FRONTEND=noninteractive
-    dpkg -i /app/unifi.deb
-fi
