@@ -190,7 +190,7 @@ ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
 netcat1.206-1ubuntu1
 netcat-openbsd1.206-1ubuntu1
-openjdk-11-jre-headless11.0.18+10-0ubuntu1~20.04.1
+openjdk-11-jre-headless11.0.17+8-1ubuntu2~20.04
 openssl1.1.1f-1ubuntu2.17
 passwd1:4.8.1-1ubuntu5.20.04.1
 perl-base5.30.0-9ubuntu0.2
