@@ -128,7 +128,7 @@ libnettle73.5.1+really3.5.1-2ubuntu0.2
 libnghttp2-141.40.0-1build1
 libnpth01.6-1
 libnspr42:4.25-1
-libnss32:3.49.1-1ubuntu1.8
+libnss32:3.49.1-1ubuntu1.9
 libonig56.9.4-1
 libp11-kit00.23.20-1ubuntu0.1
 libpam0g1.3.1-5ubuntu4.3
@@ -190,7 +190,7 @@ ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
 netcat1.206-1ubuntu1
 netcat-openbsd1.206-1ubuntu1
-openjdk-11-jre-headless11.0.17+8-1ubuntu2~20.04
+openjdk-11-jre-headless11.0.18+10-0ubuntu1~20.04.1
 openssl1.1.1f-1ubuntu2.17
 passwd1:4.8.1-1ubuntu5.20.04.1
 perl-base5.30.0-9ubuntu0.2
