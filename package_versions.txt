@@ -1,213 +1,375 @@
-adduser3.118ubuntu2
-alsa-topology-conf1.2.2-1
-alsa-ucm-conf1.2.2-1ubuntu0.13
-apt2.0.9
-apt-utils2.0.9
-base-files11ubuntu5.5
-base-passwd3.5.47
-bash5.0-6ubuntu1.1
-binutils2.34-6ubuntu1.4
-binutils-common2.34-6ubuntu1.4
-binutils-x86-64-linux-gnu2.34-6ubuntu1.4
-bsdutils1:2.34-0.1ubuntu9.3
-bzip21.0.8-2
-ca-certificates20211016ubuntu0.20.04.1
-ca-certificates-java20190405ubuntu1
-coreutils8.30-3ubuntu2
-cron3.0pl1-136ubuntu1
-curl7.68.0-1ubuntu2.15
-dash0.5.10.2-6
-dbus1.12.16-2ubuntu2.3
-debconf1.5.73
-debianutils4.9.1
-diffutils1:3.7-3
-dirmngr2.2.19-3ubuntu2.2
-dpkg1.19.7ubuntu3
-e2fsprogs1.45.5-2ubuntu1
-fdisk2.34-0.1ubuntu9.3
-findutils4.7.0-1ubuntu1
-fontconfig-config2.13.1-2ubuntu3
-fonts-dejavu-core2.37-1
-gcc-10-base10.3.0-1ubuntu1~20.04
-gnupg2.2.19-3ubuntu2.2
-gnupg-l10n2.2.19-3ubuntu2.2
-gnupg-utils2.2.19-3ubuntu2.2
-gpg2.2.19-3ubuntu2.2
-gpg-agent2.2.19-3ubuntu2.2
-gpgconf2.2.19-3ubuntu2.2
-gpgsm2.2.19-3ubuntu2.2
-gpgv2.2.19-3ubuntu2.2
-gpg-wks-client2.2.19-3ubuntu2.2
-gpg-wks-server2.2.19-3ubuntu2.2
-grep3.4-1
-gzip1.10-0ubuntu4
-hostname3.23
-init-system-helpers1.57
-java-common0.72
-jq1.6-1ubuntu0.20.04.1
-jsvc1.0.15-8
-krb5-locales1.17-6ubuntu4.2
-libacl12.2.53-6
-libapparmor12.13.3-7ubuntu5.1
-libapt-pkg6.02.0.9
-libasn1-8-heimdal7.7.0+dfsg-1ubuntu1.4
-libasound21.2.2-2.1ubuntu2.5
-libasound2-data1.2.2-2.1ubuntu2.5
-libassuan02.5.3-7ubuntu2
-libattr11:2.4.48-5
-libaudit11:2.8.5-2ubuntu6
-libaudit-common1:2.8.5-2ubuntu6
-libavahi-client30.7-4ubuntu7.1
-libavahi-common30.7-4ubuntu7.1
-libavahi-common-data0.7-4ubuntu7.1
-libbinutils2.34-6ubuntu1.4
-libblkid12.34-0.1ubuntu9.3
-libboost-filesystem1.71.01.71.0-6ubuntu6
-libboost-iostreams1.71.01.71.0-6ubuntu6
-libboost-program-options1.71.01.71.0-6ubuntu6
-libbrotli11.0.7-6ubuntu0.1
-libbsd00.10.0-1
-libbz2-1.01.0.8-2
-libc62.31-0ubuntu9.7
-libcap21:2.32-1
-libcap-ng00.7.9-2.1build1
-libc-bin2.31-0ubuntu9.7
-libcom-err21.45.5-2ubuntu1
-libcommons-daemon-java1.0.15-8
-libcrypt11:4.4.10-10ubuntu4
-libctf02.34-6ubuntu1.4
-libctf-nobfd02.34-6ubuntu1.4
-libcups22.3.1-9ubuntu1.2
-libcurl47.68.0-1ubuntu2.15
-libdb5.35.3.28+dfsg1-0.6ubuntu2
-libdbus-1-31.12.16-2ubuntu2.3
-libdebconfclient00.251ubuntu1
-libexpat12.2.9-1ubuntu0.6
-libext2fs21.45.5-2ubuntu1
-libfdisk12.34-0.1ubuntu9.3
-libffi73.3-4
-libfontconfig12.13.1-2ubuntu3
-libfreetype62.10.1-2ubuntu0.2
-libgcc-s110.3.0-1ubuntu1~20.04
-libgcrypt201.8.5-5ubuntu1.1
-libglib2.0-02.64.6-1~ubuntu20.04.4
-libglib2.0-data2.64.6-1~ubuntu20.04.4
-libgmp102:6.2.0+dfsg-4
-libgnutls303.6.13-2ubuntu1.6
-libgoogle-perftools42.7-1ubuntu2
-libgpg-error01.37-1
-libgraphite2-31.3.13-11build1
-libgssapi3-heimdal7.7.0+dfsg-1ubuntu1.4
-libgssapi-krb5-21.17-6ubuntu4.2
-libharfbuzz0b2.6.4-1ubuntu4.2
-libhcrypto4-heimdal7.7.0+dfsg-1ubuntu1.4
-libheimbase1-heimdal7.7.0+dfsg-1ubuntu1.4
-libheimntlm0-heimdal7.7.0+dfsg-1ubuntu1.4
-libhogweed53.5.1+really3.5.1-2ubuntu0.2
-libhx509-5-heimdal7.7.0+dfsg-1ubuntu1.4
-libicu6666.1-2ubuntu2.1
-libidn2-02.2.0-2
-libjpeg88c-2ubuntu8
-libjpeg-turbo82.0.3-0ubuntu1.20.04.3
-libjq11.6-1ubuntu0.20.04.1
-libk5crypto31.17-6ubuntu4.2
-libkeyutils11.6-6ubuntu1.1
-libkrb5-26-heimdal7.7.0+dfsg-1ubuntu1.4
-libkrb5-31.17-6ubuntu4.2
-libkrb5support01.17-6ubuntu4.2
-libksba81.3.5-2ubuntu0.20.04.2
-liblcms2-22.9-4
-libldap-2.4-22.4.49+dfsg-2ubuntu1.9
-libldap-common2.4.49+dfsg-2ubuntu1.9
-liblz4-11.9.2-2ubuntu0.20.04.1
-liblzma55.2.4-1ubuntu1
-libmount12.34-0.1ubuntu9.3
-libncurses66.2-0ubuntu2
-libncursesw66.2-0ubuntu2
-libnettle73.5.1+really3.5.1-2ubuntu0.2
-libnghttp2-141.40.0-1build1
-libnpth01.6-1
-libnspr42:4.25-1
-libnss32:3.49.1-1ubuntu1.9
-libonig56.9.4-1
-libp11-kit00.23.20-1ubuntu0.1
-libpam0g1.3.1-5ubuntu4.3
-libpam-modules1.3.1-5ubuntu4.3
-libpam-modules-bin1.3.1-5ubuntu4.3
-libpam-runtime1.3.1-5ubuntu4.3
-libpcap0.81.9.1-3
-libpcre2-8-010.34-7
-libpcre32:8.39-12build1
-libpcrecpp0v52:8.39-12ubuntu0.1
-libpcsclite11.8.26-3
-libpng16-161.6.37-2
-libpopt01.16-14
-libprocps82:3.3.16-1ubuntu2.3
-libpsl50.21.0-1ubuntu1
-libreadline88.0-4
-libroken18-heimdal7.7.0+dfsg-1ubuntu1.4
-librtmp12.4+20151223.gitfa8646d.1-2build1
-libsasl2-22.1.27+dfsg-2ubuntu0.1
-libsasl2-modules2.1.27+dfsg-2ubuntu0.1
-libsasl2-modules-db2.1.27+dfsg-2ubuntu0.1
-libseccomp22.5.1-1ubuntu1~20.04.2
-libselinux13.0-1build2
-libsemanage13.0-1build2
-libsemanage-common3.0-1build2
-libsepol13.0-1
-libsmartcols12.34-0.1ubuntu9.3
-libsnappy1v51.1.8-1build1
-libsqlite3-03.31.1-4ubuntu0.5
-libss21.45.5-2ubuntu1
-libssh-40.9.3-2ubuntu2.2
-libssl1.11.1.1f-1ubuntu2.17
-libstdc++610.3.0-1ubuntu1~20.04
-libstemmer0d0+svn585-2
-libsystemd0245.4-4ubuntu3.15
-libtasn1-64.16.0-2
-libtcmalloc-minimal42.7-1ubuntu2
-libtinfo66.2-0ubuntu2
-libudev1245.4-4ubuntu3.15
-libunistring20.9.10-2
-libunwind81.2.1-9build1
-libuuid12.34-0.1ubuntu9.3
-libwind0-heimdal7.7.0+dfsg-1ubuntu1.4
-libxml22.9.10+dfsg-5ubuntu0.20.04.5
-libyaml-cpp0.60.6.2-4ubuntu1
-libzstd11.4.4+dfsg-3ubuntu0.1
-locales2.31-0ubuntu9.9
-login1:4.8.1-1ubuntu5.20.04.1
-logrotate3.14.0-4ubuntu3
-logsave1.45.5-2ubuntu1
-lsb-base11.1.0ubuntu2
-mawk1.3.4.20200120-2
-mongodb-clients1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3
-mongodb-server1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3
-mongodb-server-core1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3
-mongo-tools3.6.3-0ubuntu1
-mount2.34-0.1ubuntu9.3
-ncurses-base6.2-0ubuntu2
-ncurses-bin6.2-0ubuntu2
-netcat1.206-1ubuntu1
-netcat-openbsd1.206-1ubuntu1
-openjdk-11-jre-headless11.0.18+10-0ubuntu1~20.04.1
-openssl1.1.1f-1ubuntu2.17
-passwd1:4.8.1-1ubuntu5.20.04.1
-perl-base5.30.0-9ubuntu0.2
-pinentry-curses1.1.0-3build1
-procps2:3.3.16-1ubuntu2.3
-publicsuffix20200303.0012-1
-readline-common8.0-4
-sed4.7-1
-sensible-utils0.0.12+nmu1
-shared-mime-info1.15-1
-sysvinit-utils2.96-2.1ubuntu1
-tar1.30+dfsg-7ubuntu0.20.04.2
-tzdata2022g-0ubuntu0.20.04.1
-ubuntu-keyring2020.02.11.4
-ucf3.0038+nmu1
-unifi7.3.83-19645-1
-util-linux2.34-0.1ubuntu9.3
-wget1.20.3-1ubuntu2
-xdg-user-dirs0.17-2ubuntu1
-zlib1g1:1.2.11.dfsg-2ubuntu1.2
+NAME                                      VERSION                                        TYPE         
+ace                                                                                      java-archive  
+activation                                1.1.1                                          java-archive  
+adduser                                   3.118ubuntu2                                   deb           
+alsa-topology-conf                        1.2.2-1                                        deb           
+alsa-ucm-conf                             1.2.2-1ubuntu0.13                              deb           
+analytics-api                             1.2.1                                          java-archive  
+analytics-client                          1.2.1                                          java-archive  
+analytics-privacy                         1.2.1                                          java-archive  
+annotations                               3.0.1                                          java-archive  
+antlr4-runtime                            4.5.3                                          java-archive  
+antlr4-runtime                            4.7.2                                          java-archive  
+api-common                                1.7.0                                          java-archive  
+apigateway-generic-java-sdk               1.3                                            java-archive  
+apt                                       2.0.9                                          deb           
+apt-utils                                 2.0.9                                          deb           
+aws-iot-device-sdk-java                   1.2.0                                          java-archive  
+aws-java-sdk-cloudwatch                   1.11.409                                       java-archive  
+aws-java-sdk-core                         1.11.409                                       java-archive  
+aws-java-sdk-s3                           1.11.409                                       java-archive  
+base-files                                11ubuntu5.5                                    deb           
+base-passwd                               3.5.47                                         deb           
+bash                                      5.0-6ubuntu1.1                                 deb           
+bcpkix-jdk15on                            1.60                                           java-archive  
+bcprov-jdk15on                            1.60                                           java-archive  
+binutils                                  2.34-6ubuntu1.4                                deb           
+binutils-common                           2.34-6ubuntu1.4                                deb           
+binutils-x86-64-linux-gnu                 2.34-6ubuntu1.4                                deb           
+bsdutils                                  1:2.34-0.1ubuntu9.3                            deb           
+byte-buddy-dep                            1.8.12                                         java-archive  
+bzip2                                     1.0.8-2                                        deb           
+ca-certificates                           20211016ubuntu0.20.04.1                        deb           
+ca-certificates-java                                                                     java-archive  
+ca-certificates-java                      20190405ubuntu1                                deb           
+checker-qual                              3.12.0                                         java-archive  
+classgraph                                4.8.59                                         java-archive  
+classmate                                 1.4.0                                          java-archive  
+coloring                                  1.0                                            java-archive  
+commons-beanutils                         1.9.2                                          java-archive  
+commons-cli                               1.4                                            java-archive  
+commons-codec                             1.11                                           java-archive  
+commons-daemon                            1.0.15                                         java-archive  
+commons-dbcp2                             2.7.0                                          java-archive  
+commons-httpclient                        3.1-atlassian-2                                java-archive  
+commons-httpclient-contrib                3.1                                            java-archive  
+commons-io                                2.11.0                                         java-archive  
+commons-lang3                             3.12.0                                         java-archive  
+commons-logging                           1.2                                            java-archive  
+commons-net                               3.8.0                                          java-archive  
+commons-pool2                             2.7.0                                          java-archive  
+commons-text                              1.10.0                                         java-archive  
+commons-validator                         1.6                                            java-archive  
+compiler                                  0.9.6                                          java-archive  
+coreutils                                 8.30-3ubuntu2                                  deb           
+cron                                      3.0pl1-136ubuntu1                              deb           
+cron4j                                    2.2.5                                          java-archive  
+curl                                      7.68.0-1ubuntu2.16                             deb           
+dash                                      0.5.10.2-6                                     deb           
+dbus                                      1.12.16-2ubuntu2.3                             deb           
+debconf                                   1.5.73                                         deb           
+debianutils                               4.9.1                                          deb           
+diffutils                                 1:3.7-3                                        deb           
+dirmngr                                   2.2.19-3ubuntu2.2                              deb           
+dom4j                                     1.6.1                                          java-archive  
+dpkg                                      1.19.7ubuntu3                                  deb           
+e2fsprogs                                 1.45.5-2ubuntu1                                deb           
+ecj                                       3.18.0                                         java-archive  
+eddsa                                     0.2.0                                          java-archive  
+error_prone_annotations                   2.7.1                                          java-archive  
+failureaccess                             1.0.1                                          java-archive  
+fdisk                                     2.34-0.1ubuntu9.3                              deb           
+findutils                                 4.7.0-1ubuntu1                                 deb           
+fontconfig-config                         2.13.1-2ubuntu3                                deb           
+fonts-dejavu-core                         2.37-1                                         deb           
+gax                                       1.31.0                                         java-archive  
+gcc-10-base                               10.3.0-1ubuntu1~20.04                          deb           
+geantyref                                 1.3.11                                         java-archive  
+gnupg                                     2.2.19-3ubuntu2.2                              deb           
+gnupg-l10n                                2.2.19-3ubuntu2.2                              deb           
+gnupg-utils                               2.2.19-3ubuntu2.2                              deb           
+google-api-client                         1.26.0                                         java-archive  
+google-api-services-drive                 v3-rev20180830-1.26.0                          java-archive  
+google-api-services-drive-v3-rev20180830  1.26.0                                         java-archive  
+google-api-services-storage               v1-rev135-1.24.1                               java-archive  
+google-api-services-storage-v1-rev135     1.24.1                                         java-archive  
+google-auth-library-credentials           0.11.0                                         java-archive  
+google-auth-library-oauth2-http           0.11.0                                         java-archive  
+google-cloud-core                         1.44.0                                         java-archive  
+google-cloud-core-http                    1.44.0                                         java-archive  
+google-cloud-storage                      1.44.0                                         java-archive  
+google-http-client                        1.26.0                                         java-archive  
+google-http-client-appengine              1.24.1                                         java-archive  
+google-http-client-gson                   1.26.0                                         java-archive  
+google-http-client-jackson                1.24.1                                         java-archive  
+google-http-client-jackson2               1.26.0                                         java-archive  
+google-http-client-jdo                    1.26.0                                         java-archive  
+google-oauth-client                       1.26.0                                         java-archive  
+gpg                                       2.2.19-3ubuntu2.2                              deb           
+gpg-agent                                 2.2.19-3ubuntu2.2                              deb           
+gpg-wks-client                            2.2.19-3ubuntu2.2                              deb           
+gpg-wks-server                            2.2.19-3ubuntu2.2                              deb           
+gpgconf                                   2.2.19-3ubuntu2.2                              deb           
+gpgsm                                     2.2.19-3ubuntu2.2                              deb           
+gpgv                                      2.2.19-3ubuntu2.2                              deb           
+graphql-java                              13.0                                           java-archive  
+grep                                      3.4-1                                          deb           
+gson                                      2.8.5                                          java-archive  
+gson-java8-datatype                       1.1.0                                          java-archive  
+guava                                     31.0.1-jre                                     java-archive  
+gzip                                      1.10-0ubuntu4                                  deb           
+hibernate-validator                       6.1.2.Final                                    java-archive  
+hostname                                  3.23                                           deb           
+httpclient                                4.5.13                                         java-archive  
+httpcore                                  4.4.13                                         java-archive  
+init-system-helpers                       1.57                                           deb           
+istack-commons-runtime                    3.0.5                                          java-archive  
+j2objc-annotations                        1.3                                            java-archive  
+jackson-annotations                       2.13.1                                         java-archive  
+jackson-core                              2.13.1                                         java-archive  
+jackson-databind                          2.13.1                                         java-archive  
+jackson-datatype-jdk8                     2.13.1                                         java-archive  
+jackson-datatype-jsr310                   2.13.1                                         java-archive  
+jackson-module-parameter-names            2.13.1                                         java-archive  
+jakarta.validation-api                    2.0.2                                          java-archive  
+java-binme                                1.0                                            java-archive  
+java-common                               0.72                                           deb           
+java-dataloader                           2.1.1                                          java-archive  
+java-ipv6                                 0.17                                           java-archive  
+java-semver                               0.9.0                                          java-archive  
+java-ucp                                  1.1                                            java-archive  
+java-uuid-generator                       4.0.1                                          java-archive  
+javax.mail                                1.6.2                                          java-archive  
+jaxb-api                                  2.3.0                                          java-archive  
+jaxb-core                                 2.3.0.1                                        java-archive  
+jaxb-impl                                 2.3.0.1                                        java-archive  
+jaxb-runtime                              2.3.0.1                                        java-archive  
+jboss-logging                             3.3.2.Final                                    java-archive  
+jcl-over-slf4j                            1.7.36                                         java-archive  
+jenetics                                  4.2.0                                          java-archive  
+jgrapht-core                              1.0.1                                          java-archive  
+jgrapht-ext                               1.0.1                                          java-archive  
+jgraphx                                   2.0.0.1                                        java-archive  
+jmdns                                     3.4.1                                          java-archive  
+jna                                       5.9.0                                          java-archive  
+joda-time                                 2.10.4                                         java-archive  
+jorbis                                    0.0.17                                         java-archive  
+jq                                        1.6-1ubuntu0.20.04.1                           deb           
+jrt-fs                                    11.0.18                                        java-archive  
+json                                      20190722                                       java-archive  
+jsr305                                    3.0.1                                          java-archive  
+jsr305                                    3.0.2                                          java-archive  
+jstl                                      1.2                                            java-archive  
+jstun                                     0.7.4                                          java-archive  
+jsvc                                      1.0.15-8                                       deb           
+jul-to-slf4j                              1.7.36                                         java-archive  
+krb5-locales                              1.17-6ubuntu4.2                                deb           
+lazysodium-java                           5.1.2                                          java-archive  
+libacl1                                   2.2.53-6                                       deb           
+libapparmor1                              2.13.3-7ubuntu5.1                              deb           
+libapt-pkg6.0                             2.0.9                                          deb           
+libasn1-8-heimdal                         7.7.0+dfsg-1ubuntu1.4                          deb           
+libasound2                                1.2.2-2.1ubuntu2.5                             deb           
+libasound2-data                           1.2.2-2.1ubuntu2.5                             deb           
+libassuan0                                2.5.3-7ubuntu2                                 deb           
+libattr1                                  1:2.4.48-5                                     deb           
+libaudit-common                           1:2.8.5-2ubuntu6                               deb           
+libaudit1                                 1:2.8.5-2ubuntu6                               deb           
+libavahi-client3                          0.7-4ubuntu7.1                                 deb           
+libavahi-common-data                      0.7-4ubuntu7.1                                 deb           
+libavahi-common3                          0.7-4ubuntu7.1                                 deb           
+libbinutils                               2.34-6ubuntu1.4                                deb           
+libblkid1                                 2.34-0.1ubuntu9.3                              deb           
+libboost-filesystem1.71.0                 1.71.0-6ubuntu6                                deb           
+libboost-iostreams1.71.0                  1.71.0-6ubuntu6                                deb           
+libboost-program-options1.71.0            1.71.0-6ubuntu6                                deb           
+libbrotli1                                1.0.7-6ubuntu0.1                               deb           
+libbsd0                                   0.10.0-1                                       deb           
+libbz2-1.0                                1.0.8-2                                        deb           
+libc-bin                                  2.31-0ubuntu9.7                                deb           
+libc6                                     2.31-0ubuntu9.7                                deb           
+libcap-ng0                                0.7.9-2.1build1                                deb           
+libcap2                                   1:2.32-1                                       deb           
+libcom-err2                               1.45.5-2ubuntu1                                deb           
+libcommons-daemon-java                    1.0.15-8                                       deb           
+libcrypt1                                 1:4.4.10-10ubuntu4                             deb           
+libctf-nobfd0                             2.34-6ubuntu1.4                                deb           
+libctf0                                   2.34-6ubuntu1.4                                deb           
+libcups2                                  2.3.1-9ubuntu1.2                               deb           
+libcurl4                                  7.68.0-1ubuntu2.16                             deb           
+libdb5.3                                  5.3.28+dfsg1-0.6ubuntu2                        deb           
+libdbus-1-3                               1.12.16-2ubuntu2.3                             deb           
+libdebconfclient0                         0.251ubuntu1                                   deb           
+libexpat1                                 2.2.9-1ubuntu0.6                               deb           
+libext2fs2                                1.45.5-2ubuntu1                                deb           
+libfdisk1                                 2.34-0.1ubuntu9.3                              deb           
+libffi7                                   3.3-4                                          deb           
+libfontconfig1                            2.13.1-2ubuntu3                                deb           
+libfreetype6                              2.10.1-2ubuntu0.2                              deb           
+libgcc-s1                                 10.3.0-1ubuntu1~20.04                          deb           
+libgcrypt20                               1.8.5-5ubuntu1.1                               deb           
+libglib2.0-0                              2.64.6-1~ubuntu20.04.4                         deb           
+libglib2.0-data                           2.64.6-1~ubuntu20.04.4                         deb           
+libgmp10                                  2:6.2.0+dfsg-4                                 deb           
+libgnutls30                               3.6.13-2ubuntu1.6                              deb           
+libgoogle-perftools4                      2.7-1ubuntu2                                   deb           
+libgpg-error0                             1.37-1                                         deb           
+libgraphite2-3                            1.3.13-11build1                                deb           
+libgssapi-krb5-2                          1.17-6ubuntu4.2                                deb           
+libgssapi3-heimdal                        7.7.0+dfsg-1ubuntu1.4                          deb           
+libharfbuzz0b                             2.6.4-1ubuntu4.2                               deb           
+libhcrypto4-heimdal                       7.7.0+dfsg-1ubuntu1.4                          deb           
+libheimbase1-heimdal                      7.7.0+dfsg-1ubuntu1.4                          deb           
+libheimntlm0-heimdal                      7.7.0+dfsg-1ubuntu1.4                          deb           
+libhogweed5                               3.5.1+really3.5.1-2ubuntu0.2                   deb           
+libhx509-5-heimdal                        7.7.0+dfsg-1ubuntu1.4                          deb           
+libicu66                                  66.1-2ubuntu2.1                                deb           
+libidn2-0                                 2.2.0-2                                        deb           
+libjpeg-turbo8                            2.0.3-0ubuntu1.20.04.3                         deb           
+libjpeg8                                  8c-2ubuntu8                                    deb           
+libjq1                                    1.6-1ubuntu0.20.04.1                           deb           
+libk5crypto3                              1.17-6ubuntu4.2                                deb           
+libkeyutils1                              1.6-6ubuntu1.1                                 deb           
+libkrb5-26-heimdal                        7.7.0+dfsg-1ubuntu1.4                          deb           
+libkrb5-3                                 1.17-6ubuntu4.2                                deb           
+libkrb5support0                           1.17-6ubuntu4.2                                deb           
+libksba8                                  1.3.5-2ubuntu0.20.04.2                         deb           
+liblcms2-2                                2.9-4                                          deb           
+libldap-2.4-2                             2.4.49+dfsg-2ubuntu1.9                         deb           
+libldap-common                            2.4.49+dfsg-2ubuntu1.9                         deb           
+liblz4-1                                  1.9.2-2ubuntu0.20.04.1                         deb           
+liblzma5                                  5.2.4-1ubuntu1                                 deb           
+libmount1                                 2.34-0.1ubuntu9.3                              deb           
+libncurses6                               6.2-0ubuntu2                                   deb           
+libncursesw6                              6.2-0ubuntu2                                   deb           
+libnettle7                                3.5.1+really3.5.1-2ubuntu0.2                   deb           
+libnghttp2-14                             1.40.0-1build1                                 deb           
+libnpth0                                  1.6-1                                          deb           
+libnspr4                                  2:4.25-1                                       deb           
+libnss3                                   2:3.49.1-1ubuntu1.9                            deb           
+libonig5                                  6.9.4-1                                        deb           
+libp11-kit0                               0.23.20-1ubuntu0.1                             deb           
+libpam-modules                            1.3.1-5ubuntu4.3                               deb           
+libpam-modules-bin                        1.3.1-5ubuntu4.3                               deb           
+libpam-runtime                            1.3.1-5ubuntu4.3                               deb           
+libpam0g                                  1.3.1-5ubuntu4.3                               deb           
+libpcap0.8                                1.9.1-3                                        deb           
+libpcre2-8-0                              10.34-7                                        deb           
+libpcre3                                  2:8.39-12build1                                deb           
+libpcrecpp0v5                             2:8.39-12ubuntu0.1                             deb           
+libpcsclite1                              1.8.26-3                                       deb           
+libpng16-16                               1.6.37-2                                       deb           
+libpopt0                                  1.16-14                                        deb           
+libprocps8                                2:3.3.16-1ubuntu2.3                            deb           
+libpsl5                                   0.21.0-1ubuntu1                                deb           
+libreadline8                              8.0-4                                          deb           
+libroken18-heimdal                        7.7.0+dfsg-1ubuntu1.4                          deb           
+librtmp1                                  2.4+20151223.gitfa8646d.1-2build1              deb           
+libsasl2-2                                2.1.27+dfsg-2ubuntu0.1                         deb           
+libsasl2-modules                          2.1.27+dfsg-2ubuntu0.1                         deb           
+libsasl2-modules-db                       2.1.27+dfsg-2ubuntu0.1                         deb           
+libseccomp2                               2.5.1-1ubuntu1~20.04.2                         deb           
+libselinux1                               3.0-1build2                                    deb           
+libsemanage-common                        3.0-1build2                                    deb           
+libsemanage1                              3.0-1build2                                    deb           
+libsepol1                                 3.0-1                                          deb           
+libsmartcols1                             2.34-0.1ubuntu9.3                              deb           
+libsnappy1v5                              1.1.8-1build1                                  deb           
+libsqlite3-0                              3.31.1-4ubuntu0.5                              deb           
+libss2                                    1.45.5-2ubuntu1                                deb           
+libssh-4                                  0.9.3-2ubuntu2.2                               deb           
+libssl1.1                                 1.1.1f-1ubuntu2.17                             deb           
+libstdc++6                                10.3.0-1ubuntu1~20.04                          deb           
+libstemmer0d                              0+svn585-2                                     deb           
+libsystemd0                               245.4-4ubuntu3.15                              deb           
+libtasn1-6                                4.16.0-2                                       deb           
+libtcmalloc-minimal4                      2.7-1ubuntu2                                   deb           
+libtinfo6                                 6.2-0ubuntu2                                   deb           
+libudev1                                  245.4-4ubuntu3.15                              deb           
+libunistring2                             0.9.10-2                                       deb           
+libunwind8                                1.2.1-9build1                                  deb           
+libuuid1                                  2.34-0.1ubuntu9.3                              deb           
+libwind0-heimdal                          7.7.0+dfsg-1ubuntu1.4                          deb           
+libxml2                                   2.9.10+dfsg-5ubuntu0.20.04.5                   deb           
+libyaml-cpp0.6                            0.6.2-4ubuntu1                                 deb           
+libzstd1                                  1.4.4+dfsg-3ubuntu0.1                          deb           
+locales                                   2.31-0ubuntu9.9                                deb           
+log4j-api                                 2.17.2                                         java-archive  
+log4j-core                                2.17.2                                         java-archive  
+log4j-slf4j-impl                          2.17.2                                         java-archive  
+login                                     1:4.8.1-1ubuntu5.20.04.1                       deb           
+logrotate                                 3.14.0-4ubuntu3                                deb           
+logsave                                   1.45.5-2ubuntu1                                deb           
+lsb-base                                  11.1.0ubuntu2                                  deb           
+mawk                                      1.3.4.20200120-2                               deb           
+minimal-json                              0.9.5                                          java-archive  
+mongo-java-driver                         3.4.3                                          java-archive  
+mongo-tools                               3.6.3-0ubuntu1                                 deb           
+mongodb-clients                           1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3  deb           
+mongodb-server                            1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3  deb           
+mongodb-server-core                       1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3  deb           
+mount                                     2.34-0.1ubuntu9.3                              deb           
+ncurses-base                              6.2-0ubuntu2                                   deb           
+ncurses-bin                               6.2-0ubuntu2                                   deb           
+netcat                                    1.206-1ubuntu1                                 deb           
+netcat-openbsd                            1.206-1ubuntu1                                 deb           
+openjdk-11-jre-headless                   11.0.18+10-0ubuntu1~20.04.1                    deb           
+openssh                                   1.0                                            java-archive  
+openssl                                   1.1.1f-1ubuntu2.17                             deb           
+org.eclipse.paho.client.mqttv3            1.1.0                                          java-archive  
+owasp-java-html-sanitizer                 20190503.1                                     java-archive  
+passwd                                    1:4.8.1-1ubuntu5.20.04.1                       deb           
+perl-base                                 5.30.0-9ubuntu0.2                              deb           
+pinentry-curses                           1.1.0-3build1                                  deb           
+procps                                    2:3.3.16-1ubuntu2.3                            deb           
+proto-google-common-protos                1.12.0                                         java-archive  
+proto-google-iam-v1                       0.12.0                                         java-archive  
+protobuf-java                             3.6.0                                          java-archive  
+protobuf-java-util                        3.6.0                                          java-archive  
+publicsuffix                              20200303.0012-1                                deb           
+radclient4                                4.0                                            java-archive  
+reactive-streams                          1.0.3                                          java-archive  
+reactor-core                              3.4.0                                          java-archive  
+readline-common                           8.0-4                                          deb           
+resource-loader                           2.0.2                                          java-archive  
+sed                                       4.7-1                                          deb           
+sensible-utils                            0.0.12+nmu1                                    deb           
+servo-aws                                 0.13.0                                         java-archive  
+servo-core                                0.13.0                                         java-archive  
+servo-graphite                            0.13.0                                         java-archive  
+shared-mime-info                          1.15-1                                         deb           
+slf4j-api                                 1.7.36                                         java-archive  
+snappy-java                               1.1.8.4                                        java-archive  
+spectator-api                             0.88.0                                         java-archive  
+spqr                                      0.10.1                                         java-archive  
+spring-aop                                5.3.18                                         java-archive  
+spring-beans                              5.3.18                                         java-archive  
+spring-context                            5.3.18                                         java-archive  
+spring-core                               5.3.18                                         java-archive  
+spring-data-commons                       1.13.23.RELEASE                                java-archive  
+spring-data-mongodb                       1.10.23.RELEASE                                java-archive  
+spring-expression                         5.3.18                                         java-archive  
+spring-plugin-core                        1.2.0.RELEASE                                  java-archive  
+spring-plugin-metadata                    1.2.0.RELEASE                                  java-archive  
+spring-test                               5.3.18                                         java-archive  
+spring-tx                                 5.3.18                                         java-archive  
+spring-web                                5.3.18                                         java-archive  
+spring-webmvc                             5.3.18                                         java-archive  
+spring-websocket                          5.3.18                                         java-archive  
+springfox-core                            2.9.2                                          java-archive  
+springfox-schema                          2.9.2                                          java-archive  
+springfox-spi                             2.9.2                                          java-archive  
+springfox-spring-web                      2.9.2                                          java-archive  
+springfox-swagger-common                  2.9.2                                          java-archive  
+springfox-swagger-ui                      2.9.2                                          java-archive  
+springfox-swagger2                        2.9.2                                          java-archive  
+sshj                                      0.27.0                                         java-archive  
+swagger-annotations                       1.5.20                                         java-archive  
+swagger-models                            1.5.20                                         java-archive  
+sysvinit-utils                            2.96-2.1ubuntu1                                deb           
+tar                                       1.30+dfsg-7ubuntu0.20.04.2                     deb           
+tomcat-annotations-api                    9.0.59                                         java-archive  
+tomcat-embed-core                         9.0.59                                         java-archive  
+tomcat-embed-el                           9.0.59                                         java-archive  
+tomcat-embed-jasper                       9.0.59                                         java-archive  
+tomcat-embed-websocket                    9.0.59                                         java-archive  
+txw2                                      2.3.0.1                                        java-archive  
+tzdata                                    2022g-0ubuntu0.20.04.1                         deb           
+ubuntu-keyring                            2020.02.11.4                                   deb           
+ucf                                       3.0038+nmu1                                    deb           
+unifi                                     7.3.83-19645-1                                 deb           
+urlrewritefilter                          4.0.4                                          java-archive  
+util-linux                                2.34-0.1ubuntu9.3                              deb           
+wget                                      1.20.3-1ubuntu2                                deb           
+xdg-user-dirs                             0.17-2ubuntu1                                  deb           
+zlib1g                                    1:1.2.11.dfsg-2ubuntu1.2                       deb           
