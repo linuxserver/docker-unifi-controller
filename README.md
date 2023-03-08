@@ -82,6 +82,18 @@ The default device password is `ubnt`. `$address` is the IP address of the host 
 
 When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessable) ip address.
 
+### Setting Up Your External Databases
+
+Formally only Mongo 3.6 and below are supported, however, it has been reported that versions up to 5.x will work. If you choose to use a newer version be aware that you will not be operating a supported configuration.
+
+Create your databases with:
+
+`mongo --eval 'db.getSiblingDB("MONGO_DBNAME").createUser({user: "MONGO_USER", pwd: "MONGO_PASS", roles: [{role: "readWrite", db: "MONGO_DBNAME"}]})'`
+
+`mongo --eval 'db.getSiblingDB("MONGO_DBNAME_stat").createUser({user: "MONGO_USER", pwd: "MONGO_PASS", roles: [{role: "readWrite", db: "MONGO_DBNAME_stat"}]})'`
+
+Being sure to replace the placeholders with the same values you supplied to the Unifi container.
+
 ### Strict reverse proxies
 
 This image uses a self-signed certificate by default. This naturally means the scheme is `https`.
@@ -174,11 +186,11 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e MONGO_USER=` | MONGO_USER. |
-| `-e MONGO_PASS=` | MONGO_PASS. |
-| `-e MONGO_HOST=` | MONGO_HOST. |
-| `-e MONGO_PORT=` | MONGO_PORT. |
-| `-e MONGO_DBNAME=` | MONGO_DBNAME. |
+| `-e MONGO_USER=` | Mongodb Username. Only evaluated on first run. |
+| `-e MONGO_PASS=` | Mongodb Password. Only evaluated on first run. |
+| `-e MONGO_HOST=` | Mongodb Hostname. Only evaluated on first run. |
+| `-e MONGO_PORT=` | Mongodb Port. Only evaluated on first run. |
+| `-e MONGO_DBNAME=` | Mongodb Database Name (stats DB is automatically suffixed with `_stat`). Only evaluated on first run. |
 | `-e MEM_LIMIT=1024` | Optionally change the Java memory limit (in Megabytes). Set to `default` to reset to default |
 | `-e MEM_STARTUP=1024` | Optionally change the Java initial/minimum memory (in Megabytes). Set to `default` to reset to default |
 | `-v /config` | All Unifi data stored here |
