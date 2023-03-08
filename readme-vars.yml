@@ -13,7 +13,10 @@ available_architectures:
   - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 
 # development version
-development_versions: false
+development_versions: true
+development_versions_items:
+  - { tag: "latest", desc: "Stable Unifi Controller releases." }
+  - { tag: "mongoless", desc: "Stable Unifi Controller releases without mongodb included." }
 
 # container parameters
 param_container_name: "{{ project_name }}"
@@ -30,7 +33,11 @@ param_ports:
 
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use (e.g. Europe/London) - [see list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)" }
+  - { env_var: "MONGO_USER", env_value: "", desc: "MONGO_USER." }
+  - { env_var: "MONGO_PASS", env_value: "", desc: "MONGO_PASS." }
+  - { env_var: "MONGO_HOST", env_value: "", desc: "MONGO_HOST." }
+  - { env_var: "MONGO_PORT", env_value: "", desc: "MONGO_PORT." }
+  - { env_var: "MONGO_DBNAME", env_value: "", desc: "MONGO_DBNAME." }
 
 # optional container parameters
 opt_param_usage_include_env: true

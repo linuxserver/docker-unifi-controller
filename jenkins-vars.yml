@@ -4,9 +4,9 @@
 project_name: docker-unifi-controller
 external_type: na
 custom_version_command: "curl -sX GET http://dl-origin.ubnt.com/unifi/debian/dists/stable/ubiquiti/binary-amd64/Packages |grep -A 7 -m 1 'Package: unifi' | awk -F ': ' '/Version/{print $2;exit}' | awk -F '-' '{print $1}'"
-release_type: stable
-release_tag: latest
-ls_branch: master
+release_type: prerelease
+release_tag: mongoless
+ls_branch: mongoless
 build_armhf: false
 repo_vars:
   - BUILD_VERSION_ARG = 'UNIFI_VERSION'
