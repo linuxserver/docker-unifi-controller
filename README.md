@@ -84,6 +84,8 @@ When using a Security Gateway (router) it could be that network connected device
 
 ### Setting Up Your External Databases
 
+**Please Note: We will not provide support for migrating existing installs to an external database setup.**
+
 Formally only Mongo 3.6 and below are supported, however, it has been reported that versions up to 5.x will work. If you choose to use a newer version be aware that you will not be operating a supported configuration.
 
 Create your databases with:
