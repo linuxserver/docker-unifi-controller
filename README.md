@@ -270,6 +270,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **10.03.23:** - Test writing to /run/unifi and symlink to /config/run if it fails.
 * **20.02.23:** - Migrate to s6v3, install deb package on build, fix permissions.
 * **23.01.23:** - Exclude `run` from `/config` volume.
 * **30.11.22:** - Bump JRE to 11.
