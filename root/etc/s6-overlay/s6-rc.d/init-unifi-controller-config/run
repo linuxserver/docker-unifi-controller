@@ -83,21 +83,27 @@ fi
 
 # permissions
 lsiown -R abc:abc \
-	/config \
-	/run/unifi
+	/config
 
 lsiown abc:abc \
-    /config/data/keystore
+    /config/data/keystore \
+	/run/unifi \
+    /var/run/unifi
 
 if ! s6-setuidgid abc touch /run/unifi/monogo.test 2>/dev/null; then
     if [[ ${S6_VERBOSITY} -ge 2 ]]; then
         echo "Write test to /run/unifi failed, symlinking to /config/run."
     fi
+    if [[ -L "/usr/lib/unifi/run" ]]; then
+        unlink "/usr/lib/unifi/run"
+    fi
     mkdir -p /config/run
     ln -s "/config/run" "/usr/lib/unifi/run"
+    chown abc:abc /usr/lib/unifi/run
 else
     if [[ ${S6_VERBOSITY} -ge 2 ]]; then
         echo "Write test to /run/unifi succeeded."
     fi
+    chown abc:abc /usr/lib/unifi/run
     rm /run/unifi/monogo.test
 fi
