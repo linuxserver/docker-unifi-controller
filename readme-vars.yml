@@ -66,6 +66,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "10.03.23:", desc: "Test writing to /run/unifi and symlink to /config/run if it fails."}
   - { date: "20.02.23:", desc: "Migrate to s6v3, install deb package on build, fix permissions."}
   - { date: "23.01.23:", desc: "Exclude `run` from `/config` volume."}
   - { date: "30.11.22:", desc: "Bump JRE to 11."}
