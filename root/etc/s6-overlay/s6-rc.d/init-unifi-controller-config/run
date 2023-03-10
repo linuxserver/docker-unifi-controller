@@ -90,8 +90,14 @@ lsiown abc:abc \
     /config/data/keystore
 
 if ! s6-setuidgid abc touch /run/unifi/monogo.test 2>/dev/null; then
+    if [[ ${S6_VERBOSITY} == "2" ]]; then
+        echo "Write test to /run/unifi failed, symlinking to /config/run."
+    fi
     mkdir -p /config/run
     ln -s "/config/run" "/usr/lib/unifi/run"
 else
+    if [[ ${S6_VERBOSITY} == "2" ]]; then
+        echo "Write test to /run/unifi succeeded."
+    fi
     rm /run/unifi/monogo.test
 fi
