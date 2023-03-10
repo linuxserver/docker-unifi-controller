@@ -90,7 +90,7 @@ lsiown abc:abc \
 	/run/unifi \
     /var/run/unifi
 
-if ! s6-setuidgid abc touch /run/unifi/monogo.test 2>/dev/null; then
+if ! s6-setuidgid abc touch /run/unifi/mongo.test 2>/dev/null; then
     if [[ ${S6_VERBOSITY} -ge 2 ]]; then
         echo "Write test to /run/unifi failed, symlinking to /config/run."
     fi
@@ -105,5 +105,5 @@ else
         echo "Write test to /run/unifi succeeded."
     fi
     chown abc:abc /usr/lib/unifi/run
-    rm /run/unifi/monogo.test
+    rm /run/unifi/mongo.test
 fi
