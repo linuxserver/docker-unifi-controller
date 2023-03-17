@@ -58,6 +58,14 @@ The architectures supported by this image are:
 | arm64 | ✅ | arm64v8-\<version tag\> |
 | armhf | ❌ | |
 
+## Version Tags
+
+This image provides various versions that are available via tags. Please read the descriptions carefully and exercise caution when using unstable or development tags.
+
+| Tag | Available | Description |
+| :----: | :----: |--- |
+| latest | ✅ | Stable Unifi Controller releases. |
+| mongoless | ✅ | Stable Unifi Controller releases without mongodb included. |
 ## Application Setup
 
 The webui is at https://ip:8443, setup with the first run wizard.
@@ -272,6 +280,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **18.03.23:** - Add mongoless branch.
 * **10.03.23:** - Test writing to /run/unifi and symlink to /config/run if it fails.
 * **20.02.23:** - Migrate to s6v3, install deb package on build, fix permissions.
 * **23.01.23:** - Exclude `run` from `/config` volume.
