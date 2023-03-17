@@ -71,7 +71,7 @@ The webui is at https://ip:8443, setup with the first run wizard.
 
 ### Please note, Unifi change the location of this option every few releases so if it's not where it says, search for "Inform" or "Inform Host" in the settings.
 
-For Unifi to adopt other devices, e.g. an Access Point, it is required to change the inform IP address. Because Unifi runs inside Docker by default it uses an IP address not accessible by other devices. To change this go to Settings > System > Advanced > and set the Inform Host to a hostname or IP address accessible by your devices. Additionally the checkbox "Override" has to be checked, so that devices can connect to the controller during adoption (devices use the inform-endpoint during adoption).
+For Unifi to adopt other devices, e.g. an Access Point, it is required to change the inform IP address. Because Unifi runs inside Docker by default it uses an IP address not accessible by other devices. To change this go to Settings > System > Advanced and set the Inform Host to a hostname or IP address accessible by your devices. Additionally the checkbox "Override" has to be checked, so that devices can connect to the controller during adoption (devices use the inform-endpoint during adoption).
 
 In order to manually adopt a device take these steps:
 
@@ -96,7 +96,7 @@ Create your databases with:
 
 `mongo --eval 'db.getSiblingDB("MONGO_DBNAME_stat").createUser({user: "MONGO_USER", pwd: "MONGO_PASS", roles: [{role: "readWrite", db: "MONGO_DBNAME_stat"}]})'`
 
-Being sure to replace the placeholders with the same values you supplied to the Unifi container.
+Being sure to replace the placeholders with the same values you supplied to the Unifi container. It is assumed if you are choosing to use this image tag then you have a good understanding of mongodb and how to manage external database configuration for Unifi Controller.
 
 ### Strict reverse proxies
 
@@ -308,7 +308,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **08.03.23:** - Add mongoless branch.
+* **18.03.23:** - Add mongoless branch.
 * **20.02.23:** - Migrate to s6v3, install deb package on build, fix permissions.
 * **23.01.23:** - Exclude `run` from `/config` volume.
 * **30.11.22:** - Bump JRE to 11.

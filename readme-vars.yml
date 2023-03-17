@@ -85,11 +85,11 @@ app_setup_block: |
 
   `mongo --eval 'db.getSiblingDB("MONGO_DBNAME_stat").createUser({user: "MONGO_USER", pwd: "MONGO_PASS", roles: [{role: "readWrite", db: "MONGO_DBNAME_stat"}]})'`
 
-  Being sure to replace the placeholders with the same values you supplied to the Unifi container.
+  Being sure to replace the placeholders with the same values you supplied to the Unifi container. It is assumed if you are choosing to use this image tag then you have a good understanding of mongodb and how to manage external database configuration for Unifi Controller.
 
 # changelog
 changelogs:
-  - { date: "08.03.23:", desc: "Add mongoless branch."}
+  - { date: "18.03.23:", desc: "Add mongoless branch."}
   - { date: "20.02.23:", desc: "Migrate to s6v3, install deb package on build, fix permissions."}
   - { date: "23.01.23:", desc: "Exclude `run` from `/config` volume."}
   - { date: "30.11.22:", desc: "Bump JRE to 11."}
