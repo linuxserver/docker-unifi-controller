@@ -83,7 +83,7 @@ fi
 if [[ ! -f /config/data/keystore ]]; then
     keytool -genkey -keyalg RSA -alias unifi -keystore /config/data/keystore \
     -storepass aircontrolenterprise -keypass aircontrolenterprise -validity 3650 \
-    -keysize 4096 -dname "cn=unifi"
+    -keysize 4096 -dname "cn=unifi" -ext san=dns:unifi
 fi
 
 # permissions
