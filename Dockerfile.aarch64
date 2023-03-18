@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-ubuntu:arm64v8-focal
+FROM ghcr.io/linuxserver/baseimage-ubuntu:arm64v8-jammy
 
 # set version label
 ARG BUILD_DATE
@@ -21,7 +21,6 @@ RUN \
     jsvc \
     libcap2 \
     logrotate \
-    mongodb-server \
     openjdk-11-jre-headless \
     wget && \
   echo "**** install unifi ****" && \
@@ -35,7 +34,7 @@ RUN \
   curl -o \
   /tmp/unifi.deb -L \
     "https://dl.ui.com/unifi/${UNIFI_VERSION}/unifi_sysvinit_all.deb" && \
-  dpkg -i /tmp/unifi.deb && \
+  dpkg -i --ignore-depends=mongodb-org-server /tmp/unifi.deb && \
   echo "**** cleanup ****" && \
   apt-get clean && \
   rm -rf \
