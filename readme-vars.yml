@@ -13,7 +13,10 @@ available_architectures:
   - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 
 # development version
-development_versions: false
+development_versions: true
+development_versions_items:
+  - { tag: "latest", desc: "Stable Unifi Controller releases." }
+  - { tag: "mongoless", desc: "Stable Unifi Controller releases without mongodb included." }
 
 # container parameters
 param_container_name: "{{ project_name }}"
@@ -68,6 +71,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "18.03.23:", desc: "Add mongoless branch."}
   - { date: "10.03.23:", desc: "Test writing to /run/unifi and symlink to /config/run if it fails."}
   - { date: "20.02.23:", desc: "Migrate to s6v3, install deb package on build, fix permissions."}
   - { date: "23.01.23:", desc: "Exclude `run` from `/config` volume."}
