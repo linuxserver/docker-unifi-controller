@@ -54,7 +54,7 @@ compiler                                  0.9.6                                 
 coreutils                                 8.30-3ubuntu2                                  deb           
 cron                                      3.0pl1-136ubuntu1                              deb           
 cron4j                                    2.2.5                                          java-archive  
-curl                                      7.68.0-1ubuntu2.16                             deb           
+curl                                      7.68.0-1ubuntu2.18                             deb           
 dash                                      0.5.10.2-6                                     deb           
 dbus                                      1.12.16-2ubuntu2.3                             deb           
 debconf                                   1.5.73                                         deb           
@@ -153,7 +153,7 @@ jstl                                      1.2                                   
 jstun                                     0.7.4                                          java-archive  
 jsvc                                      1.0.15-8                                       deb           
 jul-to-slf4j                              1.7.36                                         java-archive  
-krb5-locales                              1.17-6ubuntu4.2                                deb           
+krb5-locales                              1.17-6ubuntu4.3                                deb           
 lazysodium-java                           5.1.2                                          java-archive  
 libacl1                                   2.2.53-6                                       deb           
 libapparmor1                              2.13.3-7ubuntu5.1                              deb           
@@ -186,7 +186,7 @@ libcrypt1                                 1:4.4.10-10ubuntu4                    
 libctf-nobfd0                             2.34-6ubuntu1.4                                deb           
 libctf0                                   2.34-6ubuntu1.4                                deb           
 libcups2                                  2.3.1-9ubuntu1.2                               deb           
-libcurl4                                  7.68.0-1ubuntu2.16                             deb           
+libcurl4                                  7.68.0-1ubuntu2.18                             deb           
 libdb5.3                                  5.3.28+dfsg1-0.6ubuntu2                        deb           
 libdbus-1-3                               1.12.16-2ubuntu2.3                             deb           
 libdebconfclient0                         0.251ubuntu1                                   deb           
@@ -205,7 +205,7 @@ libgnutls30                               3.6.13-2ubuntu1.6                     
 libgoogle-perftools4                      2.7-1ubuntu2                                   deb           
 libgpg-error0                             1.37-1                                         deb           
 libgraphite2-3                            1.3.13-11build1                                deb           
-libgssapi-krb5-2                          1.17-6ubuntu4.2                                deb           
+libgssapi-krb5-2                          1.17-6ubuntu4.3                                deb           
 libgssapi3-heimdal                        7.7.0+dfsg-1ubuntu1.4                          deb           
 libharfbuzz0b                             2.6.4-1ubuntu4.2                               deb           
 libhcrypto4-heimdal                       7.7.0+dfsg-1ubuntu1.4                          deb           
@@ -218,11 +218,11 @@ libidn2-0                                 2.2.0-2                               
 libjpeg-turbo8                            2.0.3-0ubuntu1.20.04.3                         deb           
 libjpeg8                                  8c-2ubuntu8                                    deb           
 libjq1                                    1.6-1ubuntu0.20.04.1                           deb           
-libk5crypto3                              1.17-6ubuntu4.2                                deb           
+libk5crypto3                              1.17-6ubuntu4.3                                deb           
 libkeyutils1                              1.6-6ubuntu1.1                                 deb           
 libkrb5-26-heimdal                        7.7.0+dfsg-1ubuntu1.4                          deb           
-libkrb5-3                                 1.17-6ubuntu4.2                                deb           
-libkrb5support0                           1.17-6ubuntu4.2                                deb           
+libkrb5-3                                 1.17-6ubuntu4.3                                deb           
+libkrb5support0                           1.17-6ubuntu4.3                                deb           
 libksba8                                  1.3.5-2ubuntu0.20.04.2                         deb           
 liblcms2-2                                2.9-4                                          deb           
 libldap-2.4-2                             2.4.49+dfsg-2ubuntu1.9                         deb           
@@ -277,7 +277,7 @@ libtcmalloc-minimal4                      2.7-1ubuntu2                          
 libtinfo6                                 6.2-0ubuntu2                                   deb           
 libudev1                                  245.4-4ubuntu3.15                              deb           
 libunistring2                             0.9.10-2                                       deb           
-libunwind8                                1.2.1-9build1                                  deb           
+libunwind8                                1.2.1-9ubuntu0.1                               deb           
 libuuid1                                  2.34-0.1ubuntu9.3                              deb           
 libwind0-heimdal                          7.7.0+dfsg-1ubuntu1.4                          deb           
 libxml2                                   2.9.10+dfsg-5ubuntu0.20.04.5                   deb           
