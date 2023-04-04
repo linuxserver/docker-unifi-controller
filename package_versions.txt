@@ -27,6 +27,7 @@ binutils                                  2.38-4ubuntu2.1                       
 binutils-common                           2.38-4ubuntu2.1                          deb           
 binutils-x86-64-linux-gnu                 2.38-4ubuntu2.1                          deb           
 bsdutils                                  1:2.37.2-4ubuntu3                        deb           
+byte-buddy                                1.8.12                                   java-archive  
 byte-buddy-dep                            1.8.12                                   java-archive  
 ca-certificates                           20211016ubuntu0.22.04.1                  deb           
 ca-certificates-java                                                               java-archive  
