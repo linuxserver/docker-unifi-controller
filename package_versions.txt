@@ -27,6 +27,7 @@ binutils                                  2.34-6ubuntu1.4                       
 binutils-common                           2.34-6ubuntu1.4                                deb           
 binutils-x86-64-linux-gnu                 2.34-6ubuntu1.4                                deb           
 bsdutils                                  1:2.34-0.1ubuntu9.3                            deb           
+byte-buddy                                1.8.12                                         java-archive  
 byte-buddy-dep                            1.8.12                                         java-archive  
 bzip2                                     1.0.8-2                                        deb           
 ca-certificates                           20211016ubuntu0.20.04.1                        deb           
@@ -156,7 +157,7 @@ jul-to-slf4j                              1.7.36                                
 krb5-locales                              1.17-6ubuntu4.3                                deb           
 lazysodium-java                           5.1.2                                          java-archive  
 libacl1                                   2.2.53-6                                       deb           
-libapparmor1                              2.13.3-7ubuntu5.1                              deb           
+libapparmor1                              2.13.3-7ubuntu5.2                              deb           
 libapt-pkg6.0                             2.0.9                                          deb           
 libasn1-8-heimdal                         7.7.0+dfsg-1ubuntu1.4                          deb           
 libasound2                                1.2.2-2.1ubuntu2.5                             deb           
