@@ -364,7 +364,7 @@ tomcat-embed-el                           9.0.59                                
 tomcat-embed-jasper                       9.0.59                                         java-archive  
 tomcat-embed-websocket                    9.0.59                                         java-archive  
 txw2                                      2.3.0.1                                        java-archive  
-tzdata                                    2022g-0ubuntu0.20.04.1                         deb           
+tzdata                                    2023c-0ubuntu0.20.04.0                         deb           
 ubuntu-keyring                            2020.02.11.4                                   deb           
 ucf                                       3.0038+nmu1                                    deb           
 unifi                                     7.3.83-19645-1                                 deb           
