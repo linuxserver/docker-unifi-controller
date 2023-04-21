@@ -280,7 +280,7 @@ libunistring2                             0.9.10-2                              
 libunwind8                                1.2.1-9ubuntu0.1                               deb           
 libuuid1                                  2.34-0.1ubuntu9.3                              deb           
 libwind0-heimdal                          7.7.0+dfsg-1ubuntu1.4                          deb           
-libxml2                                   2.9.10+dfsg-5ubuntu0.20.04.5                   deb           
+libxml2                                   2.9.10+dfsg-5ubuntu0.20.04.6                   deb           
 libyaml-cpp0.6                            0.6.2-4ubuntu1                                 deb           
 libzstd1                                  1.4.4+dfsg-3ubuntu0.1                          deb           
 locales                                   2.31-0ubuntu9.9                                deb           
