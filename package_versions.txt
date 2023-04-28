@@ -12,8 +12,8 @@ antlr4-runtime                            4.5.3                                 
 antlr4-runtime                            4.7.2                                    java-archive  
 api-common                                1.7.0                                    java-archive  
 apigateway-generic-java-sdk               1.3                                      java-archive  
-apt                                       2.4.8                                    deb           
-apt-utils                                 2.4.8                                    deb           
+apt                                       2.4.9                                    deb           
+apt-utils                                 2.4.9                                    deb           
 aws-iot-device-sdk-java                   1.2.0                                    java-archive  
 aws-java-sdk-cloudwatch                   1.11.409                                 java-archive  
 aws-java-sdk-core                         1.11.409                                 java-archive  
@@ -154,7 +154,7 @@ jul-to-slf4j                              1.7.36                                
 lazysodium-java                           5.1.2                                    java-archive  
 libacl1                                   2.3.1-1                                  deb           
 libapparmor1                              3.0.4-2ubuntu2.2                         deb           
-libapt-pkg6.0                             2.4.8                                    deb           
+libapt-pkg6.0                             2.4.9                                    deb           
 libasound2                                1.2.6.1-1ubuntu1                         deb           
 libasound2-data                           1.2.6.1-1ubuntu1                         deb           
 libassuan0                                2.5.5-1build1                            deb           
@@ -190,8 +190,8 @@ libfontconfig1                            2.13.1-4.2ubuntu5                     
 libfreetype6                              2.11.1+dfsg-1ubuntu0.1                   deb           
 libgcc-s1                                 12.1.0-2ubuntu1~22.04                    deb           
 libgcrypt20                               1.9.4-3ubuntu3                           deb           
-libglib2.0-0                              2.72.4-0ubuntu1                          deb           
-libglib2.0-data                           2.72.4-0ubuntu1                          deb           
+libglib2.0-0                              2.72.4-0ubuntu2                          deb           
+libglib2.0-data                           2.72.4-0ubuntu2                          deb           
 libgmp10                                  2:6.2.1+dfsg-3ubuntu1                    deb           
 libgnutls30                               3.7.3-4ubuntu1.2                         deb           
 libgpg-error0                             1.43-3                                   deb           
@@ -282,7 +282,7 @@ netcat                                    1.218-4ubuntu1                        
 netcat-openbsd                            1.218-4ubuntu1                           deb           
 openjdk-11-jre-headless                   11.0.18+10-0ubuntu1~22.04                deb           
 openssh                                   1.0                                      java-archive  
-openssl                                   3.0.2-0ubuntu1.8                         deb           
+openssl                                   3.0.2-0ubuntu1.9                         deb           
 org.eclipse.paho.client.mqttv3            1.1.0                                    java-archive  
 owasp-java-html-sanitizer                 20190503.1                               java-archive  
 passwd                                    1:4.8.1-2ubuntu2.1                       deb           
