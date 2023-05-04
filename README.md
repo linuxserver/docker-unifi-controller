@@ -308,6 +308,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **04.05.23:** - Cleanup `apt-get install` during build to reduce image size.
 * **18.03.23:** - Add mongoless branch.
 * **20.02.23:** - Migrate to s6v3, install deb package on build, fix permissions.
 * **23.01.23:** - Exclude `run` from `/config` volume.
