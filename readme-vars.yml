@@ -71,6 +71,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "02.05.23:", desc: "Cleanup `apt-get install` during build to reduce image size."}
   - { date: "18.03.23:", desc: "Add mongoless branch."}
   - { date: "10.03.23:", desc: "Test writing to /run/unifi and symlink to /config/run if it fails."}
   - { date: "20.02.23:", desc: "Migrate to s6v3, install deb package on build, fix permissions."}

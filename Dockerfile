@@ -16,14 +16,13 @@ ARG DEBIAN_FRONTEND="noninteractive"
 RUN \
   echo "**** install packages ****" && \
   apt-get update && \
-  apt-get install -y \
+  apt-get install -y --no-install-recommends \
     binutils \
     jsvc \
     libcap2 \
     logrotate \
     mongodb-server \
-    openjdk-11-jre-headless \
-    wget && \
+    openjdk-11-jre-headless && \
   echo "**** install unifi ****" && \
   if [ -z ${UNIFI_VERSION+x} ]; then \
     UNIFI_VERSION=$(curl -sX GET http://dl-origin.ubnt.com/unifi/debian/dists/${UNIFI_BRANCH}/ubiquiti/binary-amd64/Packages \
