@@ -2,8 +2,6 @@ NAME                                      VERSION                               
 ace                                                                                      java-archive  
 activation                                1.1.1                                          java-archive  
 adduser                                   3.118ubuntu2                                   deb           
-alsa-topology-conf                        1.2.2-1                                        deb           
-alsa-ucm-conf                             1.2.2-1ubuntu0.13                              deb           
 analytics-api                             1.2.1                                          java-archive  
 analytics-client                          1.2.1                                          java-archive  
 analytics-privacy                         1.2.1                                          java-archive  
@@ -56,7 +54,6 @@ cron                                      3.0pl1-136ubuntu1                     
 cron4j                                    2.2.5                                          java-archive  
 curl                                      7.68.0-1ubuntu2.18                             deb           
 dash                                      0.5.10.2-6                                     deb           
-dbus                                      1.12.16-2ubuntu2.3                             deb           
 debconf                                   1.5.73                                         deb           
 debianutils                               4.9.1                                          deb           
 diffutils                                 1:3.7-3                                        deb           
@@ -156,7 +153,6 @@ jul-to-slf4j                              1.7.36                                
 krb5-locales                              1.17-6ubuntu4.3                                deb           
 lazysodium-java                           5.1.2                                          java-archive  
 libacl1                                   2.2.53-6                                       deb           
-libapparmor1                              2.13.3-7ubuntu5.2                              deb           
 libapt-pkg6.0                             2.0.9                                          deb           
 libasn1-8-heimdal                         7.7.0+dfsg-1ubuntu1.4                          deb           
 libasound2                                1.2.2-2.1ubuntu2.5                             deb           
@@ -199,7 +195,6 @@ libfreetype6                              2.10.1-2ubuntu0.2                     
 libgcc-s1                                 10.3.0-1ubuntu1~20.04                          deb           
 libgcrypt20                               1.8.5-5ubuntu1.1                               deb           
 libglib2.0-0                              2.64.6-1~ubuntu20.04.4                         deb           
-libglib2.0-data                           2.64.6-1~ubuntu20.04.4                         deb           
 libgmp10                                  2:6.2.0+dfsg-4                                 deb           
 libgnutls30                               3.6.13-2ubuntu1.6                              deb           
 libgoogle-perftools4                      2.7-1ubuntu2                                   deb           
@@ -213,7 +208,6 @@ libheimbase1-heimdal                      7.7.0+dfsg-1ubuntu1.4                 
 libheimntlm0-heimdal                      7.7.0+dfsg-1ubuntu1.4                          deb           
 libhogweed5                               3.5.1+really3.5.1-2ubuntu0.2                   deb           
 libhx509-5-heimdal                        7.7.0+dfsg-1ubuntu1.4                          deb           
-libicu66                                  66.1-2ubuntu2.1                                deb           
 libidn2-0                                 2.2.0-2                                        deb           
 libjpeg-turbo8                            2.0.3-0ubuntu1.20.04.3                         deb           
 libjpeg8                                  8c-2ubuntu8                                    deb           
@@ -243,7 +237,6 @@ libpam-modules                            1.3.1-5ubuntu4.3                      
 libpam-modules-bin                        1.3.1-5ubuntu4.3                               deb           
 libpam-runtime                            1.3.1-5ubuntu4.3                               deb           
 libpam0g                                  1.3.1-5ubuntu4.3                               deb           
-libpcap0.8                                1.9.1-3                                        deb           
 libpcre2-8-0                              10.34-7                                        deb           
 libpcre3                                  2:8.39-12build1                                deb           
 libpcrecpp0v5                             2:8.39-12ubuntu0.1                             deb           
@@ -280,7 +273,6 @@ libunistring2                             0.9.10-2                              
 libunwind8                                1.2.1-9ubuntu0.1                               deb           
 libuuid1                                  2.34-0.1ubuntu9.3                              deb           
 libwind0-heimdal                          7.7.0+dfsg-1ubuntu1.4                          deb           
-libxml2                                   2.9.10+dfsg-5ubuntu0.20.04.6                   deb           
 libyaml-cpp0.6                            0.6.2-4ubuntu1                                 deb           
 libzstd1                                  1.4.4+dfsg-3ubuntu0.1                          deb           
 locales                                   2.31-0ubuntu9.9                                deb           
@@ -294,7 +286,6 @@ lsb-base                                  11.1.0ubuntu2                         
 mawk                                      1.3.4.20200120-2                               deb           
 minimal-json                              0.9.5                                          java-archive  
 mongo-java-driver                         3.4.3                                          java-archive  
-mongo-tools                               3.6.3-0ubuntu1                                 deb           
 mongodb-clients                           1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3  deb           
 mongodb-server                            1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3  deb           
 mongodb-server-core                       1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3  deb           
@@ -327,7 +318,6 @@ sensible-utils                            0.0.12+nmu1                           
 servo-aws                                 0.13.0                                         java-archive  
 servo-core                                0.13.0                                         java-archive  
 servo-graphite                            0.13.0                                         java-archive  
-shared-mime-info                          1.15-1                                         deb           
 slf4j-api                                 1.7.36                                         java-archive  
 snappy-java                               1.1.8.4                                        java-archive  
 spectator-api                             0.88.0                                         java-archive  
@@ -364,12 +354,10 @@ tomcat-embed-el                           9.0.59                                
 tomcat-embed-jasper                       9.0.59                                         java-archive  
 tomcat-embed-websocket                    9.0.59                                         java-archive  
 txw2                                      2.3.0.1                                        java-archive  
-tzdata                                    2023c-0ubuntu0.20.04.0                         deb           
+tzdata                                    2023c-0ubuntu0.20.04.1                         deb           
 ubuntu-keyring                            2020.02.11.4                                   deb           
 ucf                                       3.0038+nmu1                                    deb           
 unifi                                     7.3.83-19645-1                                 deb           
 urlrewritefilter                          4.0.4                                          java-archive  
 util-linux                                2.34-0.1ubuntu9.3                              deb           
-wget                                      1.20.3-1ubuntu2                                deb           
-xdg-user-dirs                             0.17-2ubuntu1                                  deb           
 zlib1g                                    1:1.2.11.dfsg-2ubuntu1.2                       deb           
