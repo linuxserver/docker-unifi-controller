@@ -21,9 +21,9 @@ base-passwd                               3.5.47                                
 bash                                      5.0-6ubuntu1.2                                 deb           
 bcpkix-jdk15on                            1.60                                           java-archive  
 bcprov-jdk15on                            1.60                                           java-archive  
-binutils                                  2.34-6ubuntu1.4                                deb           
-binutils-common                           2.34-6ubuntu1.4                                deb           
-binutils-x86-64-linux-gnu                 2.34-6ubuntu1.4                                deb           
+binutils                                  2.34-6ubuntu1.5                                deb           
+binutils-common                           2.34-6ubuntu1.5                                deb           
+binutils-x86-64-linux-gnu                 2.34-6ubuntu1.5                                deb           
 bsdutils                                  1:2.34-0.1ubuntu9.3                            deb           
 byte-buddy-dep                            1.8.12                                         java-archive  
 bzip2                                     1.0.8-2                                        deb           
@@ -164,7 +164,7 @@ libaudit1                                 1:2.8.5-2ubuntu6                      
 libavahi-client3                          0.7-4ubuntu7.1                                 deb           
 libavahi-common-data                      0.7-4ubuntu7.1                                 deb           
 libavahi-common3                          0.7-4ubuntu7.1                                 deb           
-libbinutils                               2.34-6ubuntu1.4                                deb           
+libbinutils                               2.34-6ubuntu1.5                                deb           
 libblkid1                                 2.34-0.1ubuntu9.3                              deb           
 libboost-filesystem1.71.0                 1.71.0-6ubuntu6                                deb           
 libboost-iostreams1.71.0                  1.71.0-6ubuntu6                                deb           
@@ -179,8 +179,8 @@ libcap2                                   1:2.32-1                              
 libcom-err2                               1.45.5-2ubuntu1.1                              deb           
 libcommons-daemon-java                    1.0.15-8                                       deb           
 libcrypt1                                 1:4.4.10-10ubuntu4                             deb           
-libctf-nobfd0                             2.34-6ubuntu1.4                                deb           
-libctf0                                   2.34-6ubuntu1.4                                deb           
+libctf-nobfd0                             2.34-6ubuntu1.5                                deb           
+libctf0                                   2.34-6ubuntu1.5                                deb           
 libcups2                                  2.3.1-9ubuntu1.2                               deb           
 libcurl4                                  7.68.0-1ubuntu2.18                             deb           
 libdb5.3                                  5.3.28+dfsg1-0.6ubuntu2                        deb           
