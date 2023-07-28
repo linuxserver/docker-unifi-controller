@@ -45,7 +45,7 @@ compiler                                  0.9.6                                 
 coreutils                                 8.32-4.1ubuntu1                          deb           
 cron                                      3.0pl1-137ubuntu3                        deb           
 cron4j                                    2.2.5                                    java-archive  
-curl                                      7.81.0-1ubuntu1.10                       deb           
+curl                                      7.81.0-1ubuntu1.13                       deb           
 dash                                      0.5.11+git20210903+057cd650a4ed-3build1  deb           
 debconf                                   1.5.79ubuntu1                            deb           
 debianutils                               5.5-1ubuntu2                             deb           
@@ -166,7 +166,7 @@ libcrypt1                                 1:4.4.27-1                            
 libctf-nobfd0                             2.38-4ubuntu2.2                          deb           
 libctf0                                   2.38-4ubuntu2.2                          deb           
 libcups2                                  2.4.1op1-1ubuntu4.4                      deb           
-libcurl4                                  7.81.0-1ubuntu1.10                       deb           
+libcurl4                                  7.81.0-1ubuntu1.13                       deb           
 libdb5.3                                  5.3.28+dfsg1-0.8ubuntu3                  deb           
 libdbus-1-3                               1.12.20-2ubuntu4.1                       deb           
 libdebconfclient0                         0.261ubuntu1                             deb           
@@ -217,7 +217,7 @@ libpam-runtime                            1.4.0-11ubuntu2.3                     
 libpam0g                                  1.4.0-11ubuntu2.3                        deb           
 libpcre2-8-0                              10.39-3ubuntu0.1                         deb           
 libpcre3                                  2:8.39-13ubuntu0.22.04.1                 deb           
-libpcsclite1                              1.9.5-3                                  deb           
+libpcsclite1                              1.9.5-3ubuntu1                           deb           
 libpng16-16                               1.6.37-3build5                           deb           
 libpopt0                                  1.18-3build1                             deb           
 libprocps8                                2:3.3.17-6ubuntu2                        deb           
