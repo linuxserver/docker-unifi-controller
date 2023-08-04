@@ -133,7 +133,7 @@ jmdns                                     3.4.1                                 
 jna                                       5.9.0                                          java-archive  
 joda-time                                 2.10.4                                         java-archive  
 jq                                        1.6-1ubuntu0.20.04.1                           deb           
-jrt-fs                                    11.0.19                                        java-archive  
+jrt-fs                                    11.0.20                                        java-archive  
 json                                      20190722                                       java-archive  
 jsr305                                    3.0.1                                          java-archive  
 jsr305                                    3.0.2                                          java-archive  
@@ -288,7 +288,7 @@ ncurses-base                              6.2-0ubuntu2.1                        
 ncurses-bin                               6.2-0ubuntu2.1                                 deb           
 netcat                                    1.206-1ubuntu1                                 deb           
 netcat-openbsd                            1.206-1ubuntu1                                 deb           
-openjdk-11-jre-headless                   11.0.19+7~us1-0ubuntu1~20.04.1                 deb           
+openjdk-11-jre-headless                   11.0.20+8-1ubuntu1~20.04                       deb           
 openssh                                   1.0                                            java-archive  
 openssl                                   1.1.1f-1ubuntu2.19                             deb           
 org.eclipse.paho.client.mqttv3            1.1.0                                          java-archive  
