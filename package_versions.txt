@@ -9,8 +9,8 @@ annotations                               3.0.1                                 
 antlr4-runtime                            4.5.3                                    java-archive  
 api-common                                1.7.0                                    java-archive  
 apigateway-generic-java-sdk               1.3                                      java-archive  
-apt                                       2.4.9                                    deb           
-apt-utils                                 2.4.9                                    deb           
+apt                                       2.4.10                                   deb           
+apt-utils                                 2.4.10                                   deb           
 aws-iot-device-sdk-java                   1.2.0                                    java-archive  
 aws-java-sdk-core                         1.11.409                                 java-archive  
 aws-java-sdk-s3                           1.11.409                                 java-archive  
@@ -141,7 +141,7 @@ jsvc                                      1.0.15-8                              
 jul-to-slf4j                              1.7.36                                   java-archive  
 lazysodium-java                           5.1.2                                    java-archive  
 libacl1                                   2.3.1-1                                  deb           
-libapt-pkg6.0                             2.4.9                                    deb           
+libapt-pkg6.0                             2.4.10                                   deb           
 libasound2                                1.2.6.1-1ubuntu1                         deb           
 libasound2-data                           1.2.6.1-1ubuntu1                         deb           
 libassuan0                                2.5.5-1build1                            deb           
@@ -195,8 +195,8 @@ libkrb5-3                                 1.19.2-2ubuntu0.2                     
 libkrb5support0                           1.19.2-2ubuntu0.2                        deb           
 libksba8                                  1.6.0-2ubuntu0.2                         deb           
 liblcms2-2                                2.12~rc1-2build2                         deb           
-libldap-2.5-0                             2.5.15+dfsg-0ubuntu0.22.04.1             deb           
-libldap-common                            2.5.15+dfsg-0ubuntu0.22.04.1             deb           
+libldap-2.5-0                             2.5.16+dfsg-0ubuntu0.22.04.1             deb           
+libldap-common                            2.5.16+dfsg-0ubuntu0.22.04.1             deb           
 liblz4-1                                  1.9.3-2build2                            deb           
 liblzma5                                  5.2.5-2ubuntu1                           deb           
 libmd0                                    1.0.4-1build1                            deb           
