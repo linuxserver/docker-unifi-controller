@@ -15,17 +15,13 @@ ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
   echo "**** install packages ****" && \
-  curl -fsSL https://pgp.mongodb.com/server-4.4.asc | \
-    gpg -o /usr/share/keyrings/mongodb-server-4.4.gpg \
-    --dearmor && \
-  echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-4.4.gpg ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-4.4.list && \
   apt-get update && \
   apt-get install -y --no-install-recommends \
     binutils \
     jsvc \
     libcap2 \
     logrotate \
-    mongodb-org-server \
+    mongodb-server \
     openjdk-17-jre-headless && \
   echo "**** install unifi ****" && \
   if [ -z ${UNIFI_VERSION+x} ]; then \

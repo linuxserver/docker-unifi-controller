@@ -71,7 +71,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - { date: "04.09.23:", desc: "Bump mongodb to 4.4 and JRE to 17 to support v7.5."}
+  - { date: "04.09.23:", desc: "Bump JRE to 17 to support v7.5."}
   - { date: "02.05.23:", desc: "Cleanup `apt-get install` during build to reduce image size."}
   - { date: "18.03.23:", desc: "Add mongoless branch."}
   - { date: "10.03.23:", desc: "Test writing to /run/unifi and symlink to /config/run if it fails."}
