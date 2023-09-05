@@ -21,7 +21,7 @@ RUN \
     jsvc \
     libcap2 \
     logrotate \
-    openjdk-11-jre-headless && \
+    openjdk-17-jre-headless && \
   echo "**** install unifi ****" && \
   if [ -z ${UNIFI_VERSION+x} ]; then \
     UNIFI_VERSION=$(curl -sX GET http://dl-origin.ubnt.com/unifi/debian/dists/${UNIFI_BRANCH}/ubiquiti/binary-amd64/Packages \
