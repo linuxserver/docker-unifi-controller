@@ -280,6 +280,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **04.09.23:** - Bump JRE to 17 to support v7.5.
 * **02.05.23:** - Cleanup `apt-get install` during build to reduce image size.
 * **18.03.23:** - Add mongoless branch.
 * **10.03.23:** - Test writing to /run/unifi and symlink to /config/run if it fails.
