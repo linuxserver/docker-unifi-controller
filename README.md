@@ -280,6 +280,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **05.09.23:** - Add deprecation warning as per [https://info.linuxserver.io/issues/2023-09-06-unifi-controller](https://info.linuxserver.io/issues/2023-09-06-unifi-controller).
 * **04.09.23:** - Bump JRE to 17 to support v7.5.
 * **02.05.23:** - Cleanup `apt-get install` during build to reduce image size.
 * **18.03.23:** - Add mongoless branch.

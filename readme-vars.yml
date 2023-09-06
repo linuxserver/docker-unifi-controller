@@ -71,6 +71,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "05.09.23:", desc: "Add deprecation warning as per [https://info.linuxserver.io/issues/2023-09-06-unifi-controller](https://info.linuxserver.io/issues/2023-09-06-unifi-controller)."}
   - { date: "04.09.23:", desc: "Bump JRE to 17 to support v7.5."}
   - { date: "02.05.23:", desc: "Cleanup `apt-get install` during build to reduce image size."}
   - { date: "18.03.23:", desc: "Add mongoless branch."}
