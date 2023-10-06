@@ -267,7 +267,7 @@ libuuid1                                  2.34-0.1ubuntu9.4                     
 libwind0-heimdal                          7.7.0+dfsg-1ubuntu1.4                          deb           
 libyaml-cpp0.6                            0.6.2-4ubuntu1                                 deb           
 libzstd1                                  1.4.4+dfsg-3ubuntu0.1                          deb           
-locales                                   2.31-0ubuntu9.9                                deb           
+locales                                   2.31-0ubuntu9.12                               deb           
 log4j-api                                 2.17.2                                         java-archive  
 log4j-to-slf4j                            2.17.2                                         java-archive  
 logback-access                            1.2.11                                         java-archive  
