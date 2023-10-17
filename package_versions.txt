@@ -349,7 +349,7 @@ txw2                                      2.3.0.1                               
 tzdata                                    2023c-0ubuntu0.20.04.2                         deb           
 ubuntu-keyring                            2020.02.11.4                                   deb           
 ucf                                       3.0038+nmu1                                    deb           
-unifi                                     7.5.176-22707-1                                deb           
+unifi                                     7.5.187-22891-1                                deb           
 urlrewritefilter                          4.0.4                                          java-archive  
 util-linux                                2.34-0.1ubuntu9.4                              deb           
 zlib1g                                    1:1.2.11.dfsg-2ubuntu1.5                       deb           
