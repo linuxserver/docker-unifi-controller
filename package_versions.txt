@@ -47,7 +47,7 @@ compiler                                  0.9.6                                 
 coreutils                                 8.30-3ubuntu2                                  deb           
 cron                                      3.0pl1-136ubuntu1                              deb           
 cron4j                                    2.2.5                                          java-archive  
-curl                                      7.68.0-1ubuntu2.19                             deb           
+curl                                      7.68.0-1ubuntu2.20                             deb           
 dash                                      0.5.10.2-6                                     deb           
 debconf                                   1.5.73                                         deb           
 debianutils                               4.9.1                                          deb           
@@ -174,7 +174,7 @@ libcrypt1                                 1:4.4.10-10ubuntu4                    
 libctf-nobfd0                             2.34-6ubuntu1.6                                deb           
 libctf0                                   2.34-6ubuntu1.6                                deb           
 libcups2                                  2.3.1-9ubuntu1.6                               deb           
-libcurl4                                  7.68.0-1ubuntu2.19                             deb           
+libcurl4                                  7.68.0-1ubuntu2.20                             deb           
 libdb5.3                                  5.3.28+dfsg1-0.6ubuntu2                        deb           
 libdbus-1-3                               1.12.16-2ubuntu2.3                             deb           
 libdebconfclient0                         0.251ubuntu1                                   deb           
