@@ -2,15 +2,15 @@ NAME                                      VERSION                               
 ace                                                                                      java-archive  
 activation                                1.1.1                                          java-archive  
 adduser                                   3.118ubuntu2                                   deb           
-analytics-api                             1.3.0                                          java-archive  
-analytics-client                          1.3.0                                          java-archive  
-analytics-privacy                         1.3.0                                          java-archive  
+analytics-api                             1.3.1                                          java-archive  
+analytics-client                          1.3.1                                          java-archive  
+analytics-privacy                         1.3.1                                          java-archive  
 annotations                               3.0.1                                          java-archive  
 antlr4-runtime                            4.5.3                                          java-archive  
 api-common                                1.7.0                                          java-archive  
 apigateway-generic-java-sdk               1.3                                            java-archive  
-apt                                       2.0.9                                          deb           
-apt-utils                                 2.0.9                                          deb           
+apt                                       2.0.10                                         deb           
+apt-utils                                 2.0.10                                         deb           
 aws-iot-device-sdk-java                   1.2.0                                          java-archive  
 aws-java-sdk-core                         1.11.409                                       java-archive  
 aws-java-sdk-s3                           1.11.409                                       java-archive  
@@ -145,7 +145,7 @@ jul-to-slf4j                              1.7.36                                
 krb5-locales                              1.17-6ubuntu4.4                                deb           
 lazysodium-java                           5.1.2                                          java-archive  
 libacl1                                   2.2.53-6                                       deb           
-libapt-pkg6.0                             2.0.9                                          deb           
+libapt-pkg6.0                             2.0.10                                         deb           
 libasn1-8-heimdal                         7.7.0+dfsg-1ubuntu1.4                          deb           
 libasound2                                1.2.2-2.1ubuntu2.5                             deb           
 libasound2-data                           1.2.2-2.1ubuntu2.5                             deb           
@@ -153,9 +153,9 @@ libassuan0                                2.5.3-7ubuntu2                        
 libattr1                                  1:2.4.48-5                                     deb           
 libaudit-common                           1:2.8.5-2ubuntu6                               deb           
 libaudit1                                 1:2.8.5-2ubuntu6                               deb           
-libavahi-client3                          0.7-4ubuntu7.2                                 deb           
-libavahi-common-data                      0.7-4ubuntu7.2                                 deb           
-libavahi-common3                          0.7-4ubuntu7.2                                 deb           
+libavahi-client3                          0.7-4ubuntu7.3                                 deb           
+libavahi-common-data                      0.7-4ubuntu7.3                                 deb           
+libavahi-common3                          0.7-4ubuntu7.3                                 deb           
 libbinutils                               2.34-6ubuntu1.6                                deb           
 libblkid1                                 2.34-0.1ubuntu9.4                              deb           
 libboost-filesystem1.71.0                 1.71.0-6ubuntu6                                deb           
@@ -349,7 +349,7 @@ txw2                                      2.3.0.1                               
 tzdata                                    2023c-0ubuntu0.20.04.2                         deb           
 ubuntu-keyring                            2020.02.11.4                                   deb           
 ucf                                       3.0038+nmu1                                    deb           
-unifi                                     7.5.187-22891-1                                deb           
+unifi                                     8.0.7-24256-1                                  deb           
 urlrewritefilter                          4.0.4                                          java-archive  
 util-linux                                2.34-0.1ubuntu9.4                              deb           
 zlib1g                                    1:1.2.11.dfsg-2ubuntu1.5                       deb           
