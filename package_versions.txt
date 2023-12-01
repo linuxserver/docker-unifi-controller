@@ -134,7 +134,7 @@ jmdns                                     3.4.1                                 
 jna                                       5.9.0                                          java-archive  
 joda-time                                 2.10.4                                         java-archive  
 jq                                        1.6-1ubuntu0.20.04.1                           deb           
-jrt-fs                                    17.0.8.1                                       java-archive  
+jrt-fs                                    17.0.9                                         java-archive  
 json                                      20190722                                       java-archive  
 jsr305                                    3.0.1                                          java-archive  
 jsr305                                    3.0.2                                          java-archive  
@@ -219,7 +219,7 @@ libmount1                                 2.34-0.1ubuntu9.4                     
 libncurses6                               6.2-0ubuntu2.1                                 deb           
 libncursesw6                              6.2-0ubuntu2.1                                 deb           
 libnettle7                                3.5.1+really3.5.1-2ubuntu0.2                   deb           
-libnghttp2-14                             1.40.0-1ubuntu0.1                              deb           
+libnghttp2-14                             1.40.0-1ubuntu0.2                              deb           
 libnpth0                                  1.6-1                                          deb           
 libnspr4                                  2:4.25-1                                       deb           
 libnss3                                   2:3.49.1-1ubuntu1.9                            deb           
@@ -290,7 +290,7 @@ ncurses-base                              6.2-0ubuntu2.1                        
 ncurses-bin                               6.2-0ubuntu2.1                                 deb           
 netcat                                    1.206-1ubuntu1                                 deb           
 netcat-openbsd                            1.206-1ubuntu1                                 deb           
-openjdk-17-jre-headless                   17.0.8.1+1~us1-0ubuntu1~20.04                  deb           
+openjdk-17-jre-headless                   17.0.9+9-1~20.04                               deb           
 openssh                                   1.0                                            java-archive  
 openssl                                   1.1.1f-1ubuntu2.20                             deb           
 org.eclipse.paho.client.mqttv3            1.1.0                                          java-archive  
