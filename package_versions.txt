@@ -252,7 +252,7 @@ libsmartcols1                             2.34-0.1ubuntu9.4                     
 libsnappy1v5                              1.1.8-1build1                                  deb           
 libsqlite3-0                              3.31.1-4ubuntu0.5                              deb           
 libss2                                    1.45.5-2ubuntu1.1                              deb           
-libssh-4                                  0.9.3-2ubuntu2.3                               deb           
+libssh-4                                  0.9.3-2ubuntu2.4                               deb           
 libssl1.1                                 1.1.1f-1ubuntu2.20                             deb           
 libstdc++6                                10.3.0-1ubuntu1~20.04                          deb           
 libstemmer0d                              0+svn585-2                                     deb           
