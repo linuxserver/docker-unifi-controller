@@ -26,6 +26,11 @@ Find us at:
 * [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
 * [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
+# This image is deprecated. We will not offer support for this image and it will not be updated.
+
+We recommend our unifi-network-application image instead:
+https://github.com/linuxserver/docker-unifi-network-application
+
 # [linuxserver/unifi-controller](https://github.com/linuxserver/docker-unifi-controller)
 
 [![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver%2Funifi-controller?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh/gateway/linuxserver-ci/docker/linuxserver%2Funifi-controller)
@@ -350,6 +355,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **01.01.24:** - Deprecate.
 * **05.09.23:** - Add deprecation warning as per [https://info.linuxserver.io/issues/2023-09-06-unifi-controller](https://info.linuxserver.io/issues/2023-09-06-unifi-controller).
 * **04.09.23:** - Bump JRE to 17 to support v7.5.
 * **02.05.23:** - Cleanup `apt-get install` during build to reduce image size.
