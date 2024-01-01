@@ -1,3 +1,8 @@
+# This image is deprecated. We will not offer support for this image and it will not be updated.
+
+We recommend our unifi-network-application image instead:
+https://github.com/linuxserver/docker-unifi-network-application
+
 <!--- Provide a general summary of your changes in the Title above -->
 
 [linuxserverurl]: https://linuxserver.io
